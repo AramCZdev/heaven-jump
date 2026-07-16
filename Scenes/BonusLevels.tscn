@@ -1,0 +1,316 @@
+[gd_scene format=3 uid="uid://bi3hjywj40ks2"]
+
+[ext_resource type="Script" uid="uid://bbg1w85kaqrqq" path="res://Scripts/bonus_levels.gd" id="1_6gr4j"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="1_y66nr"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="3_6gr4j"]
+[ext_resource type="Texture2D" uid="uid://dfqm3u0pfusg0" path="res://Photos/Nav/Back.png" id="4_a35lr"]
+
+[sub_resource type="Theme" id="Theme_y66nr"]
+PopupMenu/fonts/font = ExtResource("3_6gr4j")
+
+[node name="Control" type="Control" unique_id=180740806]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6gr4j")
+
+[node name="Back Button" type="Button" parent="." unique_id=1789874564]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.014
+anchor_bottom = 0.028
+offset_left = 9.0
+offset_top = 8.0
+offset_right = 45.872
+offset_bottom = 42.856
+theme_override_font_sizes/font_size = 30
+text = "←"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1396273152]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3764706, 0.043137256, 0.05490196, 1)
+
+[node name="Chapter Title" type="Label" parent="." unique_id=1773577472]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -259.0
+offset_right = 259.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 61
+text = "BONUS"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="." unique_id=1200993801]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="B1" type="Button" parent="Control" unique_id=91145691]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -281.0
+offset_top = 104.0
+offset_right = -189.48
+offset_bottom = 195.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 40
+text = "B1"
+
+[node name="B2" type="Button" parent="Control" unique_id=1228965858]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -166.0
+offset_top = 104.0
+offset_right = -74.48
+offset_bottom = 195.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 40
+text = "B2"
+
+[node name="sky" type="Button" parent="Control" unique_id=1910227436]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -50.0
+offset_top = 104.0
+offset_right = 41.52
+offset_bottom = 195.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 33
+text = "sky"
+
+[node name="$" type="Button" parent="Control" unique_id=468701945]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 69.0
+offset_top = 104.0
+offset_right = 160.52
+offset_bottom = 195.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 40
+text = "$"
+
+[node name="3D" type="Button" parent="Control" unique_id=1285564655]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 190.0
+offset_top = 104.0
+offset_right = 281.52
+offset_bottom = 195.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 40
+text = "3D"
+
+[node name="Code" type="Label" parent="." unique_id=1817979312]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.5
+offset_top = -209.0
+offset_right = 314.5
+offset_bottom = -116.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 30
+text = "CODES"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Code" unique_id=1928458271]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -398.0
+offset_top = 25.0
+offset_right = 140.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_y66nr")
+theme_override_fonts/font = ExtResource("3_6gr4j")
+theme_override_font_sizes/font_size = 34
+placeholder_text = "TYPE_HERE"
+max_length = 15
+emoji_menu_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="Submit Button" type="Button" parent="Code" unique_id=1338459383]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 144.0
+offset_top = 26.0
+offset_right = 394.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_6gr4j")
+theme_override_font_sizes/font_size = 25
+text = "SUBMIT_BUTTON"
+
+[node name="INCORRECT_BUTTON" type="Button" parent="Code" unique_id=234340006]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 2.239
+anchor_right = 0.5
+anchor_bottom = 2.239
+offset_left = 144.0
+offset_top = -89.227005
+offset_right = 394.0
+offset_bottom = -24.227005
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_6gr4j")
+theme_override_font_sizes/font_size = 25
+text = "INCORRECT"
+
+[node name="More" type="Button" parent="." unique_id=1529511651]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -287.0
+offset_top = 6.0
+offset_right = -9.0
+offset_bottom = 72.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 20
+text = "MORECODES"
+
+[node name="More2" type="Panel" parent="." unique_id=706948000]
+z_index = 7
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -348.65927
+offset_top = -152.5
+offset_right = 348.65927
+offset_bottom = 152.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="title" type="Label" parent="More2" unique_id=1974996725]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -147.5
+offset_right = 147.5
+offset_bottom = 49.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 33
+text = "MORECODES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ok" type="Button" parent="More2" unique_id=454107138]
+z_index = 10
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -55.0
+offset_right = 90.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 25
+text = "OK_BUTTON"
+
+[node name="text" type="Label" parent="More2" unique_id=347545944]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -282.0
+offset_top = -105.5
+offset_right = 282.0
+offset_bottom = 115.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 17
+text = "TUTORIALHOWTOGETMORELEVELS"
+horizontal_alignment = 1
+
+[node name="Back button" type="Button" parent="." unique_id=2099896873]
+layout_mode = 1
+offset_left = 11.0
+offset_top = 11.0
+offset_right = 89.0
+offset_bottom = 89.0
+theme_override_font_sizes/font_size = 42
+icon = ExtResource("4_a35lr")
+expand_icon = true
+
+[connection signal="pressed" from="Control/B1" to="." method="_on_b_1_pressed"]
+[connection signal="pressed" from="Control/B2" to="." method="_on_b_2_pressed"]
+[connection signal="pressed" from="Control/sky" to="." method="_on_sky_pressed"]
+[connection signal="pressed" from="Control/$" to="." method="_on_money_pressed"]
+[connection signal="pressed" from="Control/3D" to="." method="_on_threed_pressed"]
+[connection signal="pressed" from="Code/Submit Button" to="." method="_on_submit_button_pressed"]
+[connection signal="pressed" from="More" to="." method="_on_more_pressed"]
+[connection signal="pressed" from="More2/ok" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="Back button" to="." method="_on_back_button_pressed"]

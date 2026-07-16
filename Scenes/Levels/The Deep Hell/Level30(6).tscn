@@ -1,0 +1,231 @@
+[gd_scene format=3 uid="uid://mb1amlf0lnvx"]
+
+[ext_resource type="Script" uid="uid://gg0cocv4njww" path="res://Scripts/red_cube_deep_hell2.gd" id="1_ldlf8"]
+[ext_resource type="Script" uid="uid://cfkf7wfivfmrq" path="res://Scripts/Levels/level_30.gd" id="1_t3m0q"]
+[ext_resource type="AudioStream" uid="uid://ddf1h7qgejd5h" path="res://SFX/jump.wav" id="2_t3m0q"]
+[ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="3_jid4q"]
+[ext_resource type="AudioStream" uid="uid://ce26ugl2ji5j4" path="res://SFX/Dash.wav" id="4_a5ohr"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="6_avwmo"]
+[ext_resource type="Texture2D" uid="uid://cai1bracf8oul" path="res://Photos/Nav/Resume.png" id="7_34y34"]
+[ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="7_t3m0q"]
+[ext_resource type="Texture2D" uid="uid://cs0hnoevs3rw2" path="res://Photos/Nav/Retry.png" id="8_avwmo"]
+[ext_resource type="Texture2D" uid="uid://6356cmkp6307" path="res://Photos/Nav/Menu.png" id="9_xhx56"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhx56"]
+size = Vector2(60, 59.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldlf8"]
+size = Vector2(310, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t3m0q"]
+size = Vector2(74.25, 25868.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jid4q"]
+size = Vector2(323, 108)
+
+[sub_resource type="Gradient" id="Gradient_6bb2b"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ldlf8"]
+gradient = SubResource("Gradient_6bb2b")
+
+[node name="Node2D" type="Node2D" unique_id=1826821622]
+script = ExtResource("1_t3m0q")
+
+[node name="Red cube" type="CharacterBody2D" parent="." unique_id=1704997191]
+z_index = 10
+position = Vector2(731, -5494)
+safe_margin = 0.001
+script = ExtResource("1_ldlf8")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="Red cube" unique_id=652355491]
+z_index = 10
+position = Vector2(131, 608.625)
+shape = SubResource("RectangleShape2D_xhx56")
+
+[node name="SfxJump" type="AudioStreamPlayer2D" parent="Red cube" unique_id=256441389]
+position = Vector2(379, 190)
+stream = ExtResource("2_t3m0q")
+bus = &"SFX"
+
+[node name="SfxHurt" type="AudioStreamPlayer2D" parent="Red cube" unique_id=350990983]
+position = Vector2(3, 0)
+stream = ExtResource("3_jid4q")
+bus = &"SFX"
+
+[node name="SfxDash" type="AudioStreamPlayer2D" parent="Red cube" unique_id=32685674]
+stream = ExtResource("4_a5ohr")
+bus = &"SFX"
+
+[node name="Node2D" type="Node2D" parent="Red cube" unique_id=1724376616]
+position = Vector2(131, 610)
+
+[node name="Sprite2D" type="ColorRect" parent="Red cube/Node2D" unique_id=1914863361]
+z_index = 2
+offset_left = -30.0
+offset_top = -31.0
+offset_right = 30.0
+offset_bottom = 28.0
+color = Color(0.46164685, 0, 0.0066224546, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Red cube" unique_id=2082347598]
+position = Vector2(130, 600)
+
+[node name="The hell BG" type="ColorRect" parent="." unique_id=954167607]
+light_mask = 513
+visibility_layer = 512
+z_index = -16
+offset_left = -7808.0
+offset_top = -5219.0
+offset_right = 14442.0
+offset_bottom = 7308.0
+color = Color(1, 0.050980393, 0.050980393, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1360958868]
+
+[node name="Game menu" type="Panel" parent="CanvasLayer" unique_id=349973576]
+z_index = 30
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = -88.0
+offset_right = 206.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Game menu title" type="Label" parent="CanvasLayer/Game menu" unique_id=514857137]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("6_avwmo")
+theme_override_font_sizes/font_size = 21
+text = "PAUSE_MENU"
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="CanvasLayer/Game menu" unique_id=451171467]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7.0
+offset_top = -55.0
+offset_right = 133.03847
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 53
+icon = ExtResource("7_34y34")
+expand_icon = true
+
+[node name="Restart" type="Button" parent="CanvasLayer/Game menu" unique_id=675893514]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+icon = ExtResource("8_avwmo")
+expand_icon = true
+
+[node name="Quit" type="Button" parent="CanvasLayer/Game menu" unique_id=317106919]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+icon = ExtResource("9_xhx56")
+expand_icon = true
+
+[node name="Win Menu" type="Panel" parent="CanvasLayer" unique_id=2104452294]
+visible = false
+z_index = 1
+offset_left = 374.0
+offset_top = 253.0
+offset_right = 784.0
+offset_bottom = 429.0
+
+[node name="The hell BG2" type="ColorRect" parent="." unique_id=536269026]
+light_mask = 513
+visibility_layer = 512
+z_index = -16
+offset_left = -7808.0
+offset_top = 6775.0
+offset_right = 14442.0
+offset_bottom = 21750.0
+color = Color(0.23753911, 0.23753914, 0.23753908, 1)
+
+[node name="Platform4" type="StaticBody2D" parent="." unique_id=1988257312]
+position = Vector2(778, 20258)
+
+[node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=1173682441]
+offset_left = 255.0
+offset_top = 213.0
+offset_right = 305.0
+offset_bottom = 523.0
+rotation = 1.5707964
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Platform 1" type="CollisionShape2D" parent="Platform4" unique_id=166306331]
+position = Vector2(100, 238)
+shape = SubResource("RectangleShape2D_ldlf8")
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=2078704728]
+position = Vector2(939, 19998)
+
+[node name="Wall collision" type="CollisionShape2D" parent="Wall" unique_id=962518994]
+z_index = 1
+position = Vector2(145.875, -12411.75)
+shape = SubResource("RectangleShape2D_t3m0q")
+
+[node name="Wall collision2" type="CollisionShape2D" parent="Wall" unique_id=582924146]
+z_index = 1
+position = Vector2(-266.125, -12411.75)
+shape = SubResource("RectangleShape2D_t3m0q")
+
+[node name="Timer" type="Timer" parent="." unique_id=1951503822]
+
+[node name="Activate" type="Area2D" parent="." unique_id=857405647]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Activate" unique_id=71097889]
+position = Vector2(881, 20406)
+shape = SubResource("RectangleShape2D_jid4q")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=754676248]
+position = Vector2(3213.0002, 8992)
+rotation = -1.5707964
+scale = Vector2(71.442085, 350.63928)
+color = Color(1, 0, 0, 1)
+energy = 4.38
+texture = SubResource("GradientTexture2D_ldlf8")
+
+[node name="Control" type="Control" parent="." unique_id=1730697833]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchControls" parent="Control" unique_id=3811519 instance=ExtResource("7_t3m0q")]
+
+[connection signal="pressed" from="CanvasLayer/Game menu/Resume" to="Red cube" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Game menu/Restart" to="Red cube" method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/Game menu/Quit" to="Red cube" method="_on_quit_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Activate" to="." method="_on_activate_body_entered"]

@@ -1,0 +1,257 @@
+[gd_scene format=3 uid="uid://dp422le83b3r5"]
+
+[ext_resource type="Script" uid="uid://cry6chynlju1n" path="res://Scripts/end.gd" id="1_vbw3r"]
+[ext_resource type="Texture2D" uid="uid://bqvar8n7qiphi" path="res://Photos/Social Media/New AramCZGames logo.png" id="3_vbw3r"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="3_wwss2"]
+[ext_resource type="Texture2D" uid="uid://cckv6mn85qs0t" path="res://Photos/Social Media/Youtube.png" id="4_vbw3r"]
+[ext_resource type="Texture2D" uid="uid://d077mg8eyffvi" path="res://Photos/Social Media/Twitter.png" id="5_d1g0i"]
+[ext_resource type="Texture2D" uid="uid://qpvpe5ibpnn6" path="res://Photos/Social Media/Itch.png" id="5_xoww8"]
+[ext_resource type="Texture2D" uid="uid://dq0d6ld7kp60i" path="res://Photos/Social Media/Github.png" id="7_whs21"]
+[ext_resource type="Texture2D" uid="uid://8lycgb0u1t7k" path="res://Photos/misc/Hell Jump Icon.png" id="8_x0iu1"]
+
+[node name="Control" type="Control" unique_id=1431479207]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vbw3r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=822785902]
+z_index = -5
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.35300002
+anchor_top = -0.34800002
+anchor_right = -0.35300002
+anchor_bottom = -0.34800002
+offset_left = -3863.344
+offset_top = -2437.496
+offset_right = 6158.6563
+offset_bottom = 4316.504
+color = Color(0.3764706, 0.043137256, 0.05490196, 1)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1678377450]
+
+[node name="Label" type="Label" parent="Node2D" unique_id=974783204]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = 10.0
+offset_right = 982.0
+offset_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_wwss2")
+theme_override_font_sizes/font_size = 23
+text = "ENDTHANKING"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Node2D" unique_id=271990501]
+offset_left = 461.0
+offset_top = 541.0
+offset_right = 741.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("3_wwss2")
+theme_override_font_sizes/font_size = 33
+text = "MAINMENU"
+
+[node name="Socials" type="Control" parent="." unique_id=704293088]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="AramCZGames" type="TextureButton" parent="Socials" unique_id=1968297036]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -363.0
+offset_top = -83.0
+offset_right = -280.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3_vbw3r")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Socials/AramCZGames" unique_id=662913507]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 18.0
+offset_right = 343.0
+offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("3_wwss2")
+theme_override_font_sizes/font_size = 30
+text = "AramCZGames"
+
+[node name="YT" type="TextureButton" parent="Socials" unique_id=66563062]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -352.0
+offset_top = -158.0
+offset_right = -283.0
+offset_bottom = -89.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("4_vbw3r")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="X" type="TextureButton" parent="Socials" unique_id=560301466]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -281.0
+offset_top = -158.0
+offset_right = -212.0
+offset_bottom = -89.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("5_d1g0i")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Itch" type="TextureButton" parent="Socials" unique_id=1684779591]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -210.0
+offset_top = -158.0
+offset_right = -141.0
+offset_bottom = -89.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("5_xoww8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Github" type="TextureButton" parent="Socials" unique_id=636727123]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -158.0
+offset_right = -71.0
+offset_bottom = -89.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("7_whs21")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Hell Jump" type="TextureButton" parent="Socials" unique_id=470527278]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -158.0
+offset_right = -1.0
+offset_bottom = -89.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_x0iu1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Website" type="Panel" parent="." unique_id=593828360]
+z_index = 7
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.5
+offset_top = -124.0
+offset_right = 283.5
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DangerZoneTitle" type="Label" parent="Website" unique_id=987006693]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -119.5
+offset_right = 145.0
+offset_bottom = -70.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_wwss2")
+theme_override_font_sizes/font_size = 33
+text = "SITE_NO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ok" type="Button" parent="Website" unique_id=419554724]
+z_index = 10
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -55.0
+offset_right = 90.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_wwss2")
+theme_override_font_sizes/font_size = 25
+text = "OK_BUTTON"
+
+[node name="Label" type="Label" parent="Website" unique_id=15972961]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 43.0
+offset_right = 566.0
+offset_bottom = 189.0
+theme_override_fonts/font = ExtResource("3_wwss2")
+theme_override_font_sizes/font_size = 19
+text = "WEBSITE_NOT_AVAILABLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Node2D/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Socials/AramCZGames" to="." method="_on_aram_cz_games_pressed"]
+[connection signal="pressed" from="Socials/YT" to="." method="_on_youtube_pressed"]
+[connection signal="pressed" from="Socials/X" to="." method="_on_twitter_pressed"]
+[connection signal="pressed" from="Socials/Itch" to="." method="_on_itch_pressed"]
+[connection signal="pressed" from="Socials/Github" to="." method="_on_github_pressed"]
+[connection signal="pressed" from="Socials/Hell Jump" to="." method="_on_hell_jump_pressed"]
+[connection signal="pressed" from="Website/ok" to="." method="_on_ok_site_pressed"]

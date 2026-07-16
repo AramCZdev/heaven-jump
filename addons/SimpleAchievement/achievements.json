@@ -1,0 +1,128 @@
+[
+	{
+		"id": "hell_jump",
+		"name": "hell_jump_achievement_title",
+		"description": "hell_jump_achievement_desc",
+		"icon": "res://Photos/misc/Hell Jump Icon.png",
+		"goal": 1
+	},
+	{
+		"id": "hell_complete",
+		"name": "hell_complete_achievement_title",
+		"description": "hell_complete_achievement_desc",
+		"icon": "res://addons/SimpleAchievement/icons/hell_complete.png",
+		"goal": 1
+	},
+	{
+		"id": "deep_hell_complete",
+		"name": "deep_hell_complete_achievement_title",
+		"description": "deep_hell_complete_achievement_desc",
+		"icon": "res://addons/SimpleAchievement/icons/deep_hell_complete.png",
+		"goal": 1
+	},
+	{
+		"id": "lost_hell_complete",
+		"name": "lost_hell_complete_title",
+		"description": "lost_hell_complete_desc",
+		"icon": "res://addons/SimpleAchievement/icons/lost_hell_complete.png",
+		"goal": 1
+	},
+	{
+		"id": "hell_plus_complete",
+		"name": "hell_plus_complete_title",
+		"description": "hell_plus_complete_desc",
+		"icon": "res://addons/SimpleAchievement/icons/hell_plus_complete.png",
+		"goal": 3
+	},
+	{
+		"id": "deep_hell_plus_complete",
+		"name": "deep_hell_plus_complete_title",
+		"description": "deep_hell_plus_complete_desc",
+		"icon": "res://addons/SimpleAchievement/icons/deep_hell_plus_complete.png",
+		"goal": 3
+	},
+	{
+		"id": "the_hell_no_death_run",
+		"name": "The Even Less Easier Thing",
+		"description": "Complete the no death run in chapter 1",
+		"icon": "res://addons/SimpleAchievement/icons/hell_plus_complete.png",
+		"goal": 1
+	},
+	{
+		"id": "the_deep_hell_no_death_run",
+		"name": "Complete Meltdown",
+		"description": "Complete the no death run in chapter 2",
+		"icon": "res://addons/SimpleAchievement/icons/deep_hell_plus_complete.png",
+		"goal": 1
+	},
+	{
+		"id": "lost_hell_no_death_run",
+		"name": "The Biggest Conquerer",
+		"description": "Complete the no death run in chapter 3",
+		"icon": "res://addons/SimpleAchievement/icons/lost_hell_complete.png",
+		"goal": 1
+	},
+	{
+		"id": "jumps_50",
+		"name": "jumps50_title",
+		"description": "jumps50_desc",
+		"icon": "res://addons/SimpleAchievement/icons/deep_hell_complete.png",
+		"goal": 50
+	},
+	{
+		"id": "jumps_500",
+		"name": "jumps500_title",
+		"description": "jumps500_desc",
+		"icon": "res://addons/SimpleAchievement/icons/jumps500.png",
+		"goal": 500
+	},
+	{
+		"id": "jumps_1000",
+		"name": "Jumps_1000_title",
+		"description": "jumps_1000_desc",
+		"icon": "res://addons/SimpleAchievement/icons/jumps1000.png",
+		"goal": 1000
+	},
+	{
+		"id": "jumps_10000",
+		"name": "Jumps_10000_title",
+		"description": "Jumps_10000_desc",
+		"icon": "res://addons/SimpleAchievement/icons/jumps5000.png",
+		"goal": 10000
+	},
+	{
+		"id": "deaths_50",
+		"name": "deaths_50_title",
+		"description": "deaths_50_desc",
+		"icon": "res://addons/SimpleAchievement/icons/hell_complete.png",
+		"goal": 50
+	},
+	{
+		"id": "deaths_500",
+		"name": "deaths_500_title",
+		"description": "deaths_500_desc",
+		"icon": "res://addons/SimpleAchievement/icons/deaths500.png",
+		"goal": 500
+	},
+	{
+		"id": "deaths_1000",
+		"name": "deaths_1000_title",
+		"description": "deaths_1000_desc",
+		"icon": "res://addons/SimpleAchievement/icons/deaths1000.png",
+		"goal": 1000
+	},
+	{
+		"id": "boss_complete",
+		"name": "boss_complete_title",
+		"description": "boss_complete_desc",
+		"icon": "res://addons/SimpleAchievement/icons/boss.png",
+		"goal": 1
+	},
+	{
+		"id": "wrong_path",
+		"name": "wrong_path_title",
+		"description": "wrong_path_desc",
+		"icon": "",
+		"goal": 1
+	},
+]

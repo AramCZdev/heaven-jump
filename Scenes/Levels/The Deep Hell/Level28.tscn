@@ -1,0 +1,627 @@
+[gd_scene format=3 uid="uid://dtuelih3f0kj7"]
+
+[ext_resource type="Script" uid="uid://dkjydcdarf67w" path="res://Scripts/Levels/level_28.gd" id="1_dnhlm"]
+[ext_resource type="Script" uid="uid://gg0cocv4njww" path="res://Scripts/red_cube_deep_hell2.gd" id="1_u6t3u"]
+[ext_resource type="AudioStream" uid="uid://ddf1h7qgejd5h" path="res://SFX/jump.wav" id="2_dnhlm"]
+[ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="3_870le"]
+[ext_resource type="AudioStream" uid="uid://ce26ugl2ji5j4" path="res://SFX/Dash.wav" id="4_05g0e"]
+[ext_resource type="AudioStream" uid="uid://decgjlc0qik2w" path="res://Music/Scheming Weasel faster.mp3" id="5_wkt68"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="6_jgyql"]
+[ext_resource type="Texture2D" uid="uid://clp2pe3dyfc4h" path="res://Photos/Credits/Devil He.png" id="8_870le"]
+[ext_resource type="Texture2D" uid="uid://cai1bracf8oul" path="res://Photos/Nav/Resume.png" id="8_duft2"]
+[ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="9_05g0e"]
+[ext_resource type="Texture2D" uid="uid://cs0hnoevs3rw2" path="res://Photos/Nav/Retry.png" id="9_tykwg"]
+[ext_resource type="Texture2D" uid="uid://6356cmkp6307" path="res://Photos/Nav/Menu.png" id="10_mcyie"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_duft2"]
+size = Vector2(60, 59.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tykwg"]
+size = Vector2(9447, 51.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcyie"]
+size = Vector2(5944, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6t3u"]
+size = Vector2(52, 433)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnhlm"]
+size = Vector2(74.25, 1323.7195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_870le"]
+size = Vector2(59, 211)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05g0e"]
+size = Vector2(430, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wkt68"]
+size = Vector2(149.5, 223.5)
+
+[node name="Node2D" type="Node2D" unique_id=582591393]
+script = ExtResource("1_dnhlm")
+
+[node name="The hell BG" type="ColorRect" parent="." unique_id=170721381]
+light_mask = 513
+visibility_layer = 512
+z_index = -16
+offset_left = -7772.0
+offset_top = -4727.0
+offset_right = 14478.0
+offset_bottom = 7800.0
+color = Color(1, 0.050980393, 0.050980393, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Red cube" type="CharacterBody2D" parent="." unique_id=733051259]
+z_index = 10
+position = Vector2(56, -165)
+safe_margin = 0.001
+script = ExtResource("1_u6t3u")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="Red cube" unique_id=1072493274]
+z_index = 10
+position = Vector2(131, 608.625)
+shape = SubResource("RectangleShape2D_duft2")
+
+[node name="SfxJump" type="AudioStreamPlayer2D" parent="Red cube" unique_id=42043179]
+position = Vector2(379, 190)
+stream = ExtResource("2_dnhlm")
+bus = &"SFX"
+
+[node name="SfxHurt" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1085831485]
+position = Vector2(3, 0)
+stream = ExtResource("3_870le")
+bus = &"SFX"
+
+[node name="SfxDash" type="AudioStreamPlayer2D" parent="Red cube" unique_id=735464921]
+stream = ExtResource("4_05g0e")
+bus = &"SFX"
+
+[node name="Node2D" type="Node2D" parent="Red cube" unique_id=2097919380]
+position = Vector2(131, 610)
+
+[node name="Sprite2D" type="ColorRect" parent="Red cube/Node2D" unique_id=1475208455]
+z_index = 2
+offset_left = -30.0
+offset_top = -31.0
+offset_right = 30.0
+offset_bottom = 28.0
+color = Color(0.46164685, 0, 0.0066224546, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Red cube" unique_id=1694703858]
+position = Vector2(131, 610)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1933714636]
+stream = ExtResource("5_wkt68")
+autoplay = true
+max_distance = 9.223372e+18
+bus = &"Music"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1188370339]
+
+[node name="Game menu" type="Panel" parent="CanvasLayer" unique_id=729507186]
+z_index = 30
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = -88.0
+offset_right = 206.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Game menu title" type="Label" parent="CanvasLayer/Game menu" unique_id=413335400]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 21
+text = "PAUSE_MENU"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Resume" type="Button" parent="CanvasLayer/Game menu" unique_id=1609453708]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7.0
+offset_top = -55.0
+offset_right = 133.03847
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 53
+icon = ExtResource("8_duft2")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="CanvasLayer/Game menu" unique_id=1799030370]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+icon = ExtResource("9_tykwg")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="CanvasLayer/Game menu" unique_id=674755782]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+icon = ExtResource("10_mcyie")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Win Menu" type="Panel" parent="CanvasLayer" unique_id=2122497022]
+z_index = 1
+offset_left = 374.0
+offset_top = 253.0
+offset_right = 784.0
+offset_bottom = 429.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Win Title" type="Label" parent="CanvasLayer/Win Menu" unique_id=1819621107]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 21
+text = "WIN_MENU"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="CanvasLayer/Win Menu" unique_id=2029941871]
+z_index = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 33.0
+offset_right = 134.03847
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 53
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="CanvasLayer/Win Menu" unique_id=2115279831]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Next" type="Button" parent="CanvasLayer/Win Menu" unique_id=2085062617]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Kill zone" type="Area2D" parent="." unique_id=1026834596]
+position = Vector2(-306, 638)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kill zone" unique_id=1573888855]
+position = Vector2(3167, 1609)
+shape = SubResource("RectangleShape2D_tykwg")
+
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=1676369225]
+position = Vector2(87, 263)
+
+[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=1504419095]
+offset_left = 6261.535
+offset_top = 213.00027
+offset_right = 6311.535
+offset_bottom = 7413.852
+rotation = 1.5707964
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Platform 1" type="CollisionShape2D" parent="Platform1" unique_id=122334015]
+position = Vector2(2161, 238)
+shape = SubResource("RectangleShape2D_mcyie")
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=510742637]
+position = Vector2(-78, 192)
+
+[node name="ColorRect" type="ColorRect" parent="Wall" unique_id=1547847600]
+z_index = 1
+offset_left = 110.0
+offset_top = -151.0
+offset_right = 162.0
+offset_bottom = 150.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Wall collision" type="CollisionShape2D" parent="Wall" unique_id=1639071653]
+z_index = 1
+position = Vector2(136, 66.5)
+shape = SubResource("RectangleShape2D_u6t3u")
+
+[node name="ColorRect2" type="ColorRect" parent="Wall" unique_id=962826537]
+z_index = 1
+offset_left = 110.0
+offset_top = 149.0
+offset_right = 162.0
+offset_bottom = 284.0
+color = Color(0.32941177, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Wall4" type="StaticBody2D" parent="." unique_id=56417627]
+position = Vector2(-354, -159)
+rotation = -0.79039997
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="ColorRect" type="ColorRect" parent="Wall4" unique_id=625670053]
+z_index = 1
+offset_left = 110.0
+offset_top = -800.66907
+offset_right = 183.0
+offset_bottom = 523.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Wall collision" type="CollisionShape2D" parent="Wall4" unique_id=950441430]
+z_index = 1
+position = Vector2(145.875, -139.35974)
+shape = SubResource("RectangleShape2D_dnhlm")
+
+[node name="Yellow Guy" type="ColorRect" parent="." unique_id=1942077101]
+z_index = 2
+offset_left = 865.0
+offset_top = 417.0
+offset_right = 925.0
+offset_bottom = 476.0
+color = Color(1, 1, 0.03137255, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Text" type="Label" parent="Yellow Guy" unique_id=231814380]
+layout_mode = 0
+offset_left = -151.0
+offset_top = -49.0
+offset_right = 24.0
+offset_bottom = -17.0
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 21
+text = "LEVEL_28_DIALOG_1"
+
+[node name="ActivateText1" type="Area2D" parent="Yellow Guy" unique_id=1337989712]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Yellow Guy/ActivateText1" unique_id=201813552]
+position = Vector2(-197.5, -50.5)
+shape = SubResource("RectangleShape2D_870le")
+
+[node name="Store" type="ColorRect" parent="." unique_id=321928800]
+offset_left = 1497.0
+offset_top = 196.0
+offset_right = 1893.0
+offset_bottom = 476.0
+color = Color(1, 0, 1, 1)
+
+[node name="Label" type="Label" parent="Store" unique_id=110207574]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 382.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 36
+text = "LEVEL_28_TEXT_5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Door" type="ColorRect" parent="Store" unique_id=1672351608]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 140.0
+offset_right = 253.0
+offset_bottom = 280.0
+color = Color(0.41675407, 8.4830447e-07, 2.1658838e-07, 1)
+
+[node name="Closed" type="ColorRect" parent="Store" unique_id=880139038]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 171.0
+offset_right = 137.0
+offset_bottom = 211.0
+rotation = 0.26529005
+
+[node name="Label" type="Label" parent="Store/Closed" unique_id=801951902]
+layout_mode = 0
+offset_left = 0.26218918
+offset_top = 0.9650165
+offset_right = 101.95177
+offset_bottom = 39.641773
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 20
+text = "LEVEL_28_TEXT_3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Store2" type="ColorRect" parent="." unique_id=1721086616]
+offset_left = 2009.0
+offset_top = 196.0
+offset_right = 2405.0
+offset_bottom = 476.0
+
+[node name="Label" type="Label" parent="Store2" unique_id=1985970814]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 382.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 36
+text = "LEVEL_28_TEXT_6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Door" type="ColorRect" parent="Store2" unique_id=626387517]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 140.0
+offset_right = 253.0
+offset_bottom = 280.0
+color = Color(0.41675407, 8.4830447e-07, 2.1658838e-07, 1)
+
+[node name="Closed" type="ColorRect" parent="Store2" unique_id=2004228761]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 171.0
+offset_right = 137.0
+offset_bottom = 211.0
+rotation = 0.26529005
+
+[node name="Label" type="Label" parent="Store2/Closed" unique_id=502887294]
+layout_mode = 0
+offset_left = 0.26218918
+offset_top = 0.9650165
+offset_right = 101.95177
+offset_bottom = 39.641773
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 20
+text = "LEVEL_28_TEXT_3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Store3" type="ColorRect" parent="." unique_id=2084778011]
+offset_left = 2571.0
+offset_top = 196.0
+offset_right = 2967.0
+offset_bottom = 476.0
+color = Color(0.6857328, 3.1044335e-06, 5.7756904e-07, 1)
+
+[node name="Label" type="Label" parent="Store3" unique_id=937594860]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 382.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 36
+text = "LEVEL_28_TEXT_7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Door" type="ColorRect" parent="Store3" unique_id=192586334]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 140.0
+offset_right = 253.0
+offset_bottom = 280.0
+color = Color(0.41675407, 8.4830447e-07, 2.1658838e-07, 1)
+
+[node name="Closed" type="ColorRect" parent="Store3" unique_id=1444965754]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 171.0
+offset_right = 137.0
+offset_bottom = 211.0
+rotation = 0.26529005
+
+[node name="Label" type="Label" parent="Store3/Closed" unique_id=1732438421]
+layout_mode = 0
+offset_left = 0.26218918
+offset_top = 0.9650165
+offset_right = 101.95177
+offset_bottom = 39.641773
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 20
+text = "LEVEL_28_TEXT_3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Black Guy (THIS IS NOT RACISM ITS JUST HIS COLOR DO NOT SUPPORT RACISM)" type="ColorRect" parent="." unique_id=18030902]
+z_index = 2
+offset_left = 3463.0
+offset_top = 417.0
+offset_right = 3523.0
+offset_bottom = 476.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Platform9" type="StaticBody2D" parent="." unique_id=1558681413]
+position = Vector2(-307, -118)
+
+[node name="ColorRect" type="ColorRect" parent="Platform9" unique_id=207387465]
+offset_left = 374.5277
+offset_top = 213.00002
+offset_right = 424.5241
+offset_bottom = 642.5277
+rotation = 1.5707964
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Platform 1" type="CollisionShape2D" parent="Platform9" unique_id=129827457]
+position = Vector2(160, 238)
+shape = SubResource("RectangleShape2D_05g0e")
+
+[node name="Store4" type="ColorRect" parent="." unique_id=534706593]
+offset_left = 4828.0
+offset_top = -439.0
+offset_right = 6318.0
+offset_bottom = 476.0
+
+[node name="Label" type="Label" parent="Store4" unique_id=1224990808]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 610.0
+offset_right = 379.0
+offset_bottom = 667.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 36
+text = "LEVEL_28_TEXT_4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Store4" unique_id=728100139]
+layout_mode = 0
+offset_left = -307.0
+offset_top = 744.0
+offset_right = -235.0
+offset_bottom = 915.0
+color = Color(0, 1, 0.3529412, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Store4/ColorRect" unique_id=1312989607]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = 32.5
+offset_right = -10.0
+offset_bottom = 203.5
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5707964
+color = Color(0, 1, 0.3529412, 1)
+
+[node name="Label" type="Label" parent="Store4/ColorRect" unique_id=1065659364]
+layout_mode = 0
+offset_left = -46.0
+offset_top = 47.0
+offset_right = 125.0
+offset_bottom = 118.0
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 24
+text = "LEVEL_28_TEXT_4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="Store4" unique_id=429800895]
+
+[node name="Door" type="ColorRect" parent="Store4/Area2D" unique_id=1109404564]
+offset_left = 34.0
+offset_top = 689.0
+offset_right = 184.0
+offset_bottom = 915.0
+color = Color(0.851769, 0.8517689, 0.85176885, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Store4/Area2D" unique_id=683834448]
+position = Vector2(109.25, 801.25)
+shape = SubResource("RectangleShape2D_wkt68")
+
+[node name="Rules" type="ColorRect" parent="." unique_id=614132563]
+offset_left = 1198.0
+offset_top = 238.0
+offset_right = 1432.0
+offset_bottom = 476.0
+color = Color(0.6857328, 3.1044335e-06, 5.7756904e-07, 1)
+
+[node name="Label" type="Label" parent="Rules" unique_id=797567020]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 208.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 36
+text = "LEVEL_28_TEXT_1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Rules" unique_id=102926350]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 53.0
+offset_right = 230.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("6_jgyql")
+theme_override_font_sizes/font_size = 14
+text = "LEVEL_28_TEXT_2"
+
+[node name="Rules2" type="ColorRect" parent="." unique_id=999668430]
+offset_left = 3632.0
+offset_top = 238.0
+offset_right = 3866.0
+offset_bottom = 476.0
+color = Color(0.6857328, 3.1044335e-06, 5.7756904e-07, 1)
+
+[node name="DevilHe" type="Sprite2D" parent="." unique_id=1443526978]
+position = Vector2(3750, 354.99997)
+rotation = 0.116937056
+scale = Vector2(0.19979784, 0.19979784)
+texture = ExtResource("8_870le")
+
+[node name="Control" type="Control" parent="." unique_id=473804277]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchControls" parent="Control" unique_id=3811519 instance=ExtResource("9_05g0e")]
+
+[connection signal="pressed" from="CanvasLayer/Game menu/Resume" to="Red cube" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Game menu/Restart" to="Red cube" method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/Game menu/Quit" to="Red cube" method="_on_quit_pressed"]
+[connection signal="body_entered" from="Kill zone" to="Red cube" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="Yellow Guy/ActivateText1" to="." method="_on_activate_text_1_body_entered"]
+[connection signal="body_entered" from="Store4/Area2D" to="Red cube" method="_on_clinic_body_entered"]

@@ -1,0 +1,28 @@
+# Backup tools
+.megaignore
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Godot
+.godot/
+
+# Android generated files
+android/
+
+# Export/build files
+export/
+*.exe
+*.apk
+*.aab
+*.ipa
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log

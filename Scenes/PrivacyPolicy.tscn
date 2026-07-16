@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://dk5vawo2mv4wy"]
+
+[ext_resource type="Script" uid="uid://dd7oejivgh32c" path="res://Scripts/privacy_policy.gd" id="1_rubjv"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="2_22rf8"]
+
+[node name="Control" type="Control" unique_id=414698927]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rubjv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=286605608]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Label" parent="." unique_id=464406049]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_22rf8")
+theme_override_font_sizes/font_size = 93
+text = "PRIVACYPOLICY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=2005986881]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -503.5
+offset_top = -179.0
+offset_right = 502.5
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_22rf8")
+theme_override_font_sizes/font_size = 26
+text = "PRIVACYPOLICYDESC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="I agree" type="Button" parent="." unique_id=448016303]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -232.75
+offset_top = -139.0
+offset_right = 232.75
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_22rf8")
+theme_override_font_sizes/font_size = 40
+text = "AGREE"
+
+[node name="Read" type="Button" parent="." unique_id=1204574657]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -232.75
+offset_top = -284.0
+offset_right = 232.75
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_22rf8")
+theme_override_font_sizes/font_size = 40
+text = "READ"
+
+[connection signal="pressed" from="I agree" to="." method="_on_i_agree_pressed"]
+[connection signal="pressed" from="Read" to="." method="_on_read_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnbvr7ure56qw"
+path="res://.godot/imported/Unholy Knight.mp3-52cb11fab211b5425e1905632a2e774e.mp3str"
+
+[deps]
+
+source_file="res://Music/Unholy Knight.mp3"
+dest_files=["res://.godot/imported/Unholy Knight.mp3-52cb11fab211b5425e1905632a2e774e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,220 @@
+[gd_scene format=3 uid="uid://1e225fdbhkra"]
+
+[ext_resource type="Script" uid="uid://ci3ebi5gfcds7" path="res://Scripts/level_select.gd" id="1_2sqnl"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="3_2sqnl"]
+[ext_resource type="Texture2D" uid="uid://dfqm3u0pfusg0" path="res://Photos/Nav/Back.png" id="3_s6o25"]
+[ext_resource type="Texture2D" uid="uid://ceftj4pnmp3i2" path="res://Photos/Chapters/The Hell.png" id="4_72w8f"]
+[ext_resource type="Texture2D" uid="uid://bf5qg51djahri" path="res://Photos/Chapters/lost hell.png" id="5_72w8f"]
+[ext_resource type="Texture2D" uid="uid://ddx8wet7tdlmp" path="res://Photos/Chapters/The Deep Hell.png" id="5_s6o25"]
+
+[node name="Level select" type="Control" unique_id=918917741]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2sqnl")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1604961315]
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.92941177, 0.10980392, 0.14117648, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1303427821]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126
+anchor_top = -0.002
+anchor_right = 0.126
+anchor_bottom = -0.002
+offset_left = 189.84799
+offset_top = 0.296
+offset_right = 671.848
+offset_bottom = 70.296
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 47
+text = "SELECT_CHAPTER"
+
+[node name="Back Button" type="Button" parent="." unique_id=1410881166]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 65.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 32
+icon = ExtResource("3_s6o25")
+expand_icon = true
+
+[node name="Hell" type="Control" parent="." unique_id=1993154913]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TheHell" type="Sprite2D" parent="Hell" unique_id=855149635]
+position = Vector2(172, 299)
+scale = Vector2(0.90625, 0.90625)
+texture = ExtResource("4_72w8f")
+
+[node name="Label" type="Label" parent="Hell" unique_id=1393708269]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 531.0
+offset_right = 288.0
+offset_bottom = 583.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 25
+text = "THEHELL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HellButton" type="Button" parent="Hell" unique_id=684236096]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 583.0
+offset_right = 288.0
+offset_bottom = 630.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 26
+text = "PLAY_BUTTON"
+
+[node name="Deep Hell" type="Control" parent="." unique_id=1107305062]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TheDeepHell" type="Sprite2D" parent="Deep Hell" unique_id=1932044207]
+position = Vector2(447.5, 299.00006)
+scale = Vector2(1.03125, 1.03125)
+texture = ExtResource("5_s6o25")
+
+[node name="Label" type="Label" parent="Deep Hell" unique_id=353550700]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 530.0
+offset_right = 563.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 25
+text = "DEEPHELL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DeepHellButton" type="Button" parent="Deep Hell" unique_id=1228688827]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 584.0
+offset_right = 563.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 26
+text = "PLAY_BUTTON"
+
+[node name="Lost Hell" type="Control" parent="." unique_id=1780726697]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TheLostHell" type="Sprite2D" parent="Lost Hell" unique_id=197605099]
+position = Vector2(715.375, 299)
+scale = Vector2(0.9091796, 0.9023437)
+texture = ExtResource("5_72w8f")
+
+[node name="Label" type="Label" parent="Lost Hell" unique_id=99299853]
+layout_mode = 0
+offset_left = 601.0
+offset_top = 530.0
+offset_right = 832.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 25
+text = "LOSTHELL"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="LostHellButton" type="Button" parent="Lost Hell" unique_id=2006123199]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 584.0
+offset_right = 832.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 26
+text = "PLAY_BUTTON"
+
+[node name="Heaven" type="Control" parent="." unique_id=2110236241]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect2" type="ColorRect" parent="Heaven" unique_id=1730075651]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.017
+anchor_bottom = 0.062
+offset_left = 865.0
+offset_top = -1718.0
+offset_right = 4351.9995
+offset_bottom = 1530.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="HeavenButton" type="Button" parent="Heaven" unique_id=1010083665]
+layout_mode = 0
+offset_left = 882.0
+offset_top = 583.0
+offset_right = 1113.0
+offset_bottom = 630.0
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 26
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Heaven" unique_id=1446315158]
+layout_mode = 0
+offset_left = 882.0
+offset_top = 67.0
+offset_right = 1113.0
+offset_bottom = 529.0
+color = Color(0.43134022, 0.43134025, 0.43134025, 1)
+
+[node name="Coming soon" type="Label" parent="Heaven" unique_id=1228024448]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 312.00003
+offset_right = 1119.0
+offset_bottom = 361.00003
+rotation = -0.21971454
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 33
+text = "COMINGSOON"
+
+[node name="Label" type="Label" parent="Heaven" unique_id=109120305]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.025
+anchor_right = 7.025
+offset_left = 601.0
+offset_top = 530.0
+offset_right = 832.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(0, 0.20000005, 1, 1)
+theme_override_fonts/font = ExtResource("3_2sqnl")
+theme_override_font_sizes/font_size = 25
+text = "MIDDLEHEAVEN"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Hell/HellButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Deep Hell/DeepHellButton" to="." method="_on_the_deep_hell_pressed"]
+[connection signal="pressed" from="Lost Hell/LostHellButton" to="." method="_on_lost_hell_button_pressed"]

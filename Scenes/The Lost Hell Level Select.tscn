@@ -1,0 +1,327 @@
+[gd_scene format=3 uid="uid://d1uv6y1cbcwsq"]
+
+[ext_resource type="Script" uid="uid://bt62x8u44uk5i" path="res://Scripts/the_lost_hell_level_select.gd" id="1_0fcnn"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="1_s0xxv"]
+[ext_resource type="Texture2D" uid="uid://dfqm3u0pfusg0" path="res://Photos/Nav/Back.png" id="3_3kn23"]
+[ext_resource type="AudioStream" uid="uid://dnbvr7ure56qw" path="res://Music/Unholy Knight.mp3" id="4_3kn23"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="5_prji7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mdvsg"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Control" type="Control" unique_id=479111441]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fcnn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1768002400]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+
+[node name="Chapter Title" type="Label" parent="." unique_id=57686552]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -281.5
+offset_right = 281.5
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 61
+text = "LOSTHELL"
+horizontal_alignment = 1
+
+[node name="Back Button" type="Button" parent="." unique_id=1243556723]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.014
+anchor_bottom = 0.028
+offset_left = 9.0
+offset_top = 8.0
+offset_right = 45.872
+offset_bottom = 42.856
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("3_3kn23")
+expand_icon = true
+
+[node name="Control" type="Control" parent="." unique_id=1819967160]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="31" type="Button" parent="Control" unique_id=1488453851]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -197.0
+offset_top = -207.0
+offset_right = -105.48
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+text = "31"
+
+[node name="32" type="Button" parent="Control" unique_id=525136180]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -82.0
+offset_top = -207.0
+offset_right = 9.52
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+text = "32"
+
+[node name="33" type="Button" parent="Control" unique_id=1668197622]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 34.0
+offset_top = -207.0
+offset_right = 125.52
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+text = "33"
+
+[node name="34" type="Button" parent="Control" unique_id=1983011936]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 153.0
+offset_top = -207.0
+offset_right = 244.52
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+text = "34"
+
+[node name="35" type="Button" parent="Control" unique_id=194014407]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -192.0
+offset_top = -101.0
+offset_right = 238.17601
+offset_bottom = -9.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mdvsg")
+text = "FINALE"
+
+[node name="Locked2" type="Button" parent="Control" unique_id=606220137]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -82.0
+offset_top = -207.0
+offset_right = 9.52
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+
+[node name="Locked3" type="Button" parent="Control" unique_id=588503808]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 34.0
+offset_top = -207.0
+offset_right = 125.52
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+
+[node name="Locked4" type="Button" parent="Control" unique_id=8143232]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 153.0
+offset_top = -207.0
+offset_right = 244.52
+offset_bottom = -115.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+
+[node name="Locked5" type="Button" parent="Control" unique_id=419271523]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -192.0
+offset_top = -101.0
+offset_right = 237.52
+offset_bottom = -9.48
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0xxv")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mdvsg")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1061126318]
+stream = ExtResource("4_3kn23")
+volume_db = -11.929
+autoplay = true
+bus = &"Music"
+
+[node name="No death run" type="Button" parent="." unique_id=1302343247]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -338.0
+offset_top = -77.0
+offset_right = -6.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_prji7")
+theme_override_font_sizes/font_size = 29
+text = "NO_DEATH"
+
+[node name="No death runs" type="Panel" parent="." unique_id=94114811]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.0
+offset_top = -122.0
+offset_right = 257.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="No death runs" unique_id=495876366]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -146.5
+offset_right = 146.5
+offset_bottom = 71.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_prji7")
+theme_override_font_sizes/font_size = 30
+text = "NO_DEATH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="No death runs" unique_id=416175547]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -254.0
+offset_top = 66.0
+offset_right = 256.0
+offset_bottom = 186.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_prji7")
+theme_override_font_sizes/font_size = 25
+text = "NO_DEATH_DESC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="Button" parent="No death runs" unique_id=4592307]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -154.0
+offset_top = -50.0
+offset_right = -2.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_prji7")
+theme_override_font_sizes/font_size = 22
+text = "Start"
+
+[node name="Button2" type="Button" parent="No death runs" unique_id=186613423]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -50.0
+offset_right = 154.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_prji7")
+theme_override_font_sizes/font_size = 22
+text = "Do not"
+
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Control/31" to="." method="_on__pressed31"]
+[connection signal="pressed" from="Control/32" to="." method="_on__pressed32"]
+[connection signal="pressed" from="Control/33" to="." method="_on__pressed33"]
+[connection signal="pressed" from="Control/34" to="." method="_on__pressed34"]
+[connection signal="pressed" from="Control/35" to="." method="_on__pressed35"]
+[connection signal="pressed" from="No death run" to="." method="_on_no_death_run_pressed"]
+[connection signal="pressed" from="No death runs/Start" to="." method="_on_start_no_death_pressed"]
+[connection signal="pressed" from="No death runs/Button2" to="." method="_on_do_not_pressed"]

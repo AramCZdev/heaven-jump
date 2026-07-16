@@ -1,0 +1,768 @@
+keys,en_US,cs_CZ,en_UK
+PLAY_BUTTON,Play,Hrát,Play
+SETTINGS_BUTTON,Settings,Nastavení,Settings
+CREDITS_BUTTON,Credits,Titulky,Credits
+QUIT_BUTTON,Quit,Ukončit,Quit
+ACHIEVEMENTS_BUTTON,Achievements,Úspěchy,Achievements
+SETTINGS_TITLE,Settings,Nastavení,Settings
+YES_BUTTON,Yes,Ano,Yes
+NO_BUTTON,No,Ne,No
+RESET_BUTTON,Reset Progress,Resetovat,Reset Progress
+NEXT_BUTTON,Next,Další,Next
+SKIP_SETUP_BUTTON,Skip This Setup,Přeskočit toto nastavení,Skip This Setup
+SETUP_BUTTON,Setup Hell Jump,Nastavit Hell Jump,Setup Hell Jump
+WELCOME_TEXT,Welcome to Hell Jump let's set Hell Jump up!,Vítejte v Hell Jumpu pojďme Hell Jump nastavit,Welcome to Hell Jump let's set Hell Jump up!
+SFX_TEXT,SFX,SFX,SFX
+MUSIC_TEXT,Music,Muzika,Music
+VOLUME_TEXT,Volume,Hlasitost,Volume
+STEP2_TEXT,"Choose the settings that
+Appeal to you","Vybrete si nastavení
+Které vám vyhovuje","Choose the settings that
+Appeal to you"
+LANGUAGE_TITLE,Language,Jazyk,Language
+VIDEO_TITLE,Video,Video,Video
+STEP3,"Choose how you want progression 
+(this cannot be changed later 
+Unless you reset your data)","Vyberte jak chcete vybrat průběh
+(Toto nemůže být změněno pokud
+Neresetujete hru)","Choose how you want progression 
+(this cannot be changed later 
+Unless you reset your data)"
+LV1_START,Start from level 1,Startovat z levelu 1,Start from level 1
+UNLOCK_ALL,Unlock all levels,Odemknout všechny levely,Unlock all levels
+STEP4,"You are all set up!
+You can now go enjoy hell jump :D","Hell Jump je nastaven!
+Můžete si užít Hell Jump :D","You are all set up!
+You can now go enjoy hell jump :D"
+TIMETOPLAY,Time To Play!,Čas hrát,Time To Play!
+PRIVACYPOLICY,Privacy Policy,Osobní údaje,Privacy Policy
+PRIVACYPOLICYDESC,"Before playing Hell Jump read this privacy policy
+if you read through it click I agree or if you do not 
+Agree close the game and delete it","Než začnete hrát Hell Jump, přečtěte si 
+tyto zásady  aochrany osobních údajů. Pokud jste si je přečetli,
+klikněte na Souhlasím pokud nesouhlasíte, 
+zavřete hru a odstraňte ji.","Before playing Hell Jump read this privacy policy
+if you read through it click I agree or if you do not 
+Agree close the game and delete it"
+READ,"Read the 
+privacy policy",Přečíst zásady,"Read the 
+privacy policy"
+AGREE,I agree,Souhlasím,I agree
+U_SURE,Are you sure?,Jste si jistí?,Are you sure?
+RESET_WARNING,"Do you really wanna reset your 
+progress? Your data will be gone 
+forever. And forever is a really really 
+really long time (Your game will be closed)","Opravdu chceš resetovat svůj 
+postup ve hře? Tvá data budou navždy 
+ztracena. A navždy je opravdu, opravdu, 
+opravdu dlouhá doba (Hra bude zavřena)","Do you really wanna reset your 
+progress? Your data will be gone 
+forever. And forever is a really really 
+really long time (Your game will be closed)"
+DANGER_ZONE,Danger Zone,Nebezpečná zóna,Danger Zone
+CAMPAIGN,Campaign mode,Kampaň,Campaign mode
+COOP,Co-op mode,Kooperace,Co-op mode
+BONUS,Bonus Levels,Bonusové levely,Bonus Levels
+COMINGSOON,Coming Soon!,Příjde brzy,Coming Soon!
+ARAMCZ,Hi i am the developer of this game,Ahoj já jsem vývojář této hry,Hi i am the developer of this game
+SELECT_CHAPTER,Chapter Select,Výběr kapitol,Chapter Select
+THEHELL,The Hell,Peklo,The Hell
+DEEPHELL,The Deep Hell,Hluboké Peklo,The Deep Hell
+LOSTHELL,The Lost Hell,Ztracené peklo,The Lost Hell
+MIDDLEHEAVEN,Middle Heaven,Střední nebe,Middle Heaven
+PLUSLEVELS,Plus Levels:,Plusové levely:,Plus Levels:
+FINALE,Final Level!,Finální level!,Final Level!
+PAUSE_MENU,Pause Menu,Pauza,Pause Menu
+WIN_MENU,You Win!,Vyhrál jsi!,You Win!
+MESSAGE_LEVEL7_1,"This is just the 
+begin it will 
+be worse I promise","Tohle je jen
+Začátek
+Bude to horší","This is just the 
+begin it will 
+be worse I promise"
+MESSAGE_LEVEL7_2,The hell begins,Peklo začíná,The hell begins
+OK_BUTTON,Ok,Ok,Ok
+SITE_NO,Website not available,Stránka nedostupná,Website not available
+WEBSITE_NOT_AVAILABLE,"Website is not available.
+Sorry for the inconvenience","Stránka není dostupná
+Omlouváme se","Website is not available.
+Sorry for the inconvenience"
+LEVEL_27_TEXT_1,Activate orb,Akttivuj orb,Activate orb
+LEVEL_28_DIALOG_1,Oh hi new guy!,Čau nový týpku,Oh hi new guy!
+LEVEL_28_TEXT_1,Rules,Pravdila,Rules
+LEVEL_28_TEXT_2,"1. All cities must have a
+devil poster
+2. No escaping hell
+3. No complaining about
+hell
+4. You must worship the
+devil 10 times per day","1. Ve všech městech musí 
+Být plakát s ďáblem
+2. Z pekla není úniku
+3. Nesmí se stěžovat na
+peklo
+4. Musíte uctívat
+ďábla 10x denně","1. All cities must have a
+devil poster
+2. No escaping hell
+3. No complaining about
+hell
+4. You must worship the
+devil 10 times per day"
+LEVEL_28_TEXT_3,Closed,zavřeno,Closed
+LEVEL_28_TEXT_4,The Clinic,Nemocnice,The Clinic
+LEVEL_28_TEXT_5,Candy store,Sladkosti,Candy store
+LEVEL_28_TEXT_6,Groceries,Potraviny,Groceries
+LEVEL_28_TEXT_7,Clothes,Oblečení,Clothes
+LEVEL_28_TEXT_8(1),Room 1,Místnost 1,Room 1
+LEVEL_28_TEXT_8(2),Room 2,Místnost 2,Room 2
+LEVEL_28_TEXT_8(3),Room 3,Místnost 3,Room 3
+LEVEL_28_TEXT_8(4),Room 4,Místnost 4,Room 4
+LEVEL_28_TEXT_8(5),Room 5,Místnost 5,Room 5
+LEVEL_28_TEXT_8(6),Room 6,Místnost 6,Room 6
+LEVEL_28_TEXT_8(7),Room 7,Místnost 7,Room 7
+LEVEL_28_TEXT_9,"Wait for a doctor to
+clear obstacles or
+clear them if you dare","Počkejte, až lékař
+odstraní překážky, nebo
+je přeskočte","Wait for a doctor to
+clear obstacles or
+clear them if you dare"
+LEVEL_28_DIALOG_2,Get out I am busy.,Vypadni. Dělám práci,Get out I am busy.
+LEVEL_34_TEXT_1,"The Deep Hell is 
+up 10451.0 pixels
+Above","Hluboké Peklol je 
+10451.0 pixelů
+Nahoře","The Deep Hell is 
+up 10451.0 pixels
+Above"
+LEVEL_34_TEXT_2,keep going :D,jdi dál :D,keep going :D
+MAP_TUTORIAL,"How to play: Click M to view
+the map then decide to what path
+to go","Jak hrát: Klikni M aby jsi viděl mapu  
+Pak zijsti kterou cestou jít","How to play: Click M to view
+the map then decide to what path
+to go"
+MAP_TUTORIAL_MOBILE,"How to play: Tap    to view
+the map then decide to what path
+to go","Jak hrát: Klikni ikonku mapy aby jsi viděl mapu  
+Pak zijsti kterou cestou jít","How to play: Tap map icon to view
+the map then decide to what path
+to go"
+LEVEL_35_DIALOG_1(1),Why are you trying to escape hell?,Proč se snažíš dostat z pekla?,Why are you trying to escape hell?
+LEVEL_35_DIALOG_1(2),Wait so we sent you here by accdent?,Počkej tebe jsme tě jsem dali omylem?,Wait so we sent you here by accdent?
+LEVEL_35_DIALOG_1(3),Our bad sorry you can now continue,Naše chyba můžeš dál pokračovat,Our bad sorry you can now continue
+LEVEL_35_TEXT_1,Castle ,Hrad,Castle 
+LEVEL_35_DIALOG_2,You just saw the devil?!,Ty jsi viděl ďábla?!,You just saw the devil?!
+LEVEL_35_TEXT_2,Café,Kavárna,Café
+LEVEL_35_DIALOG_3,WE GOT YOU!,MÁME TĚ!,WE GOT YOU!
+LEVEL_35_DIALOG_4,Good luck!,Hodně štěstí!,Good luck!
+LEVEL_35_TEXT_3,Hard but shorter path,Těžší ale kratší cesta,Hard but shorter path
+BOSSFIGHT_DEATH,"This bossfight is really really
+hard but you do not need to beat it to continue
+Continue or try again","Tento souboj je velmi
+Těžký ale nepotřebuješ ho dokončit
+Pokračuješ nebo zkusíš znova?","This bossfight is really really
+hard but you do not need to beat it to continue
+Continue or try again"
+CONTINUE_BUTTON,Continue,Pokračovat,Continue
+TRYAGAIN_BUTTON,Try again,Zkus zase,Try again
+LOSE_DIALOG1,"Why did you swoon them
+They were sent here by accident","Proč jsi ho dal do bezvědomí.
+Oni tu jsou omylem","Why did you swoon them
+They were sent here by accident"
+LOSE_DIALOG2,I'm sorry boss I did not know,Promiň šéfe já nevěděl,I'm sorry boss I did not know
+LOSE_DIALOG3,Now go heal them!,Teď ho oživ!,Now go heal them!
+WIN_DIALOG1,"You are strong. I am tired
+of sending obstacles onto you","Jsi silný. Už mě unavuje
+Posílání překážek na tebe","You are strong. I am tired
+of sending obsticles onto you"
+WIN_DIALOG2,So you know what? You win,Takže víš co? Vyhráváš,So you know what? You win
+WIN_DIALOG3,"You know because you actually
+won here is a skip ticket you might need it","Víš co protože si vyhrál
+Tady je přeskakovací ticket budeš ho potřebovat","You know because you actually
+won here is a skip ticket you might need it"
+HEAVEN_SIGN,"The 
+Heaven",Nebe,"The 
+Heaven"
+HEAVEN_SIGN2,"The middle
+Heaven",Střední nebe,"The middle
+Heaven"
+CONTINUED,To be continued,pokračování příště,To be continued
+CREDITS,"A game by Purple Controller
+
+
+
+
+
+
+
+Main Developers: AramCZ
+(Aka Aram)
+
+
+
+
+
+
+Programmers: AramCZ
+
+
+
+
+
+
+
+
+Art: By AramCZ in Piskel 
+
+
+
+
+Posters:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Music/Songs:
+
+The hell theme: Desert city
+by Kevin macleod
+The deep hell theme: 
+scheaming weasel by kevin
+macleod
+Level 35 theme: Killers
+by kevin macleod
+Lost hell theme: Unholy Knight 
+by Kevin Macleod
+Boss music: boss battle by audio
+keeper on pixabay
+campground wood 
+outhouse haunting airy ambience
+ in sh** receptacle 
+part1 hollow wind drone by
+kyles on freesound.org
+Credits Song: Desmeon -
+ Hellcat
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Level design:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playtestors:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Special thanks: 
+Pixel sagas for making this
+cool font symtext
+pixelsagas.com
+all of my playtestors
+The godot foundation
+Smart screen for making
+people think Hell Jump is
+a virus
+Wolfyxon for making the
+Godottogether plugin
+cherttov for making the
+to do list plugin
+my flash drive for saving the
+source code
+Cengiz for the admob plugin
+
+
+
+
+
+
+
+
+
+
+
+Thank you for playing!
+","Hra od Purple Controller
+
+
+
+
+
+
+
+Vývojáři: AramCZ
+(Aram)
+
+
+
+
+
+
+Programátoři: AramCZ
+
+
+
+
+
+
+
+
+Kreslení: AramCZ v Piskelu 
+
+
+
+
+Plakáty:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Muzika:
+
+Peklo: Desert city
+od Kevina macleoda
+Hluboké peklo: 
+scheaming weasel od kevina
+macleoda
+Level 35: Killers
+od kevina macleoda
+Ztracené peklo: Unholy Knight 
+by Kevin Macleod
+Finální boss: boss battle by audio
+keeper on pixabay
+campground wood 
+outhouse haunting airy ambience
+ in sh** receptacle 
+part1 hollow wind drone by
+kyles on freesound.org
+Titulky: Desmeon -
+ Hellcat
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Level design:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playtestři:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Speciální dík: 
+Pixel sagas pro udělání
+symtextu
+pixelsagas.com
+všichni playtestři
+The godot foundation
+Smart screen
+
+
+Wolfyxon pro
+godototgther plugin
+cherttov za udělání
+to do list plugin
+flashka za záchranu
+kódu hry
+Cengiz za udělání admob pluginu
+
+
+
+
+
+
+
+
+
+
+
+Děkuji za hraní!
+","A game by Purple controller
+
+
+
+
+
+
+
+
+Main Developers: AramCZ
+(Aka Aram)
+
+
+
+
+
+
+Programmers: AramCZ
+
+
+
+
+
+
+
+
+Art: By AramCZ in Piskel 
+
+
+
+
+Posters:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Music/Songs:
+
+The hell theme: Desert city
+by Kevin macleod
+The deep hell theme: 
+scheaming weasel by kevin
+macleod
+Level 35 theme: Killers
+by kevin macleod
+Lost hell theme: Unholy Knight 
+by Kevin Macleod
+Boss music: boss battle by audio
+keeper on pixabay
+campground wood 
+outhouse haunting airy ambience
+ in sh** receptacle 
+part1 hollow wind drone by
+kyles on freesound.org
+Credits Song: Desmeon -
+ Hellcat
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Level design:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playtestors:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Special thanks: 
+Pixel sagas for making this
+cool font symtext
+pixelsagas.com
+all of my playtestors
+The godot foundation
+Smart screen for making
+people think Hell Jump is
+a virus
+Wolfyxon for making the
+Godottogether plugin
+cherttov for making the
+to do list plugin
+my flash drive for saving the
+source code
+Cengiz for the admob plugin
+
+
+
+
+
+
+
+
+
+
+
+Thank you for playing!
+"
+BYARAMCZ,By: AramCZ,,By: AramCZ
+BYIHATETUESDAYS,By: I Hate tuesdays,,By: I Hate tuesdays
+MAINMENU,Main Menu,Hlavní Menu,Main Menu
+ENDTHANKING,"Thank you for playing Hell Jump
+
+If you enjoyed the Hell Jump leave a review on itch io reviews
+or game jolt comments
+or just tag @HellJumpGame on Twitter and tell us
+how you enjoyed the game
+
+Chapter 4 coming soon
+
+And once again thank you for playing
+Hell Jump","Děkujeme, že jste si zahráli Hell Jump
+
+Pokud se vám Hell Jump líbil, napište recenzi na itch.io
+nebo komentář na Game Jolt
+nebo prostě označte @HellJumpGame na Twitteru a dejte nám vědět,
+jak se vám hra líbila
+
+4. kapitola brzy
+
+A ještě jednou děkujeme, že jste si zahráli
+Hell Jump","Thank you for playing Hell Jump
+
+If you enjoyed the Hell Jump leave a review on itch io reviews
+or game jolt comments
+or just tag @HellJumpGame on Twitter and tell us
+how you enjoyed the game
+
+Chapter 4 coming soon
+
+And once again thank you for playing
+Hell Jump"
+STORY,"You are a red cube and an orange 
+cube was making bad stuff. Well
+bad for you the hell
+took you instead because they 
+thought you are the orange one. 
+Your mission: Get out of hell","Jsi červená kostka a jedna oranžová 
+kostka dělala špatné věci. No
+a k tvé smůle si tě peklo
+vzalo místo ní, protože si 
+mysleli, že jsi ta oranžová. 
+Tvůj úkol: Dostat se z pekla","You are a red cube and an orange 
+cube was making bad stuff. Well
+bad for you the hell
+took you instead because they 
+thought you are the orange one. 
+Your mission: Get out of hell"
+HOWTOPLAY,"How to play: You move right by 
+pressing right or D. You move left by
+pressing left or A. You jump by
+pressing space, up or W","Jak hrát: Doprava se pohybuješ 
+stisknutím vpravo nebo D. Doleva se pohybuješ
+stisknutím vlevo nebo klávesy A. Skočíš
+stisknutím mezerníku, nahoru nebo W","How to play: You move right by 
+pressing   or D. You move left by
+pressing   or A. You jump by
+pressing space,   oR W"
+HOWTODASH,"How to play: Dash by using S or
+Down. Dash boosts you a
+bit further. You can dash on the
+ground or midair. Now try","Jak hrát: Dashuj pomocí S nebo
+dolů. Dash ti umožní
+dostat se dál. Můžeš dashnout na
+zemi i ve vzduchu. Teď to zkus","How to play: Dash by using S or
+. Dash boosts you a
+bit further. You can dash on the
+ground or midair. Now try"
+STORY2,"You fell through a fake bridge
+straight into the Deep Hell. The 
+heat is unbearable but you can't 
+even dash anymore. Every part of
+you wants to give up. But you won't
+Your mission: Escape the Deep Hell.","Propadl jsi se pod falešným mostem
+přímo do Hlubokého pekla. 
+Horko je nesnesitelné, ale už ani 
+nemůžeš sprintovat. Každá část
+tvého já chce to vzdát. Ale ty to nevzdáš.
+Tvůj úkol: Uteč z Hlubokého pekla.","You fell through a fake bridge
+straight into the Deep Hell. The 
+heat is unbearable but you can't 
+even dash anymore. Every part of
+you wants to give up. But you won't
+Your mission: Escape the Deep Hell."
+STORY3,"Finally it's not so hot and you
+have the ability to dash again","Konečně není takové horko
+A máš funkci dash zpět","Finally it's not so hot and you
+have the ability to dash again"
+UPDATE_BUTTON,NEW VERSION AVAILABLE!,NOVÁ VERZE DOSTUPNÁ!,NEW VERSION AVAILABLE!
+hell_jump_achievement_title,Welcome!,Vítejte!,Welcome!
+hell_jump_achievement_desc,Thank You For Playing Hell Jump!,Děkujeme že jste si zahráli Hell Jump,Thank You For Playing Hell Jump!
+hell_complete_achievement_title,The Easy Thing,Jednoduchá věc,The Easy Thing
+hell_complete_achievement_desc,Complete Chapter 1 The Hell.,Dokonči kapitolu 1 Peklo,Complete Chapter 1 The Hell.
+deep_hell_complete_achievement_title,The Hot Area,Ta horká část,The Hot Area
+deep_hell_complete_achievement_desc,Complete Chapter 2 The Deep Hell.,Dokonči kapitolu 2 Hluboké peklo,Complete Chapter 2 The Deep Hell.
+lost_hell_complete_title,Conquerer Of The Entire Hell,Dobyvatel celého pekla,Conquerer Of The Entire Hell
+lost_hell_complete_desc,Complete Chapter 3 The Lost Hell.,Dokonči kapitolu 3 Hluboké peklo,Complete Chapter 3 The Lost Hell.
+hell_plus_complete_title,The Less Easier Thing,Méně jednoduchá věc,The Less Easier Thing
+hell_plus_complete_desc,Complete all The Hell plus levels.,Dokonči všchny plus levely v pekle,Complete all The Hell plus levels.
+deep_hell_plus_complete_title,Melting,Tání,Melting
+deep_hell_plus_complete_desc,Complete all The Deep Hell plus levels.,Dokonči všchny plus levely v hlubokém pekle,Complete all The Deep Hell plus levels.
+jumps50_title,You'll Do a Lot More,Uděláš jich více,You'll Do a Lot More
+jumps50_desc,Jump 50 times.,Skoč 50x,Jump 50 times.
+AD_TITLE,Ads,Reklamy,Ads
+SUPPORT_BUTTON,Watch an ad,Podívejte se na reklamu,Watch an ad
+AD_NOT_LOADED,Ad not loaded yet!,Reklama se nenačetla!,Ad not loaded yet!
+jumps500_title,Jumper,Skákač,Jumper
+jumps500_desc,Jump 500 times.,Skoč 500x,Jump 500 times.
+Jumps_1000_title,Jump King,Král skákání,Jump King
+jumps_1000_desc,Jump 1 000 times.,Skoč 1 000x,Jump 1 000 times.
+Jumps_10000_title,JUMP GOD!!!,BŮH SKÁKÁNÍ!,JUMP GOD!!!
+Jumps_10000_desc,Jump 10 000 times.,Skoč 10 000x,Jump 10 000 times.
+deaths_50_title,N00B,N00BÁK,N00B
+deaths_50_desc,Die 50 times.,Umři 50x,Die 50 times.
+deaths_500_title,This Is A Hell What Did You Expect?,Toto je peklo co jste čekali?,This Is A Hell What Did You Expect?
+deaths_500_desc,Die 500 times.,Umři 500x.,Die 500 times.
+deaths_1000_title,Dier,Umíráč,Dier
+deaths_1000_desc,Die 1 000 times.,Umři 1 000x,Die 1 000 times.
+boss_complete_title,True Gamer,Pravej Gejmr,True Gamer
+boss_complete_desc,Defeat ShadowGuy in Level 35.,Pokoř ShadowGuy v levelu 35,Defeat ShadowGuy in Level 35.
+easteregg_level12,you went the wrong path idiot,Šel jsi špatnou cestou idiote,you went the wrong path idiot
+wrong_path_title,Wrong Path,Špatná cesta,Wrong Path
+wrong_path_desc,you went the wrong path idiot,Šel jsi špatnou cestou idiote,you went the wrong path idiot
+CODES,"Type codes to get bonus levels
+(All letters must be uppercase and with no spaces)","Zadejte kódy a získejte bonusové úrovně
+(Všechna písmena musí být velká a bez mezer)","Type codes to get bonus levels
+(All letters must be uppercase and with no spaces)"
+SUBMIT_BUTTON,Submit,Potvrdit,Submit
+INCORRECT,Incorrect,Špatně,Incorrect
+MORECODES,How to get codes?,Jak dostat kódy?,How to get codes?
+TUTORIALHOWTOGETMORELEVELS,"Follow these accounts, where bonus codes
+ are occasionally posted:
+
+Twitter/X: @AramCZGames, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Keep an eye out for new posts. You never 
+know when a new code will appear.","Sledujte tyto účty, kde se
+občas objevují bonusové kódy:
+
+Twitter/X: @AramCZGames, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Sledujte nové příspěvky. Nikdy 
+nevíte, kdy se objeví nový kód.","Follow these accounts, where bonus codes
+ are occasionally posted:
+
+Twitter/X: @AramCZGames, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Keep an eye out for new posts. You never 
+know when a new code will appear."
+JUMPSTART,Jump to start,Skočte pro start,Jump to start
+STEPHERE,Step here to win,Stoupněte sem pro výhru,Step here to win
+UNLOCKEDACH,Achievement Unlocked!,Úspěch Odemčen!,Achievement Unlocked!
+TYPE_HERE,Type Here,Napsat sem,Type Here
+LOADING_TEXT,Loading…,Načítání,Loading…
+DEV_SETTINGS,Developer options,Vývojářské nastavení,Developer options
+IMPROVE_PHYSICS,Improved physics (experimental),Vylepšená fyzika (Experimentální),Improved physics (experimental)
+NO_DEATH,No death run,Kolo bez umření,No death run
+NO_DEATH_DESC,"This challenge is only for the
+real gamers. You complete a
+chapter without dying once","Tato výzva je pouze pro
+Pravý hráče. Dokonči ka-
+Pitolu bez umření.","This challenge is only for the
+real gamers. You complete a
+chapter without dying once"
+START,Start,Start,Start
+DONOT,Do not,Ne,Do not
+SIZE_WINDOW,Window size,Velikost okna,Window size

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ln1qy27uc6xh"]
+
+[ext_resource type="Script" uid="uid://bp6bid050ib54" path="res://Scripts/hello_simon.gd" id="1_ahw1o"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="1_o6xd3"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="3_22xop"]
+
+[node name="Node2D" type="Node2D" unique_id=741398342]
+script = ExtResource("1_ahw1o")
+
+[node name="Label" type="Label" parent="." unique_id=806696923]
+offset_left = 38.0
+offset_top = 266.0
+offset_right = 1096.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_o6xd3")
+theme_override_font_sizes/font_size = 38
+text = "easteregg_level12"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=299436523]
+offset_left = 459.0
+offset_top = 537.0
+offset_right = 691.0
+offset_bottom = 626.0
+theme_override_fonts/font = ExtResource("3_22xop")
+theme_override_font_sizes/font_size = 43
+text = "Back"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=62006449]
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
+
+[connection signal="pressed" from="Button" to="." method="_on_back_button_pressed"]

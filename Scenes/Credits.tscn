@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://cnoj3s68vdlr1"]
+
+[ext_resource type="Script" uid="uid://dpnqr5f0r0h3t" path="res://Scripts/credits.gd" id="1_uy3b0"]
+[ext_resource type="Texture2D" uid="uid://th0ogeixot4u" path="res://Photos/misc/Hell Jump Logo.png" id="2_iynit"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="3_f64u0"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="4_lpub1"]
+[ext_resource type="Texture2D" uid="uid://clp2pe3dyfc4h" path="res://Photos/Credits/Devil He.png" id="5_f64u0"]
+[ext_resource type="Texture2D" uid="uid://djtr1c6ete3wv" path="res://Photos/Credits/Teeth Day.png" id="6_lpub1"]
+
+[node name="Credits" type="Node2D" unique_id=521856083]
+
+[node name="The hell BG" type="ColorRect" parent="." unique_id=881874463]
+light_mask = 513
+visibility_layer = 512
+offset_left = -1587.0
+offset_top = -523.0
+offset_right = 2763.0
+offset_bottom = 1038.0
+color = Color(1, 0.788235, 0.054902, 1)
+
+[node name="Credits" type="Node2D" parent="." unique_id=619455319]
+script = ExtResource("1_uy3b0")
+
+[node name="HellJumpLogo" type="Sprite2D" parent="Credits" unique_id=1786540351]
+position = Vector2(593, 721)
+scale = Vector2(0.43750003, 0.4375)
+texture = ExtResource("2_iynit")
+
+[node name="Credits" type="Label" parent="Credits" unique_id=1161109899]
+offset_left = 328.0
+offset_top = 1050.0
+offset_right = 872.0
+offset_bottom = 6549.0
+theme_override_fonts/font = ExtResource("3_f64u0")
+theme_override_font_sizes/font_size = 26
+text = "CREDITS"
+horizontal_alignment = 1
+
+[node name="Poster1" type="Sprite2D" parent="Credits" unique_id=1463225584]
+position = Vector2(506.12497, 2520.5002)
+scale = Vector2(0.1721191, 0.1721191)
+texture = ExtResource("5_f64u0")
+
+[node name="Label" type="Label" parent="Credits/Poster1" unique_id=553985182]
+offset_left = -540.3235
+offset_top = 557.7519
+offset_right = 546.13354
+offset_bottom = 842.4384
+theme_override_fonts/font = ExtResource("3_f64u0")
+theme_override_font_sizes/font_size = 80
+text = "BYIHATETUESDAYS"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TeethDay" type="Sprite2D" parent="Credits" unique_id=1174189094]
+position = Vector2(709.125, 2569.5)
+scale = Vector2(0.465, 0.465)
+texture = ExtResource("6_lpub1")
+
+[node name="Label" type="Label" parent="Credits/TeethDay" unique_id=1761010481]
+offset_left = -197.54846
+offset_top = 305.3761
+offset_right = 206.45154
+offset_bottom = 490.3224
+theme_override_fonts/font = ExtResource("3_f64u0")
+theme_override_font_sizes/font_size = 60
+text = "BYARAMCZ"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="." unique_id=688819728]
+wait_time = 89.0
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1258650721]
+position = Vector2(575, 325)
+
+[node name="Button" type="Button" parent="." unique_id=1154612579]
+offset_left = 967.0
+offset_top = 599.0
+offset_right = 1149.3572
+offset_bottom = 647.0
+theme_override_fonts/font = ExtResource("4_lpub1")
+theme_override_font_sizes/font_size = 27
+text = "Skip"
+
+[connection signal="timeout" from="Timer" to="Credits" method="_on_normal_timer_timeout"]
+[connection signal="pressed" from="Button" to="Credits" method="_on_normal_button_pressed"]

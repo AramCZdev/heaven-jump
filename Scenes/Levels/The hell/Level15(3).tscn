@@ -1,0 +1,378 @@
+[gd_scene format=3 uid="uid://bpov7mnlbtf4f"]
+
+[ext_resource type="Script" uid="uid://cfoynt14obb6w" path="res://Scripts/red_cube.gd" id="1_lc7m5"]
+[ext_resource type="AudioStream" uid="uid://ce26ugl2ji5j4" path="res://SFX/Dash.wav" id="2_8v8vi"]
+[ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="3_wmsmq"]
+[ext_resource type="AudioStream" uid="uid://ddf1h7qgejd5h" path="res://SFX/jump.wav" id="4_jma8v"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="5_8v8vi"]
+[ext_resource type="Texture2D" uid="uid://cai1bracf8oul" path="res://Photos/Nav/Resume.png" id="5_rtyxh"]
+[ext_resource type="Texture2D" uid="uid://cs0hnoevs3rw2" path="res://Photos/Nav/Retry.png" id="6_s4v4v"]
+[ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="6_wmsmq"]
+[ext_resource type="Texture2D" uid="uid://6356cmkp6307" path="res://Photos/Nav/Menu.png" id="7_6lmyl"]
+[ext_resource type="Texture2D" uid="uid://cyj566iy84t2h" path="res://Photos/Nav/Next.png" id="7_jma8v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xvr8"]
+size = Vector2(1223, 86.4375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ddp5"]
+size = Vector2(74.25, 719.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtyxh"]
+size = Vector2(415, 1015)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s4v4v"]
+size = Vector2(74.25, 1226)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6lmyl"]
+size = Vector2(60, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wdg0"]
+size = Vector2(235, 20)
+
+[sub_resource type="Gradient" id="Gradient_8v8vi"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wmsmq"]
+gradient = SubResource("Gradient_8v8vi")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(0.96581197, 0.012820513)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8v8vi"]
+size = Vector2(748, 44.75)
+
+[node name="Node2D" type="Node2D" unique_id=141883432]
+
+[node name="The hell BG3" type="ColorRect" parent="." unique_id=1029400987]
+light_mask = 513
+visibility_layer = 512
+offset_left = -59.0
+offset_top = -55.0
+offset_right = 261.0
+offset_bottom = 1703.0
+color = Color(1, 0.788235, 0.054902, 1)
+
+[node name="The hell BG" type="ColorRect" parent="." unique_id=2051013232]
+light_mask = 513
+visibility_layer = 512
+offset_left = -76.0
+offset_top = -43.0
+offset_right = 2127.0
+offset_bottom = 413.0
+color = Color(1, 0.788235, 0.054902, 1)
+
+[node name="Celling" type="StaticBody2D" parent="." unique_id=984384116]
+z_index = 1
+position = Vector2(187, -644)
+
+[node name="ColorRect" type="ColorRect" parent="Celling" unique_id=1858384398]
+z_index = 1
+offset_left = -225.0
+offset_top = -157.0
+offset_right = 2005.0
+offset_bottom = 706.125
+color = Color(0, 0, 0, 1)
+
+[node name="CellingCollision" type="CollisionShape2D" parent="Celling" unique_id=1640168149]
+z_index = 1
+position = Vector2(388.5, 662.938)
+shape = SubResource("RectangleShape2D_3xvr8")
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=540735588]
+position = Vector2(-150, 169)
+
+[node name="ColorRect" type="ColorRect" parent="Wall" unique_id=1493062634]
+z_index = 1
+offset_left = -667.0
+offset_top = -967.0
+offset_right = 183.0
+offset_bottom = 1538.0
+color = Color(0, 0, 0, 1)
+
+[node name="Wall collision" type="CollisionShape2D" parent="Wall" unique_id=929905893]
+z_index = 1
+position = Vector2(145.875, 174.5)
+shape = SubResource("RectangleShape2D_6ddp5")
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=892522841]
+
+[node name="ColorRect" type="ColorRect" parent="Floor" unique_id=1488225626]
+z_index = 1
+offset_left = 150.0
+offset_top = 277.0
+offset_right = 350.0
+offset_bottom = 1712.0
+color = Color(0, 0, 0, 1)
+
+[node name="FloorCollision" type="CollisionShape2D" parent="Floor" unique_id=1989873737]
+position = Vector2(142.5, 784.5)
+shape = SubResource("RectangleShape2D_rtyxh")
+
+[node name="Wall2" type="StaticBody2D" parent="." unique_id=1742107678]
+position = Vector2(1005, 168)
+
+[node name="ColorRect" type="ColorRect" parent="Wall2" unique_id=1912840661]
+z_index = 1
+offset_left = 110.0
+offset_top = 109.0
+offset_right = 1160.0
+offset_bottom = 1539.0
+color = Color(0, 0, 0, 1)
+
+[node name="Wall2 collision" type="CollisionShape2D" parent="Wall2" unique_id=1938027863]
+z_index = 1
+position = Vector2(147, 507)
+shape = SubResource("RectangleShape2D_s4v4v")
+
+[node name="Red cube" type="CharacterBody2D" parent="." unique_id=558798703]
+z_index = 10
+position = Vector2(-30, -383)
+safe_margin = 0.001
+script = ExtResource("1_lc7m5")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="Red cube" unique_id=761083395]
+z_index = 10
+position = Vector2(129, 609.5)
+shape = SubResource("RectangleShape2D_6lmyl")
+
+[node name="SfxDash" type="AudioStreamPlayer2D" parent="Red cube" unique_id=536608167]
+stream = ExtResource("2_8v8vi")
+bus = &"SFX"
+
+[node name="SfxHurt" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1471288562]
+stream = ExtResource("3_wmsmq")
+bus = &"SFX"
+
+[node name="SfxJump" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1687387718]
+position = Vector2(380, 190)
+stream = ExtResource("4_jma8v")
+bus = &"SFX"
+
+[node name="Node2D" type="Node2D" parent="Red cube" unique_id=1337924526]
+position = Vector2(131, 610)
+
+[node name="Sprite2D" type="ColorRect" parent="Red cube/Node2D" unique_id=210030990]
+z_index = 2
+offset_left = -32.0
+offset_top = -30.0
+offset_right = 28.0
+offset_bottom = 29.0
+color = Color(0.92941177, 0.10980392, 0.14117648, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Bridge" type="StaticBody2D" parent="." unique_id=1323939201]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge" unique_id=1681913780]
+position = Vector2(467.5, 287)
+shape = SubResource("RectangleShape2D_0wdg0")
+
+[node name="ColorRect" type="ColorRect" parent="Bridge" unique_id=1299357406]
+offset_left = 350.0
+offset_top = 277.0
+offset_right = 1118.0
+offset_bottom = 297.0
+color = Color(0.4, 0, 0.006666565, 1)
+
+[node name="Game menu" type="Panel" parent="." unique_id=90415189]
+z_index = 30
+offset_left = 374.0
+offset_top = 253.0
+offset_right = 784.0
+offset_bottom = 429.0
+
+[node name="Resume" type="Button" parent="Game menu" unique_id=1217475032]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7.0
+offset_top = -55.0
+offset_right = 133.03847
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 53
+icon = ExtResource("5_rtyxh")
+expand_icon = true
+
+[node name="Restart" type="Button" parent="Game menu" unique_id=144911761]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+icon = ExtResource("6_s4v4v")
+expand_icon = true
+
+[node name="Quit" type="Button" parent="Game menu" unique_id=2049797525]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+icon = ExtResource("7_6lmyl")
+expand_icon = true
+
+[node name="Game menu title" type="Label" parent="Game menu" unique_id=322027354]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_8v8vi")
+theme_override_font_sizes/font_size = 21
+text = "PAUSE_MENU"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=158135442]
+offset_left = 339.0
+offset_top = 399.0
+offset_right = 1178.0
+offset_bottom = 1707.0
+color = Color(0.52, 0, 0, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1105397702]
+z_index = 20
+position = Vector2(718, 547.25)
+scale = Vector2(13.359375, 4.6328125)
+texture = SubResource("GradientTexture2D_wmsmq")
+
+[node name="Staircase to heaven" type="Label" parent="." unique_id=867181780]
+offset_left = 605.0
+offset_top = 148.0
+offset_right = 1071.0
+offset_bottom = 196.0
+theme_override_fonts/font = ExtResource("5_8v8vi")
+theme_override_font_sizes/font_size = 32
+text = "Staircase to heaven "
+
+[node name="The deep hell" type="Label" parent="." unique_id=2082786732]
+offset_left = 578.0
+offset_top = 413.0
+offset_right = 869.0
+offset_bottom = 512.0
+theme_override_fonts/font = ExtResource("5_8v8vi")
+theme_override_font_sizes/font_size = 32
+text = "The deep hell
+"
+horizontal_alignment = 1
+
+[node name="The hell BG2" type="ColorRect" parent="." unique_id=275919722]
+light_mask = 513
+visibility_layer = 512
+z_index = -2
+offset_left = -57.0
+offset_top = 278.0
+offset_right = 281.0
+offset_bottom = 707.0
+color = Color(1, 0.788235, 0.054902, 1)
+
+[node name="The deep hell entrance" type="Area2D" parent="." unique_id=2016596330]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="The deep hell entrance" unique_id=737485584]
+position = Vector2(734, 1254)
+shape = SubResource("RectangleShape2D_8v8vi")
+
+[node name="Win Menu" type="Panel" parent="." unique_id=1227212105]
+visible = false
+offset_left = 374.0
+offset_top = 253.0
+offset_right = 784.0
+offset_bottom = 429.0
+
+[node name="Win Title" type="Label" parent="Win Menu" unique_id=431702744]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_8v8vi")
+theme_override_font_sizes/font_size = 21
+text = "You win"
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="Win Menu" unique_id=315153144]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 33.0
+offset_right = 134.03847
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 53
+text = "■"
+
+[node name="Restart" type="Button" parent="Win Menu" unique_id=743699016]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+text = "↺"
+
+[node name="Next" type="Button" parent="Win Menu" unique_id=1885967197]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "➔"
+
+[node name="Achievment" type="Area2D" parent="." unique_id=1823678957]
+position = Vector2(-5, -556)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievment" unique_id=1115043611]
+position = Vector2(734, 1254)
+shape = SubResource("RectangleShape2D_8v8vi")
+
+[node name="Control" type="Control" parent="." unique_id=1933208616]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchControls" parent="Control" unique_id=3811519 instance=ExtResource("6_wmsmq")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=269899840]
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
+
+[node name="Next" type="Sprite2D" parent="." unique_id=1216652017]
+position = Vector2(1060, 176.00002)
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("7_jma8v")
+
+[node name="Next2" type="Sprite2D" parent="." unique_id=355973219]
+position = Vector2(726, 490)
+rotation = 1.5707964
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("7_jma8v")
+
+[connection signal="pressed" from="Game menu/Resume" to="Red cube" method="_on_resume_pressed"]
+[connection signal="pressed" from="Game menu/Restart" to="Red cube" method="_on_restart_pressed"]
+[connection signal="pressed" from="Game menu/Quit" to="Red cube" method="_on_quit_pressed"]
+[connection signal="body_entered" from="The deep hell entrance" to="Red cube" method="_on_the_deep_hell_entrance_body_entered"]
+[connection signal="body_entered" from="Achievment" to="Red cube" method="_on_achievment_body_entered"]

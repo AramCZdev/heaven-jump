@@ -1,0 +1,426 @@
+[gd_scene format=3 uid="uid://cfruhgw33pkp3"]
+
+[ext_resource type="Script" uid="uid://clmulkpebe2qc" path="res://Scripts/initial_setup.gd" id="1_oqjj6"]
+[ext_resource type="Texture2D" uid="uid://th0ogeixot4u" path="res://Photos/misc/Hell Jump Logo.png" id="2_x86fj"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="3_smpi0"]
+[ext_resource type="Script" uid="uid://dj32bs4u0duhr" path="res://Scripts/sfx_slider.gd" id="4_smpi0"]
+[ext_resource type="Script" uid="uid://n4ilt3em8sok" path="res://Scripts/music_slider.gd" id="5_fj5wy"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="6_ldk8y"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ldk8y"]
+color = Color(1, 1, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_b7mkv"]
+color = Color(1, 0, 0, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_0s0yu"]
+color = Color(1, 0.494251, 0.42709, 1)
+thickness = 6
+
+[sub_resource type="Theme" id="Theme_fj5wy"]
+Button/fonts/font = ExtResource("6_ldk8y")
+FoldableContainer/fonts/font = ExtResource("6_ldk8y")
+Label/fonts/font = ExtResource("6_ldk8y")
+MenuButton/fonts/font = ExtResource("6_ldk8y")
+OptionButton/fonts/font = ExtResource("6_ldk8y")
+PopupMenu/fonts/font = ExtResource("6_ldk8y")
+
+[sub_resource type="Theme" id="Theme_ldk8y"]
+Button/fonts/font = ExtResource("6_ldk8y")
+Label/fonts/font = ExtResource("6_ldk8y")
+PopupMenu/fonts/font = ExtResource("6_ldk8y")
+
+[node name="InitialSetup" type="Control" unique_id=783939452]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oqjj6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=817363828]
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.7882353, 0.05490196, 1)
+
+[node name="Step1" type="Control" parent="." unique_id=1461606088]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HellJumpLogo" type="Sprite2D" parent="Step1" unique_id=1406228891]
+position = Vector2(569, 104.000015)
+scale = Vector2(0.59765625, 0.59765625)
+texture = ExtResource("2_x86fj")
+
+[node name="Label" type="Label" parent="Step1" unique_id=88514488]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -520.5
+offset_top = -50.5
+offset_right = 520.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 35
+text = "WELCOME_TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Setup" type="Button" parent="Step1" unique_id=785516151]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.875
+offset_top = 47.5
+offset_right = 257.875
+offset_bottom = 202.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 45
+text = "SETUP_BUTTON"
+
+[node name="Skip" type="Button" parent="Step1" unique_id=288257167]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.875
+offset_top = 207.0
+offset_right = 257.875
+offset_bottom = 318.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.49426448, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.49411765, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 34
+text = "SKIP_SETUP_BUTTON"
+
+[node name="Step2" type="Control" parent="." unique_id=738418245]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Step2" unique_id=1023251142]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -525.5
+offset_top = 3.0
+offset_right = 525.5
+offset_bottom = 135.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 44
+text = "STEP2_TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Volume" type="Node2D" parent="Step2" unique_id=224115299]
+position = Vector2(-211, 74)
+
+[node name="VolumeTitle" type="Label" parent="Step2/Volume" unique_id=2090823616]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 573.0
+offset_top = 55.0
+offset_right = 998.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 50
+text = "VOLUME_TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SFX Slider" type="HSlider" parent="Step2/Volume" unique_id=1586503809]
+offset_left = 381.0
+offset_top = 131.0
+offset_right = 1232.0
+offset_bottom = 147.0
+theme_override_styles/slider = SubResource("StyleBoxLine_ldk8y")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_b7mkv")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_0s0yu")
+min_value = -80.0
+max_value = 0.0
+script = ExtResource("4_smpi0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Music Slider" type="HSlider" parent="Step2/Volume" unique_id=1715942740]
+offset_left = 380.0
+offset_top = 182.0
+offset_right = 1233.0
+offset_bottom = 212.0
+theme_override_styles/slider = SubResource("StyleBoxLine_ldk8y")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_b7mkv")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_0s0yu")
+min_value = -80.0
+max_value = 0.0
+script = ExtResource("5_fj5wy")
+metadata/_edit_use_anchors_ = true
+
+[node name="SFX" type="Label" parent="Step2/Volume" unique_id=2142652746]
+offset_left = 377.0
+offset_top = 91.0
+offset_right = 562.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 30
+text = "SFX_TEXT"
+metadata/_edit_use_anchors_ = true
+
+[node name="SFX2" type="Label" parent="Step2/Volume" unique_id=25913351]
+offset_left = 379.0
+offset_top = 145.0
+offset_right = 599.0
+offset_bottom = 190.0
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 30
+text = "MUSIC_TEXT"
+metadata/_edit_use_anchors_ = true
+
+[node name="Video" type="Node2D" parent="Step2" unique_id=866997243]
+position = Vector2(-211, 213)
+
+[node name="Window settings" type="OptionButton" parent="Step2/Video" unique_id=642012847]
+offset_left = 379.0
+offset_top = 267.0
+offset_right = 1234.0
+offset_bottom = 331.0
+theme = SubResource("Theme_fj5wy")
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 20
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Borderless"
+popup/item_1/id = 1
+popup/item_2/text = "Fullscreen"
+popup/item_2/id = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Video" type="Label" parent="Step2/Video" unique_id=637625360]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 694.0
+offset_top = 182.0
+offset_right = 887.0
+offset_bottom = 271.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 60
+text = "VIDEO_TITLE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Next" type="Button" parent="Step2" unique_id=1504468409]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -194.5
+offset_top = -98.0
+offset_right = 194.5
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 54
+text = "NEXT_BUTTON"
+
+[node name="Language" type="Node2D" parent="Step2" unique_id=1549115980]
+position = Vector2(-211, 78)
+
+[node name="Language" type="Label" parent="Step2/Language" unique_id=1005886066]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 517.5
+offset_top = 191.0
+offset_right = 1063.5
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 54
+text = "LANGUAGE_TITLE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Language Settings" type="OptionButton" parent="Step2/Language" unique_id=1511505945]
+offset_left = 379.0
+offset_top = 275.0
+offset_right = 1234.0
+offset_bottom = 328.0
+theme = SubResource("Theme_ldk8y")
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 20
+selected = 0
+item_count = 4
+popup/item_0/text = "English (US)"
+popup/item_0/id = 0
+popup/item_1/text = "English (UK)"
+popup/item_1/id = 1
+popup/item_2/text = "Español"
+popup/item_2/id = 2
+popup/item_2/disabled = true
+popup/item_3/text = "Čeština"
+popup/item_3/id = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Step4" type="Control" parent="." unique_id=1532032364]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Step4" unique_id=565368446]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -524.0
+offset_top = 12.0
+offset_right = 527.0
+offset_bottom = 262.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 50
+text = "STEP3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start lv 1" type="Button" parent="Step4" unique_id=825886304]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.875
+offset_top = 47.5
+offset_right = 257.875
+offset_bottom = 202.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 45
+text = "LV1_START"
+
+[node name="unlock all" type="Button" parent="Step4" unique_id=941462433]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.875
+offset_top = 207.0
+offset_right = 257.875
+offset_bottom = 318.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.49426448, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.49411765, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 34
+text = "UNLOCK_ALL"
+
+[node name="Step5" type="Control" parent="." unique_id=734408830]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Step5" unique_id=773554219]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -524.0
+offset_top = 12.0
+offset_right = 527.0
+offset_bottom = 262.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 50
+text = "STEP4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="play" type="Button" parent="Step5" unique_id=1383913706]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.5
+offset_top = 152.5
+offset_right = 284.5
+offset_bottom = 307.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_smpi0")
+theme_override_font_sizes/font_size = 45
+text = "TIMETOPLAY"
+
+[connection signal="pressed" from="Step1/Setup" to="." method="_on_setup_pressed"]
+[connection signal="pressed" from="Step1/Skip" to="." method="_on_skip_pressed"]
+[connection signal="value_changed" from="Step2/Volume/SFX Slider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="Step2/Volume/Music Slider" to="." method="_on_music_slider_value_changed"]
+[connection signal="item_selected" from="Step2/Video/Window settings" to="." method="_on_window_settings_item_selected"]
+[connection signal="pressed" from="Step2/Next" to="." method="_on_next_pressed"]
+[connection signal="item_selected" from="Step2/Language/Language Settings" to="." method="_on_language_settings_item_selected"]
+[connection signal="pressed" from="Step4/Start lv 1" to="." method="_on_start_lv_1_pressed"]
+[connection signal="pressed" from="Step4/unlock all" to="." method="_on_unlock_all_pressed"]
+[connection signal="pressed" from="Step5/play" to="." method="_on_play_pressed"]

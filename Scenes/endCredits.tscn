@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://b5ic3efnykt2f"]
+
+[ext_resource type="Script" uid="uid://dpnqr5f0r0h3t" path="res://Scripts/credits.gd" id="1_aaktg"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="2_00oai"]
+[ext_resource type="AudioStream" uid="uid://cst3tg4sg77m6" path="res://Music/Desmeon - Hellcat [NCS Release].mp3" id="3_00oai"]
+[ext_resource type="Texture2D" uid="uid://cjb3dufa4cw8" path="res://Photos/Credits/Artwork 2.png" id="4_m7puw"]
+[ext_resource type="Texture2D" uid="uid://by7x2nrv5lht7" path="res://Photos/Credits/Artwork 1.png" id="4_q1201"]
+[ext_resource type="Texture2D" uid="uid://dte23eda8eput" path="res://Photos/Credits/Artwork 3.png" id="5_7wbli"]
+[ext_resource type="Texture2D" uid="uid://c6xoc2o6hyiof" path="res://Photos/Credits/Artwork 4.png" id="6_26w3p"]
+[ext_resource type="Texture2D" uid="uid://dn17uee864mhq" path="res://Photos/Credits/Artwork 5.png" id="7_co11o"]
+[ext_resource type="Texture2D" uid="uid://cx504p2srkit6" path="res://Photos/Credits/Artwork 6.png" id="8_s1fpr"]
+[ext_resource type="Texture2D" uid="uid://th0ogeixot4u" path="res://Photos/misc/Hell Jump Logo.png" id="9_fcv3r"]
+[ext_resource type="Texture2D" uid="uid://clp2pe3dyfc4h" path="res://Photos/Credits/Devil He.png" id="11_v33w8"]
+[ext_resource type="Texture2D" uid="uid://bwm3pacjewm5e" path="res://Photos/Credits/Artwork 7.png" id="11_v53y4"]
+[ext_resource type="Texture2D" uid="uid://djtr1c6ete3wv" path="res://Photos/Credits/Teeth Day.png" id="12_4k2te"]
+[ext_resource type="Texture2D" uid="uid://ben26bnn1ckjv" path="res://Photos/Credits/Artwork 8.png" id="14_qy5kg"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="15_ntcwh"]
+
+[node name="Node2D" type="Node2D" unique_id=1272602449]
+
+[node name="The hell BG" type="ColorRect" parent="." unique_id=912459529]
+light_mask = 513
+visibility_layer = 512
+offset_left = -1587.0
+offset_top = -523.0
+offset_right = 2763.0
+offset_bottom = 1038.0
+color = Color(1, 0.788235, 0.054902, 1)
+
+[node name="Credits" type="Node2D" parent="." unique_id=1262924606]
+script = ExtResource("1_aaktg")
+
+[node name="Credits" type="Label" parent="Credits" unique_id=548703915]
+offset_left = 328.0
+offset_top = 1050.0
+offset_right = 872.0
+offset_bottom = 6549.0
+theme_override_fonts/font = ExtResource("2_00oai")
+theme_override_font_sizes/font_size = 26
+text = "CREDITS"
+horizontal_alignment = 1
+
+[node name="Artwork1" type="Sprite2D" parent="Credits" unique_id=378998817]
+position = Vector2(890, 1125)
+rotation = 0.18500488
+scale = Vector2(0.46223027, 0.46223027)
+texture = ExtResource("4_q1201")
+
+[node name="Artwork2" type="Sprite2D" parent="Credits" unique_id=1442128374]
+position = Vector2(894.9999, 1516)
+rotation = 0.24609144
+scale = Vector2(0.45699683, 0.45699686)
+texture = ExtResource("4_m7puw")
+
+[node name="Artwork3" type="Sprite2D" parent="Credits" unique_id=2090149048]
+position = Vector2(583, 1758)
+scale = Vector2(0.4730216, 0.4730216)
+texture = ExtResource("5_7wbli")
+
+[node name="Artwork4" type="Sprite2D" parent="Credits" unique_id=162619908]
+position = Vector2(223.52966, 2030)
+scale = Vector2(0.70323735, 0.7032374)
+texture = ExtResource("6_26w3p")
+
+[node name="Artwork5" type="Sprite2D" parent="Credits" unique_id=861574982]
+position = Vector2(611.00006, 3937)
+scale = Vector2(0.7446043, 0.7446043)
+texture = ExtResource("7_co11o")
+
+[node name="Artwork6" type="Sprite2D" parent="Credits" unique_id=1704102346]
+position = Vector2(864, 4874)
+texture = ExtResource("8_s1fpr")
+
+[node name="HellJumpLogo" type="Sprite2D" parent="Credits" unique_id=1986813901]
+position = Vector2(593, 721)
+scale = Vector2(0.43750003, 0.4375)
+texture = ExtResource("9_fcv3r")
+
+[node name="Artwork7" type="Sprite2D" parent="Credits" unique_id=1295635367]
+position = Vector2(377, 5437)
+rotation = -0.3700098
+scale = Vector2(0.5845324, 0.5845324)
+texture = ExtResource("11_v53y4")
+
+[node name="Poster1" type="Sprite2D" parent="Credits" unique_id=897843786]
+position = Vector2(499, 2525.5002)
+scale = Vector2(0.1721191, 0.1721191)
+texture = ExtResource("11_v33w8")
+
+[node name="Label" type="Label" parent="Credits/Poster1" unique_id=534206751]
+offset_left = -540.3235
+offset_top = 557.7519
+offset_right = 546.13354
+offset_bottom = 842.4384
+theme_override_fonts/font = ExtResource("2_00oai")
+theme_override_font_sizes/font_size = 80
+text = "BYIHATETUESDAYS"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TeethDay" type="Sprite2D" parent="Credits" unique_id=1994688528]
+position = Vector2(702, 2574.5)
+scale = Vector2(0.465, 0.465)
+texture = ExtResource("12_4k2te")
+
+[node name="Label" type="Label" parent="Credits/TeethDay" unique_id=271601596]
+offset_left = -197.54846
+offset_top = 305.3761
+offset_right = 206.45154
+offset_bottom = 490.3224
+theme_override_fonts/font = ExtResource("2_00oai")
+theme_override_font_sizes/font_size = 60
+text = "BYARAMCZ"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Artwork8" type="Sprite2D" parent="Credits" unique_id=2025153083]
+position = Vector2(346.5, 4477)
+texture = ExtResource("14_qy5kg")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2136647856]
+position = Vector2(510, 270)
+stream = ExtResource("3_00oai")
+volume_db = -2.4
+autoplay = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1630370997]
+wait_time = 89.0
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1019235343]
+position = Vector2(575, 325)
+
+[node name="Button" type="Button" parent="." unique_id=707221504]
+offset_left = 961.0
+offset_top = 596.0
+offset_right = 1143.3572
+offset_bottom = 642.0
+theme_override_fonts/font = ExtResource("15_ntcwh")
+theme_override_font_sizes/font_size = 27
+text = "Skip"
+
+[connection signal="timeout" from="Timer" to="Credits" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="Credits" method="_on_button_pressed"]
