@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b6kdoxch4ks0t"]
 
 [ext_resource type="Script" uid="uid://bl1wioy5sy44c" path="res://Scripts/agameby.gd" id="1_0cq34"]
-[ext_resource type="Texture2D" uid="uid://dglpok5gjhur1" path="res://Photos/misc/Purple controller.png" id="2_18k11"]
+[ext_resource type="Texture2D" uid="uid://dixyhu68sao64" path="res://Photos/Social Media/Purple controller.png" id="2_0cq34"]
 [ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="3_0cq34"]
 
 [node name="Control" type="Control" unique_id=1616518639]
@@ -30,13 +30,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -366.25
-offset_top = -437.25
-offset_right = 366.25
-offset_bottom = 295.25
+offset_left = -260.125
+offset_top = -299.125
+offset_right = 260.125
+offset_bottom = 221.125
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_18k11")
+texture = ExtResource("2_0cq34")
 
 [node name="Label" type="Label" parent="." unique_id=395098988]
 layout_mode = 1
@@ -46,9 +46,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -369.5
-offset_top = -102.0
+offset_top = -95.0
 offset_right = 369.5
-offset_bottom = -13.0
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("3_0cq34")

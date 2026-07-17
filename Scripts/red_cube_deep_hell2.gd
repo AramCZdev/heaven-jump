@@ -11,9 +11,9 @@ const CHECKPOINT_FILE = "user://checkpoint.tmp"
 @export var coyote_frames: int = 6
 @export var jumpad_speed: float = 1000.0
 
-# Improved physics
-@export var improved_acceleration: float = 5000.0
-@export var improved_deceleration: float = 6000.0
+# Improved Physics
+@export var improved_acceleration: float = 1400.0
+@export var improved_deceleration: float = 1800.0
 @export var improved_coyote_frames: int = 10
 
 var _dashing: bool = false
@@ -86,6 +86,7 @@ func _physics_process(delta: float) -> void:
 
 		var can_jump := is_on_floor() or _coyote_timer > 0
 		if Input.is_action_just_pressed("jump") and can_jump:
+			MiscManager.add_jump()
 			velocity.y = -jump_speed
 			_coyote_timer = 0
 			_was_on_floor = false
@@ -97,6 +98,7 @@ func _physics_process(delta: float) -> void:
 				AchievementManager.progressachievement("jumps_1000", 1)
 				AchievementManager.progressachievement("jumps_10000", 1)
 		if Input.is_action_just_pressed("dash") and _dash_ready:
+			MiscManager.add_dash()
 			var dash_dir := _facing
 			if dir != 0:
 				dash_dir = sign(dir)
@@ -122,6 +124,7 @@ func _on_spike_body_entered(body: Node2D) -> void:
 		_die()
 
 func _die() -> void:
+	MiscManager.add_death()
 	_dead = true
 	velocity = Vector2.ZERO
 	if _sfx_hurt:
@@ -170,6 +173,7 @@ func _on_quit_pressed() -> void:
 	LoadingManager.goto("res://Scenes/The Deep Hell Level Select.tscn")
 
 func _on_finish_line_body_entered(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not win:
 		return
 	var paused := not win.visible
@@ -247,6 +251,7 @@ func _on_exit_body_entered(_body: Node2D) -> void:
 	LoadingManager.goto("res://Scenes/Levels/The Deep Hell/Level30(3).tscn")
 
 func _on_finish_line_body_entered22plus(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not SaveManager.is_secret_unlocked("the_hell", "22+_complete"):
 		SaveManager.unlock_secret("the_hell", "22+_complete")
 		AchievementManager.progressachievement("deep_hell_plus_complete", 1)
@@ -265,6 +270,7 @@ func _on_secret_exit_body_entered24(_body: Node2D) -> void:
 	LoadingManager.goto("res://Scenes/Levels/The Deep Hell/Level24+.tscn")
 
 func _on_finish_line_body_entered24plus(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not SaveManager.is_secret_unlocked("the_hell", "24+_complete"):
 		SaveManager.unlock_secret("the_hell", "24+_complete")
 		AchievementManager.progressachievement("deep_hell_plus_complete", 1)
@@ -281,6 +287,7 @@ func _on_secret_exit_body_entered27plus(_body: Node2D) -> void:
 	LoadingManager.goto("res://Scenes/Levels/The Deep Hell/Level27+.tscn")
 
 func _on_finish_line_body_entered27plus(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not SaveManager.is_secret_unlocked("the_hell", "27+_complete"):
 		SaveManager.unlock_secret("the_hell", "27+_complete")
 		AchievementManager.progressachievement("deep_hell_plus_complete", 1)

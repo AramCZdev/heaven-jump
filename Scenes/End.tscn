@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dp422le83b3r5"]
 
 [ext_resource type="Script" uid="uid://cry6chynlju1n" path="res://Scripts/end.gd" id="1_vbw3r"]
-[ext_resource type="Texture2D" uid="uid://bqvar8n7qiphi" path="res://Photos/Social Media/New AramCZGames logo.png" id="3_vbw3r"]
+[ext_resource type="Texture2D" uid="uid://dixyhu68sao64" path="res://Photos/Social Media/Purple controller.png" id="3_vbw3r"]
 [ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="3_wwss2"]
 [ext_resource type="Texture2D" uid="uid://cckv6mn85qs0t" path="res://Photos/Social Media/Youtube.png" id="4_vbw3r"]
 [ext_resource type="Texture2D" uid="uid://d077mg8eyffvi" path="res://Photos/Social Media/Twitter.png" id="5_d1g0i"]
@@ -88,14 +88,21 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Socials/AramCZGames" unique_id=662913507]
-layout_mode = 0
-offset_left = 93.0
-offset_top = 18.0
-offset_right = 343.0
-offset_bottom = 63.0
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -16.5
+offset_right = 276.0
+offset_bottom = 16.5
+grow_horizontal = 0
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_wwss2")
-theme_override_font_sizes/font_size = 30
-text = "AramCZGames"
+theme_override_font_sizes/font_size = 22
+text = "Purple controller"
 
 [node name="YT" type="TextureButton" parent="Socials" unique_id=66563062]
 layout_mode = 1

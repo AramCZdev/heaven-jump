@@ -11,8 +11,8 @@ var _facing: int = 1
 var _dead: bool = false
 
 # Improved Physics
-@export var improved_acceleration: float = 5000.0
-@export var improved_deceleration: float = 6000.0
+@export var improved_acceleration: float = 1400.0
+@export var improved_deceleration: float = 1800.0
 @export var improved_coyote_frames: int = 10
 
 @onready var _sprite := $Sprite2D
@@ -55,6 +55,7 @@ func _physics_process(delta: float) -> void:
 			velocity.x = dir * walk_speed
 
 		velocity.y += gravity * delta
+		MiscManager.add_jump()
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.y = -jump_speed
 			if _sfx_jump:
@@ -69,6 +70,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _start_dash(dir: int) -> void:
+	MiscManager.add_dash()
 	_dashing = true
 	_dash_ready = false
 	_facing = dir
@@ -88,6 +90,7 @@ func _on_spike_body_entered(body: Node2D) -> void:
 		_die()
 
 func _die() -> void:
+	MiscManager.add_death()
 	_dead = true
 	velocity = Vector2.ZERO
 	if _sfx_hurt:
@@ -142,6 +145,7 @@ func _on_jumpad_body_entered(_body: Node2D) -> void:
 
 
 func _on_finish_line_deep_body_entered(_body: Node2D) -> void:
+		MiscManager.add_level_complete()
 		if not win:
 			return
 		var paused := not win.visible

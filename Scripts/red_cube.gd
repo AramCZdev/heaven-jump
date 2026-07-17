@@ -11,8 +11,8 @@ extends CharacterBody2D
 @export var coyote_frames: int = 6
 
 # Improved Physics
-@export var improved_acceleration: float = 4000.0
-@export var improved_deceleration: float = 5000.0
+@export var improved_acceleration: float = 1200.0
+@export var improved_deceleration: float = 1800.0
 @export var improved_coyote_frames: int = 10
 
 @onready var _sprite := $Node2D
@@ -103,6 +103,11 @@ func _physics_process(delta: float) -> void:
 		var can_jump := is_on_floor() or _coyote_timer > 0
 
 		if Input.is_action_just_pressed("jump") and can_jump:
+			MiscManager.add_jump()
+			AchievementManager.progressachievement("jumps_50", 1)
+			AchievementManager.progressachievement("jumps_500", 1)
+			AchievementManager.progressachievement("jumps_1000", 1)
+			AchievementManager.progressachievement("jumps_10000", 1)
 			velocity.y = -jump_speed
 			_coyote_timer = 0
 			_was_on_floor = false
@@ -113,6 +118,7 @@ func _physics_process(delta: float) -> void:
 
 
 		if Input.is_action_just_pressed("dash") and _dash_ready:
+			MiscManager.add_dash()
 			var dash_dir := _facing
 
 			if dir != 0:
@@ -143,6 +149,7 @@ func _on_spike_body_entered(body: Node2D) -> void:
 		_die()
 
 func _die() -> void:
+	MiscManager.add_death()
 	_dead = true
 	velocity = Vector2.ZERO
 	if _sfx_hurt:
@@ -196,6 +203,7 @@ func _on_secret_exit_body_entered(_body: Node2D) -> void:
 		LoadingManager.goto("res://Scenes/Levels/The hell/Level5+.tscn")
 
 func _on_finish_line_body_entered(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not win:
 		return
 	var paused := not win.visible
@@ -308,6 +316,7 @@ func _on_achievment_body_entered(_body: Node2D) -> void:
 	AchievementManager.unlock("hell_complete")
 
 func _on_finish_line_body_entered5plus(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not SaveManager.is_secret_unlocked("the_hell", "5+_complete"):
 		SaveManager.unlock_secret("the_hell", "5+_complete")
 		AchievementManager.progressachievement("hell_plus_complete", 1)
@@ -318,6 +327,7 @@ func _on_finish_line_body_entered5plus(_body: Node2D) -> void:
 	get_tree().paused = paused
 
 func _on_finish_line_body_entered8plus(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not SaveManager.is_secret_unlocked("the_hell", "8+_complete"):
 		SaveManager.unlock_secret("the_hell", "8+_complete")
 		AchievementManager.progressachievement("hell_plus_complete", 1)
@@ -328,6 +338,7 @@ func _on_finish_line_body_entered8plus(_body: Node2D) -> void:
 	get_tree().paused = paused
 
 func _on_finish_line_body_entered11plus(_body: Node2D) -> void:
+	MiscManager.add_level_complete()
 	if not SaveManager.is_secret_unlocked("the_hell", "11+_complete"):
 		SaveManager.unlock_secret("the_hell", "11+_complete")
 		AchievementManager.progressachievement("hell_plus_complete", 1)

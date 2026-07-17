@@ -1,0 +1,95 @@
+name: Bug Report
+description: Report a bug in Hell Jump
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: checkboxes
+    id: game_related
+    attributes:
+      label: Before submitting
+      options:
+        - label: I confirmed this issue is related to Hell Jump and not a modified version.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Version
+      placeholder: "Example: 1.1.0"
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Linux (Native)
+        - Linux (Snap)
+        - Android
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System Version
+      placeholder: "Example: Windows 11 25H2, Linux Mint 22.3, Android 16, Ubuntu 26.04"
+
+  - type: input
+    id: desktop_environment
+    attributes:
+      label: Desktop Environment (Linux only)
+      placeholder: "Example: Cinnamon, KDE Plasma, GNOME, XFCE"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe what happened.
+      placeholder: Describe the bug here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to...
+        2. Do...
+        3. See error
+
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: The game should have...
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: Drag and drop screenshots or videos here if available.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste crash logs or error messages here.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I confirmed this issue happens on the latest version of Hell Jump.
+          required: true
+        - label: I checked existing issues and confirmed this bug has not already been reported.
+          required: true
+        - label: I confirmed this issue is related to Hell Jump and not a modified version.
+          required: true

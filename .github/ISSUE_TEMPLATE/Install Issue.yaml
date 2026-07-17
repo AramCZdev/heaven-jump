@@ -1,0 +1,86 @@
+name: Install Issue
+description: Report problems installing Hell Jump
+title: "[Install Issue]: "
+labels: ["install issue"]
+
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I downloaded Hell Jump from an official source.
+          required: true
+        - label: I checked that my device meets the requirements.
+          required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Linux
+        - Linux (Snap)
+        - Android
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System Version
+      placeholder: "Example: Windows 11 25H2, Linux Mint 22.3, Android 16"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Hell Jump Version
+      placeholder: "Example: 1.1.0"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Installation Problem
+      description: Describe what happens when installing the game.
+      placeholder: "Example: Installation fails, app does not appear, permission error..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Download...
+        2. Open installer/package...
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error Message or Logs
+      description: Paste any error messages here.
+      render: text
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: Add screenshots or recordings if they help explain the issue.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I downloaded Hell Jump from an official source (itch.io, Game Jolt, or Snap Store).
+          required: true
+        - label: I confirmed my device supports Hell Jump.
+          required: true
+        - label: I checked existing issues and confirmed this installation issue has not already been reported.
+          required: true

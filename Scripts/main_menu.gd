@@ -1,7 +1,7 @@
 extends Control
 
 var game_version: String = ProjectSettings.get_setting("application/config/version") as String
-const VERSION_URL := "https://aramczdev.github.io/helljumpver.txt?v=1"
+const VERSION_URL := "https://purplecontroller.github.io/helljumpver.txt?v=1"
 
 @onready var http_request: HTTPRequest = $HTTPRequest
 @onready var update_button: Button = $"Main menu/Update"
@@ -33,6 +33,12 @@ var _loading := false
 
 
 func _ready() -> void:
+	$Stats.visible = false
+	$Stats/Jumps/Jumps.text = str(MiscManager.get_stat("jumps"))
+	$Stats/Deaths/Deaths.text = str(MiscManager.get_stat("deaths"))
+	$Stats/Dashes/Dashes.text = str(MiscManager.get_stat("dashes"))
+	$"Stats/Level completes/Completes".text = str(MiscManager.get_stat("level_completes"))
+	$More.visible = false
 	var saved_resolution = SettingsManager.get_setting("resolution", 0)
 	resolution_dropdown.selected = saved_resolution
 	_on_resolution_settings_item_selected(saved_resolution)
@@ -55,7 +61,7 @@ func _ready() -> void:
 	$Website.visible = false
 	_loading = true
 	$AramCz.visible = false
-	if OS.get_name() == "Android" or OS.get_name() == "iOS":
+	if OS.get_name() == "Android":
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 		$"Main menu/Support".visible = true
 		$"Main menu/Quit".visible = false
@@ -93,6 +99,8 @@ func _ready() -> void:
 	$AramCz.visible = false
 
 func _on_options_button_pressed() -> void:
+	$Stats.visible = false
+	$More.visible = false
 	if OS.get_name() == "Android" or OS.get_name() == "iOS":
 		$Settings/Video.visible = false
 	settings_menu.visible = true
@@ -102,11 +110,13 @@ func _on_options_button_pressed() -> void:
 
 
 func _on_back_button_pressed() -> void:
+	$Stats.visible = false
 	settings_menu.visible = false
 	play.visible = false
 	socials.visible = true
 	delete_warning.visible = false
 	$Settings2.visible = false
+	$More.visible = false
 
 
 func _on_exit_button_pressed() -> void:
@@ -114,10 +124,12 @@ func _on_exit_button_pressed() -> void:
 
 
 func _on_play_pressed() -> void:
+	$Stats.visible = false
 	settings_menu.visible = false
 	play.visible = true
 	socials.visible = false
 	$Settings2.visible = false
+	$More.visible = false
 
 
 func _on_window_settings_item_selected(index: int) -> void:
@@ -188,7 +200,7 @@ func _on_yt_pressed() -> void:
 
 
 func _on_x_pressed() -> void:
-	OS.shell_open("x.com/AramCZGames")
+	OS.shell_open("x.com/HellJumpGame")
 
 
 func _on_itch_pressed() -> void:
@@ -196,11 +208,11 @@ func _on_itch_pressed() -> void:
 
 
 func _on_aram_cz_games_pressed() -> void:
-	$Website.visible = true
+	OS.shell_open("https://purplecontroller.github.io/")
 
 
 func _on_hell_jump_pressed() -> void:
-	$Website.visible = true
+	OS.shell_open("https://purplecontroller.github.io/helljump")
 
 
 func _on_ok_site_pressed() -> void:
@@ -376,3 +388,32 @@ func _on_resolution_settings_item_selected(index: int) -> void:
 		2: DisplayServer.window_set_size(Vector2i(1600, 900))
 		3: DisplayServer.window_set_size(Vector2i(1920, 1080))
 		4: DisplayServer.window_set_size(Vector2i(3840, 2160))
+
+
+func _on_more_pressed() -> void:
+	$More.visible = true
+	settings_menu.visible = false
+	play.visible = false
+	socials.visible = false
+	$Settings2.visible = false
+	$Stats.visible = false
+
+
+func _on_stats_pressed() -> void:
+	$Stats.visible = true
+	$More.visible = false
+	settings_menu.visible = false
+	play.visible = false
+	socials.visible = false
+	$Settings2.visible = false
+	if MiscManager.is_old_stats_transferred():
+		$Stats/Transfer.visible = false
+
+
+
+func _on_transfer_pressed() -> void:
+	MiscManager.transfer_old_stats()
+	$Stats/Transfer.hide()
+
+func _on_no_reset_pressed() -> void:
+	delete_warning.visible = false
