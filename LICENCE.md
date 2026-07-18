@@ -1,34 +1,37 @@
-# Hell Jump Source Available License
+Hell Jump Source Available License
 
 Copyright (c) 2026 Purple Controller
 
-Permission is granted to view, modify, and share the source code of Hell Jump.
+Permission is granted to view, modify, and share the source code of Hell Jump, subject to the terms of this license.
 
-## You may:
+You may:
+- Modify the source code.
+- Share modified versions of the source code.
+- Use Hell Jump for personal, educational, and non-commercial purposes.
 
-* Modify the source code.
-* Share modified versions.
-* Use the project for personal, educational, and non-commercial purposes.
+You may not:
+- Sell Hell Jump or modified versions of Hell Jump.
+- Use Hell Jump or modified versions of Hell Jump for commercial purposes without written permission from the copyright holder.
+- Include Hell Jump or modified versions of Hell Jump in a paid product without written permission.
 
-## You may not:
+Donations
 
-* Sell Hell Jump or modified versions of Hell Jump.
-* Use Hell Jump or modified versions for commercial purposes without permission.
-* Include Hell Jump in a paid product without permission.
+Donations related to Hell Jump are permitted without requiring additional permission.
 
-## Donations
+This includes donations supporting development, hosting, community projects, or other non-commercial activities related to Hell Jump.
 
-Donations related to Hell Jump are allowed without requiring permission from the copyright holder.
+Contributions
 
-This includes donations to support development, hosting, or community projects related to Hell Jump.
+By submitting contributions to Hell Jump, you grant Purple Controller permission to use, modify, and distribute those contributions as part of the Hell Jump project under this license.
 
-## Contributions
+You retain ownership of your original contributions unless otherwise agreed.
 
-By contributing code or other content to Hell Jump, you agree that your contributions may be used and distributed under this license.
-
-## Ownership
+Ownership
 
 The original creator retains copyright ownership of Hell Jump.
 
-This license does not grant ownership of the Hell Jump name, branding, or official assets unless explicitly stated.
+This license does not grant rights to use the Hell Jump name, branding, logos, or official assets unless explicitly stated.
 
+No Warranty
+
+Hell Jump is provided "as is", without warranty of any kind. The copyright holder is not responsible for any damages or issues caused by the use of this software.
