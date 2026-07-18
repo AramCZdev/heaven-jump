@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://c7yo3htne11v8"]
 
+[ext_resource type="Script" uid="uid://dw07h3vxpj1g" path="res://Scripts/Levels/level_2.gd" id="1_5oof7"]
 [ext_resource type="AudioStream" uid="uid://ce26ugl2ji5j4" path="res://SFX/Dash.wav" id="1_aopm6"]
 [ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/misc/Spike.png" id="1_n63yr"]
 [ext_resource type="AudioStream" uid="uid://ddf1h7qgejd5h" path="res://SFX/jump.wav" id="1_sxyf2"]
-[ext_resource type="Script" uid="uid://dw07h3vxpj1g" path="res://Scripts/level_2.gd" id="1_vfa7m"]
 [ext_resource type="Script" uid="uid://cfoynt14obb6w" path="res://Scripts/red_cube.gd" id="1_x76hr"]
 [ext_resource type="Texture2D" uid="uid://rteiaa58cgfe" path="res://Photos/misc/Finish Line.png" id="2_sfk1o"]
 [ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="3_oa5fo"]
@@ -41,7 +41,7 @@ size = Vector2(66, 174)
 size = Vector2(60, 59)
 
 [node name="Node2D" type="Node2D" unique_id=1207835655]
-script = ExtResource("1_vfa7m")
+script = ExtResource("1_5oof7")
 
 [node name="The hell BG" type="ColorRect" parent="." unique_id=1658839736]
 light_mask = 513

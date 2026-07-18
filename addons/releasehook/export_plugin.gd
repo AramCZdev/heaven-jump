@@ -1,7 +1,7 @@
 @tool
 extends EditorExportPlugin
 
-const VERSION_FILE_PATH = "/home/aramcz/Documents/GitHub/aramczgames.github.io/helljumpver.txt"
+const VERSION_FILE_PATH = "/home/aramcz/Documents/GitHub/purplecontroller.github.io/helljumpver.txt"
 
 func _export_begin(features, is_debug, path, flags):
 	var version = ProjectSettings.get_setting("application/config/version")

@@ -93,8 +93,9 @@ func _ready() -> void:
 	var error := http_request.request(VERSION_URL)
 	print("Request error:", error)
 
-	await get_tree().create_timer(60).timeout
+	await get_tree().create_timer(180).timeout
 	$AramCz.visible = true
+	AchievementManager.unlock("AramCZ")
 	await get_tree().create_timer(5).timeout
 	$AramCz.visible = false
 
@@ -220,11 +221,11 @@ func _on_ok_site_pressed() -> void:
 
 
 func _on_github_pressed() -> void:
-	OS.shell_open("https://github.com/AramCZdev")
+	OS.shell_open("https://github.com/PurpleController")
 
 
 func _on_update_pressed() -> void:
-	OS.shell_open("https://aramczgames.itch.io/hell-jump")
+	OS.shell_open("https://purplecontroller.github.io/helljump#download")
 
 func _on_version_request_completed(
 	_result: int,
@@ -412,6 +413,7 @@ func _on_stats_pressed() -> void:
 
 
 func _on_transfer_pressed() -> void:
+	AchievementManager.unlock("og")
 	MiscManager.transfer_old_stats()
 	$Stats/Transfer.hide()
 

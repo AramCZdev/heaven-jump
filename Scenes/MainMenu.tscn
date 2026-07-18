@@ -2144,13 +2144,13 @@ offset_top = -171.0
 offset_right = -358.0
 offset_bottom = -123.0
 theme_override_font_sizes/font_size = 32
-text = "Total jumps: "
+text = "TOTAL_JUMPS"
 
 [node name="Jumps" type="Label" parent="Stats/Jumps" unique_id=1220995664]
 layout_mode = 0
-offset_left = 291.0
+offset_left = 538.0
 offset_top = -1.0
-offset_right = 319.0
+offset_right = 566.0
 offset_bottom = 47.0
 theme_override_font_sizes/font_size = 32
 text = "0"
@@ -2162,13 +2162,13 @@ offset_top = -103.0
 offset_right = -358.0
 offset_bottom = -55.0
 theme_override_font_sizes/font_size = 32
-text = "Total deaths: "
+text = "TOTAL_DEATHS"
 
 [node name="Deaths" type="Label" parent="Stats/Deaths" unique_id=1793324840]
 layout_mode = 0
-offset_left = 307.0
+offset_left = 538.0
 offset_top = -1.0
-offset_right = 335.0
+offset_right = 566.0
 offset_bottom = 47.0
 theme_override_font_sizes/font_size = 32
 text = "0"
@@ -2180,13 +2180,13 @@ offset_top = -42.0
 offset_right = -358.0
 offset_bottom = 6.0
 theme_override_font_sizes/font_size = 32
-text = "Total dashes: "
+text = "TOTAL_DASHES"
 
 [node name="Dashes" type="Label" parent="Stats/Dashes" unique_id=1432546906]
 layout_mode = 0
-offset_left = 300.0
+offset_left = 538.0
 offset_top = -1.0
-offset_right = 328.0
+offset_right = 566.0
 offset_bottom = 47.0
 theme_override_font_sizes/font_size = 32
 text = "0"
@@ -2198,13 +2198,13 @@ offset_top = 19.0
 offset_right = -128.0
 offset_bottom = 67.0
 theme_override_font_sizes/font_size = 32
-text = "Total level completes: "
+text = "TOTAL_COMPLETES"
 
 [node name="Completes" type="Label" parent="Stats/Level completes" unique_id=1106487945]
 layout_mode = 0
-offset_left = 513.0
+offset_left = 538.0
 offset_top = -1.0
-offset_right = 541.0
+offset_right = 566.0
 offset_bottom = 47.0
 theme_override_font_sizes/font_size = 32
 text = "0"
@@ -2217,8 +2217,7 @@ offset_right = -272.0
 offset_bottom = 332.0
 theme_override_fonts/font = ExtResource("7_loo7a")
 theme_override_font_sizes/font_size = 24
-text = "Transfer jumps/deaths 
-from old versions"
+text = "TRANSFER"
 
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_version_request_completed"]
 [connection signal="consent_form_dismissed" from="Admob" to="." method="_on_admob_consent_form_dismissed"]

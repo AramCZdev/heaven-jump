@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b88vhqymumbe7"]
 
-[ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/Unused/Spike.png" id="1_fqc0v"]
-[ext_resource type="Script" uid="uid://b1say82c3w4q0" path="res://Scripts/level_16.gd" id="1_v5u5q"]
+[ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/misc/Spike.png" id="1_fqc0v"]
+[ext_resource type="Script" uid="uid://b1say82c3w4q0" path="res://Scripts/Levels/level_16.gd" id="1_gg6h2"]
 [ext_resource type="Script" uid="uid://cmyxgw171x6dp" path="res://Scripts/red_cube_deep_hell.gd" id="2_v5u5q"]
 [ext_resource type="AudioStream" uid="uid://ddf1h7qgejd5h" path="res://SFX/jump.wav" id="3_ms2eh"]
 [ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="4_5ipj0"]
@@ -39,7 +39,7 @@ size = Vector2(60, 59)
 size = Vector2(66, 185)
 
 [node name="Node2D" type="Node2D" unique_id=152272227]
-script = ExtResource("1_v5u5q")
+script = ExtResource("1_gg6h2")
 
 [node name="The hell BG" type="ColorRect" parent="." unique_id=301915001]
 light_mask = 513

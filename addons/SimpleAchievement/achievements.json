@@ -122,7 +122,21 @@
 		"id": "wrong_path",
 		"name": "wrong_path_title",
 		"description": "wrong_path_desc",
-		"icon": "",
+		"icon": "res://addons/SimpleAchievement/icons/boss.png",
+		"goal": 1
+	},
+	{
+		"id": "og",
+		"name": "OG_title",
+		"description": "OG_desc",
+		"icon": "res://Photos/misc/Hell Jump Icon.png",
+		"goal": 1
+	},
+	{
+		"id": "AramCZ",
+		"name": "AramCZ",
+		"description": "wrong_path_desc",
+		"icon": "res://Photos/misc/AramCZ.png",
 		"goal": 1
 	},
 ]

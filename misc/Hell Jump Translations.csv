@@ -721,7 +721,7 @@ boss_complete_title,True Gamer,Pravej Gejmr,True Gamer
 boss_complete_desc,Defeat ShadowGuy in Level 35.,Pokoř ShadowGuy v levelu 35,Defeat ShadowGuy in Level 35.
 easteregg_level12,you went the wrong path idiot,Šel jsi špatnou cestou idiote,you went the wrong path idiot
 wrong_path_title,Wrong Path,Špatná cesta,Wrong Path
-wrong_path_desc,you went the wrong path idiot,Šel jsi špatnou cestou idiote,you went the wrong path idiot
+wrong_path_desc,A secret is required to unlock this achievement,Tajemství je požadováno aby jsi tento úspěch odemknul,A secret is required to unlock this achievement
 CODES,"Type codes to get bonus levels
 (All letters must be uppercase and with no spaces)","Zadejte kódy a získejte bonusové úrovně
 (Všechna písmena musí být velká a bez mezer)","Type codes to get bonus levels
@@ -748,7 +748,7 @@ Twitter/X: @AramCZGames, @HellJumpGame
 Bluesky: @AramCZdev.github.io
 Keep an eye out for new posts. You never 
 know when a new code will appear."
-JUMPSTART,Jump to start,Skočte pro start,Jump to start
+JUMPSTART,Jump to start,Skočte,Jump to start
 STEPHERE,Step here to win,Stoupněte sem pro výhru,Step here to win
 UNLOCKEDACH,Achievement Unlocked!,Úspěch Odemčen!,Achievement Unlocked!
 TYPE_HERE,Type Here,Napsat sem,Type Here
@@ -768,3 +768,13 @@ DONOT,Do not,Ne,Do not
 SIZE_WINDOW,Window size,Velikost okna,Window size
 STATS_BUTTON,Statistics,Statistiky,Statistics
 MORE_BUTTON,More,Více,More
+TOTAL_JUMPS,Total jumps: ,Celkový skoky:,Total jumps: 
+TOTAL_DEATHS,Total deaths: ,Celkový smrti:,Total deaths: 
+TOTAL_DASHES,Total dashes: ,Celkový dashing:,Total dashes: 
+TOTAL_COMPLETES,Total level completes: ,Celkový dokončení levelů: ,Total completes: 
+TRANSFER,"Transfer jumps/deaths 
+from old versions","Přenést skoky/smrti ze
+Starších verzí","Transfer jumps/deaths 
+from old versions"
+OG_title,OG player,Vracející se hrač,OG player
+OG_desc,Transfer your stats from an older version,Převeď statistiky ze starší verze,Transfer your stats from an older version

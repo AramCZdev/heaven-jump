@@ -27,9 +27,13 @@ func _ready() -> void:
 		$Control/sky.visible = false
 
 	if SaveManager.is_secret_unlocked("the_hell", "$"):
-		$Control/sky.visible = true
+		$"Control/$".visible = true
 	else:
-		$Control/sky.visible = false
+		$"Control/$".visible = false
+	if SaveManager.is_secret_unlocked("the_hell", "3D"):
+		$"Control/3D".visible = true
+	else:
+		$"Control/3D".visible = false
 
 
 

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bpov7mnlbtf4f"]
+[gd_scene format=3]
 
 [ext_resource type="Script" uid="uid://cfoynt14obb6w" path="res://Scripts/red_cube.gd" id="1_lc7m5"]
 [ext_resource type="Script" uid="uid://cfkf7wfivfmrq" path="res://Scripts/Levels/level_30.gd" id="1_sj3iu"]
