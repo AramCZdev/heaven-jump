@@ -72,6 +72,11 @@ func _ready() -> void:
 	$AramCz.visible = false
 	if OS.get_name() == "Android":
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+
+		window.content_scale_size = BASE_SIZE
+		window.content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
+		window.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
+
 		$"Main menu/Support".visible = true
 		$"Main menu/Quit".visible = false
 	else:
