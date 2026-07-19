@@ -2,6 +2,7 @@ extends Control
 
 var game_version: String = ProjectSettings.get_setting("application/config/version") as String
 const VERSION_URL := "https://purplecontroller.github.io/helljumpver.txt?v=1"
+const BASE_SIZE := Vector2i(1152, 648)
 
 @onready var http_request: HTTPRequest = $HTTPRequest
 @onready var update_button: Button = $"Main menu/Update"
@@ -33,6 +34,14 @@ var _loading := false
 
 
 func _ready() -> void:
+	print("Window size:", DisplayServer.window_get_size())
+	print("Window mode:", DisplayServer.window_get_mode())
+	print("Content scale mode:", get_window().content_scale_mode)
+	print("Content scale size:", get_window().content_scale_size)
+	var window := get_window()
+	window.content_scale_size = Vector2i(1152, 648)
+	window.content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
+	window.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_KEEP
 	$Stats.visible = false
 	$Stats/Jumps/Jumps.text = str(MiscManager.get_stat("jumps"))
 	$Stats/Deaths/Deaths.text = str(MiscManager.get_stat("deaths"))
@@ -197,15 +206,15 @@ func _on_campaign_pressed() -> void:
 
 
 func _on_yt_pressed() -> void:
-	OS.shell_open("youtube.com/@AramCZGames")
+	OS.shell_open("https://youtube.com/@AramCZGames")
 
 
 func _on_x_pressed() -> void:
-	OS.shell_open("x.com/HellJumpGame")
+	OS.shell_open("https://x.com/HellJumpGame")
 
 
 func _on_itch_pressed() -> void:
-	OS.shell_open("aramczgames.itch.io")
+	OS.shell_open("https://aramczgames.itch.io")
 
 
 func _on_aram_cz_games_pressed() -> void:
@@ -383,12 +392,20 @@ func _on_page_2_pressed() -> void:
 func _on_resolution_settings_item_selected(index: int) -> void:
 	SettingsManager.set_setting("resolution", index)
 
+	get_window().content_scale_size = BASE_SIZE
+	get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
+
 	match index:
-		0: DisplayServer.window_set_size(Vector2i(1152, 648))
-		1: DisplayServer.window_set_size(Vector2i(1280, 720))
-		2: DisplayServer.window_set_size(Vector2i(1600, 900))
-		3: DisplayServer.window_set_size(Vector2i(1920, 1080))
-		4: DisplayServer.window_set_size(Vector2i(3840, 2160))
+		0:
+			get_window().size = Vector2i(1152, 648)
+		1:
+			get_window().size = Vector2i(1280, 720)
+		2:
+			get_window().size = Vector2i(1600, 900)
+		3:
+			get_window().size = Vector2i(1920, 1080)
+		4:
+			get_window().size = Vector2i(3840, 2160)
 
 
 func _on_more_pressed() -> void:
