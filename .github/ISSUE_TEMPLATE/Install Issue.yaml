@@ -79,8 +79,6 @@ body:
       label: Before submitting
       options:
         - label: I downloaded Hell Jump from an official source (itch.io, Game Jolt, or Snap Store).
-          required: true
         - label: I confirmed my device supports Hell Jump.
-          required: true
         - label: I checked existing issues and confirmed this installation issue has not already been reported.
           required: true
