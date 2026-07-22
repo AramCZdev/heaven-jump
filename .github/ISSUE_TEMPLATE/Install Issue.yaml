@@ -3,6 +3,7 @@ description: Report problems installing Hell Jump
 title: "[Install Issue]: "
 labels: ["install issue"]
 
+body:
   - type: dropdown
     id: platform
     attributes:
