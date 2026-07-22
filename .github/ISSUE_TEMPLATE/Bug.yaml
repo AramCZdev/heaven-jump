@@ -52,17 +52,7 @@ body:
         3. See error
     validations:
       required: true
-      
-    - type: textarea
-      id: steps
-      attributes:
-        label: Steps to Reproduce
-        placeholder: |
-          1. Go to...
-          2. Do...
-          3. See error
-      validations:
-        required: true
+    
 
   - type: textarea
     id: expected
