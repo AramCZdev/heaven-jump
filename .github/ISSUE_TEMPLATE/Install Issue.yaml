@@ -3,17 +3,6 @@ description: Report problems installing Hell Jump
 title: "[Install Issue]: "
 labels: ["install issue"]
 
-body:
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: Before submitting
-      options:
-        - label: I downloaded Hell Jump from an official source.
-          required: true
-        - label: I checked that my device meets the requirements.
-          required: true
-
   - type: dropdown
     id: platform
     attributes:
