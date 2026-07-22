@@ -43,11 +43,13 @@ body:
       placeholder: "Example: Cinnamon, KDE Plasma, GNOME, XFCE"
 
   - type: textarea
-    id: description
+    id: steps
     attributes:
-      label: Bug Description
-      description: Describe what happened.
-      placeholder: Describe the bug here...
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to...
+        2. Do...
+        3. See error
     validations:
       required: true
       
@@ -74,7 +76,7 @@ body:
     attributes:
       label: Screenshots or Videos
       description: Drag and drop screenshots or videos here if available.
-
+      
   - type: textarea
     id: logs
     attributes:
