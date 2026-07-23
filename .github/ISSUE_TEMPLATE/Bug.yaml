@@ -3,6 +3,7 @@ description: Report a bug in Hell Jump
 title: "[Bug]: "
 labels: ["bug"]
 
+  body:
   - type: input
     id: version
     attributes:
