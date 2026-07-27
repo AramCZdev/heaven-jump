@@ -4,7 +4,7 @@ extends CharacterBody3D
 @onready var _sfx_hurt: AudioStreamPlayer3D = $SfxHurt
 
 const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 5.5
 
 func _ready() -> void:
 	get_tree().paused = false
@@ -41,5 +41,13 @@ func _on_spike_body_entered(_body: Node3D) -> void:
 
 func _on_win_body_entered(_body: Node3D) -> void:
 	if _body is CharacterBody3D:
+		AdManager.level_completed()
 		SaveManager.unlock_secret("the_hell", "3D")
+		LoadingManager.goto("res://Scenes/BonusLevels.tscn")
+
+
+func _on_win_body_entered2(_body: Node3D) -> void:
+	if _body is CharacterBody3D:
+		AdManager.level_completed()
+		SaveManager.unlock_secret("the_hell", "3D2")
 		LoadingManager.goto("res://Scenes/BonusLevels.tscn")

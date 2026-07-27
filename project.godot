@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Hell Jump"
 config/description="A hellish platformer"
-config/version="1.1.0"
+config/version="1.1.2"
 config/tags=PackedStringArray("first_game")
 run/main_scene="uid://b6kdoxch4ks0t"
 config/features=PackedStringArray("4.7", "GL Compatibility")
@@ -158,7 +158,7 @@ open_map={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://misc/Hell Jump Translations.en_US.translation", "res://misc/Hell Jump Translations.cs_CZ.translation", "res://misc/Hell Jump Translations.en_GB.translation")
+locale/translations=PackedStringArray("res://translation/Hell Jump Translations.cs_CZ.translation", "res://translation/Hell Jump Translations.en_GB.translation", "res://translation/Hell Jump Translations.en_US.translation", "res://translation/Hell Jump Translations.de_DE.translation", "res://translation/Hell Jump Translations.es_ES.translation")
 
 [milestone]
 

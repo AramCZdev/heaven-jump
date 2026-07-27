@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bmax78vj7fqlf" path="res://Photos/misc/Orb.png" id="9_851aa"]
 [ext_resource type="Texture2D" uid="uid://6356cmkp6307" path="res://Photos/Nav/Menu.png" id="9_xtrml"]
 [ext_resource type="Texture2D" uid="uid://hfc3mkskyh7" path="res://Photos/misc/Bed.png" id="10_851aa"]
-[ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/Unused/Spike.png" id="11_1fr5y"]
+[ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/misc/Spike.png" id="11_1fr5y"]
 [ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="12_38mjq"]
 [ext_resource type="Script" uid="uid://bmd8ow7lmjf6" path="res://Scripts/checkpoint.gd" id="12_frvqn"]
 
@@ -771,7 +771,7 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Platform22" type="StaticBody2D" parent="." unique_id=1658467386]
-position = Vector2(280, -806)
+position = Vector2(267, -806)
 
 [node name="ColorRect" type="ColorRect" parent="Platform22" unique_id=1469171739]
 offset_left = 580.0
@@ -787,7 +787,7 @@ shape = SubResource("RectangleShape2D_a0i3f")
 
 [node name="Spike" type="Area2D" parent="." unique_id=325607477]
 z_index = 5
-position = Vector2(234, -841)
+position = Vector2(221, -841)
 
 [node name="CollisionSpike" type="CollisionShape2D" parent="Spike" unique_id=218385984]
 position = Vector2(746.5, 415)

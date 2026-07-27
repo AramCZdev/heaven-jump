@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://rteiaa58cgfe" path="res://Photos/misc/Finish Line.png" id="9_iitwt"]
 [ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="10_e2xan"]
 [ext_resource type="Texture2D" uid="uid://cyj566iy84t2h" path="res://Photos/Nav/Next.png" id="10_pr2vf"]
+[ext_resource type="Texture2D" uid="uid://dfqm3u0pfusg0" path="res://Photos/Nav/Back.png" id="15_wtkjq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wx16y"]
 size = Vector2(60, 59.25)
@@ -38,9 +39,19 @@ size = Vector2(16, 16)
 
 [node name="Node2D" type="Node2D" unique_id=365709779]
 
+[node name="The hell BG" type="ColorRect" parent="." unique_id=1037567540]
+light_mask = 513
+visibility_layer = 512
+z_index = -16
+offset_left = -7768.0
+offset_top = -4752.0
+offset_right = 14482.0
+offset_bottom = 7775.0
+color = Color(1, 0.050980393, 0.050980393, 1)
+
 [node name="Red cube" type="CharacterBody2D" parent="." unique_id=704786244]
 z_index = 10
-position = Vector2(56, -165)
+position = Vector2(-2709, 78)
 safe_margin = 0.001
 script = ExtResource("1_6ib5i")
 
@@ -76,6 +87,7 @@ offset_top = -31.0
 offset_right = 30.0
 offset_bottom = 28.0
 color = Color(0.46164685, 0, 0.0066224546, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Red cube" unique_id=145010248]
 position = Vector2(131, 610)
@@ -85,16 +97,6 @@ stream = ExtResource("5_e2xan")
 autoplay = true
 max_distance = 9.223372e+18
 bus = &"Music"
-
-[node name="The hell BG" type="ColorRect" parent="." unique_id=1037567540]
-light_mask = 513
-visibility_layer = 512
-z_index = -16
-offset_left = -7768.0
-offset_top = -4752.0
-offset_right = 14482.0
-offset_bottom = 7775.0
-color = Color(1, 0.050980393, 0.050980393, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1921391440]
 
@@ -509,7 +511,7 @@ color = Color(1, 1, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="JumpOrb" type="Area2D" parent="." unique_id=2097545463]
-position = Vector2(-720, 453)
+position = Vector2(-705, 413)
 script = ExtResource("7_l52m2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOrb" unique_id=1870813674]
@@ -852,6 +854,7 @@ offset_bottom = 40.0
 [node name="TouchControls" parent="Control" unique_id=3811519 instance=ExtResource("10_e2xan")]
 
 [node name="Secret Exit" type="Area2D" parent="." unique_id=2042634048]
+position = Vector2(3713, -333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Secret Exit" unique_id=771458068]
 position = Vector2(-1370, 1197)
@@ -862,6 +865,89 @@ offset_left = -1378.0
 offset_top = 1189.0
 offset_right = -1362.0
 offset_bottom = 1205.0
+metadata/_edit_use_anchors_ = true
+
+[node name="JumpOrb9" type="Area2D" parent="." unique_id=1076268192]
+position = Vector2(-2624, 192)
+script = ExtResource("7_l52m2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOrb9" unique_id=1143922292]
+z_index = 1
+position = Vector2(573, 490)
+shape = SubResource("CircleShape2D_e2xan")
+
+[node name="TextureRect" type="TextureRect" parent="JumpOrb9" unique_id=134285066]
+offset_left = 544.0
+offset_top = 461.0
+offset_right = 602.0
+offset_bottom = 519.0
+texture = ExtResource("8_iitwt")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="JumpOrb10" type="Area2D" parent="." unique_id=1117242152]
+position = Vector2(-1909, 4)
+script = ExtResource("7_l52m2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOrb10" unique_id=640491233]
+z_index = 1
+position = Vector2(573, 490)
+shape = SubResource("CircleShape2D_e2xan")
+
+[node name="TextureRect" type="TextureRect" parent="JumpOrb10" unique_id=841996967]
+offset_left = 544.0
+offset_top = 461.0
+offset_right = 602.0
+offset_bottom = 519.0
+texture = ExtResource("8_iitwt")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Next" type="Sprite2D" parent="." unique_id=1121712520]
+position = Vector2(-2133.0002, 565)
+rotation = -0.41032702
+scale = Vector2(1.1625, 1.1625)
+texture = ExtResource("10_pr2vf")
+
+[node name="Next2" type="Sprite2D" parent="." unique_id=2061711615]
+position = Vector2(-1305, 555.0001)
+rotation = 0.36216706
+texture = ExtResource("10_pr2vf")
+
+[node name="Next3" type="Sprite2D" parent="." unique_id=1734032110]
+position = Vector2(-760, 671)
+texture = ExtResource("10_pr2vf")
+
+[node name="Next4" type="Sprite2D" parent="." unique_id=1138246961]
+position = Vector2(-4, 717)
+texture = ExtResource("10_pr2vf")
+
+[node name="Next5" type="Sprite2D" parent="." unique_id=2072867609]
+position = Vector2(517, 597)
+rotation = -0.47208625
+texture = ExtResource("10_pr2vf")
+
+[node name="Back" type="Sprite2D" parent="." unique_id=875963233]
+position = Vector2(379, 385)
+texture = ExtResource("15_wtkjq")
+
+[node name="Back2" type="Sprite2D" parent="." unique_id=1327594488]
+position = Vector2(-181, 410)
+texture = ExtResource("15_wtkjq")
+
+[node name="Next6" type="Sprite2D" parent="." unique_id=2139943637]
+position = Vector2(-271, 64)
+texture = ExtResource("10_pr2vf")
+
+[node name="Next7" type="Sprite2D" parent="." unique_id=556483436]
+position = Vector2(599, -36)
+rotation = -0.13975269
+texture = ExtResource("10_pr2vf")
+
+[node name="Back3" type="Sprite2D" parent="." unique_id=1843034070]
+position = Vector2(1147, -333)
+rotation = 0.8497158
+texture = ExtResource("15_wtkjq")
 
 [connection signal="pressed" from="CanvasLayer/Game menu/Resume" to="Red cube" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Game menu/Restart" to="Red cube" method="_on_restart_pressed"]

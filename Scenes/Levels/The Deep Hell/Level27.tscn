@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cs0hnoevs3rw2" path="res://Photos/Nav/Retry.png" id="9_nhjnv"]
 [ext_resource type="Texture2D" uid="uid://hfc3mkskyh7" path="res://Photos/misc/Bed.png" id="10_851aa"]
 [ext_resource type="Texture2D" uid="uid://6356cmkp6307" path="res://Photos/Nav/Menu.png" id="10_owhkm"]
-[ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/Unused/Spike.png" id="11_1fr5y"]
+[ext_resource type="Texture2D" uid="uid://da3ytm4g4dmw" path="res://Photos/misc/Spike.png" id="11_1fr5y"]
 [ext_resource type="Texture2D" uid="uid://cyj566iy84t2h" path="res://Photos/Nav/Next.png" id="11_suyni"]
 [ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="12_38mjq"]
 [ext_resource type="Script" uid="uid://bmd8ow7lmjf6" path="res://Scripts/checkpoint.gd" id="13_ddep7"]
@@ -79,7 +79,7 @@ radius = 29.0
 size = Vector2(178, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_11tk1"]
-size = Vector2(146, 75.5)
+size = Vector2(146, 44)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n81gu"]
 size = Vector2(61, 29)
@@ -820,7 +820,7 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Platform22" type="StaticBody2D" parent="." unique_id=1658467386]
-position = Vector2(295, -820)
+position = Vector2(274, -817)
 
 [node name="ColorRect" type="ColorRect" parent="Platform22" unique_id=1469171739]
 offset_left = 580.0
@@ -836,7 +836,7 @@ shape = SubResource("RectangleShape2D_a0i3f")
 
 [node name="Spike" type="Area2D" parent="." unique_id=325607477]
 z_index = 5
-position = Vector2(249, -855)
+position = Vector2(228, -852)
 
 [node name="SpikeSprite" type="Sprite2D" parent="Spike" unique_id=1107970110]
 z_index = 5

@@ -8,10 +8,123 @@ var chapter1_no_death := false
 var chapter2_no_death := false
 var chapter3_no_death := false
 
+var has_controller := false
+var last_scene: Node = null
+
+
+func _process(_delta):
+	if has_controller:
+		refocus_if_needed()
+	var current_scene = get_tree().current_scene
+
+	if current_scene != null and current_scene != last_scene:
+		last_scene = current_scene
+
+		if has_controller:
+			await get_tree().process_frame
+			focus_first_button(current_scene)
 
 func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
+
 	load_game()
 	init_stats()
+
+	check_controller()
+	Input.joy_connection_changed.connect(_on_controller_changed)
+
+func refocus_if_needed() -> void:
+	var scene = get_tree().current_scene
+
+	if scene == null:
+		return
+
+	var focused = get_viewport().gui_get_focus_owner()
+
+	if focused == null or not focused.is_visible_in_tree():
+		await get_tree().process_frame
+
+		scene = get_tree().current_scene
+
+		if scene != null:
+			focus_first_button(scene)
+
+func focus_nearest_button(old_button: Control) -> void:
+	var buttons: Array[Button] = []
+
+	collect_buttons(get_tree().current_scene, buttons)
+
+	if buttons.is_empty():
+		return
+
+	var nearest: Button = buttons[0]
+	var distance := old_button.global_position.distance_to(nearest.global_position)
+
+	for button in buttons:
+		var new_distance = old_button.global_position.distance_to(button.global_position)
+
+		if new_distance < distance:
+			distance = new_distance
+			nearest = button
+
+	nearest.grab_focus()
+
+func _input(event):
+	if event is InputEventJoypadMotion:
+		if event.axis == JOY_AXIS_LEFT_Y:
+			var scroll = get_viewport().gui_get_focus_owner()
+
+			if scroll:
+				var container = find_scroll_container(scroll)
+
+				if container:
+					container.scroll_vertical += event.axis_value * 20
+
+func is_controller_connected() -> bool:
+	return Input.get_connected_joypads().size() > 0
+
+func find_scroll_container(node: Node) -> ScrollContainer:
+	var parent = node.get_parent()
+
+	while parent:
+		if parent is ScrollContainer:
+			return parent
+
+		parent = parent.get_parent()
+
+	return null
+
+func collect_buttons(node: Node, buttons: Array[Button]) -> void:
+	for child in node.get_children():
+		if child is Button and child.visible and child.is_visible_in_tree():
+			buttons.append(child)
+
+		collect_buttons(child, buttons)
+
+
+func check_controller() -> void:
+	has_controller = Input.get_connected_joypads().size() > 0
+
+
+func _on_controller_changed(_device: int, connected: bool) -> void:
+	has_controller = connected
+	print("Controller connected:", connected)
+
+	if connected:
+		await get_tree().process_frame
+		focus_first_button(get_tree().current_scene)
+
+func focus_first_button(node: Node) -> void:
+	for child in node.get_children():
+		if child is Button and child.visible and child.is_visible_in_tree():
+			print("Trying focus:", child.name)
+
+			child.grab_focus()
+
+			print("Has focus:", child.has_focus())
+			return
+
+		focus_first_button(child)
 
 
 func init_stats() -> void:

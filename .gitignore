@@ -26,3 +26,7 @@ export/
 # Temporary files
 *.tmp
 *.log
+
+# Python files
+/translation/venv/
+/translation/add_language.py

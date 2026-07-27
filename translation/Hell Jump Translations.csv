@@ -1,0 +1,1193 @@
+keys,en_US,cs_CZ,en_UK,de_DE,es_ES
+PLAY_BUTTON,Play,Hrát,Play,Spielen,Jugar
+SETTINGS_BUTTON,Settings,Nastavení,Settings,Einstellungen,Ajustes
+CREDITS_BUTTON,Credits,Titulky,Credits,Credits,Créditos
+QUIT_BUTTON,Quit,Ukončit,Quit,Aufhören,Abandonar
+ACHIEVEMENTS_BUTTON,Achievements,Úspěchy,Achievements,Erfolge,Logros
+SETTINGS_TITLE,Settings,Nastavení,Settings,Einstellungen,Ajustes
+YES_BUTTON,Yes,Ano,Yes,Ja,Sí
+NO_BUTTON,No,Ne,No,NEIN,No
+RESET_BUTTON,Reset Progress,Resetovat,Reset Progress,Fortschritt zurücksetzen,Restablecer progreso
+NEXT_BUTTON,Next,Další,Next,Nächste,Próximo
+SKIP_SETUP_BUTTON,Skip This Setup,Přeskočit toto nastavení,Skip This Setup,Überspringen Sie dieses Setup,Saltar esta configuración
+SETUP_BUTTON,Setup Hell Jump,Nastavit Hell Jump,Setup Hell Jump,Höllensprung einrichten,Configurar salto infernal
+WELCOME_TEXT,Welcome to Hell Jump let's set Hell Jump up!,Vítejte v Hell Jumpu pojďme Hell Jump nastavit,Welcome to Hell Jump let's set Hell Jump up!,"Willkommen bei Hell Jump, lasst uns Hell Jump auf die Beine stellen!","Bienvenido a Hell Jump, ¡pongamos en marcha Hell Jump!"
+SFX_TEXT,SFX,SFX,SFX,SFX,efectos de sonido
+MUSIC_TEXT,Music,Muzika,Music,Musik,Música
+VOLUME_TEXT,Volume,Hlasitost,Volume,Volumen,Volumen
+STEP2_TEXT,"Choose the settings that
+Appeal to you","Vybrete si nastavení
+Které vám vyhovuje","Choose the settings that
+Appeal to you","Wählen Sie die Einstellungen, die
+Appell an Sie","Elija la configuración que
+apelar a ti"
+LANGUAGE_TITLE,Language,Jazyk,Language,Sprache,Idioma
+VIDEO_TITLE,Video,Video,Video,Video,Video
+STEP3,"Choose how you want progression 
+(this cannot be changed later 
+Unless you reset your data)","Vyberte jak chcete vybrat průběh
+(Toto nemůže být změněno pokud
+Neresetujete hru)","Choose how you want progression 
+(this cannot be changed later 
+Unless you reset your data)","Wählen Sie, wie Sie Fortschritte machen möchten 
+(Dies kann später nicht mehr geändert werden 
+Sofern Sie Ihre Daten nicht zurücksetzen)","Elige cómo quieres progresar 
+(esto no se puede cambiar más tarde 
+A menos que restablezcas tus datos)"
+LV1_START,Start from level 1,Startovat z levelu 1,Start from level 1,Beginnen Sie mit Level 1,Empezar desde el nivel 1
+UNLOCK_ALL,Unlock all levels,Odemknout všechny levely,Unlock all levels,Schalte alle Level frei,Desbloquea todos los niveles
+STEP4,"You are all set up!
+You can now go enjoy hell jump :D","Hell Jump je nastaven!
+Můžete si užít Hell Jump :D","You are all set up!
+You can now go enjoy hell jump :D","Sie sind bereit!
+Jetzt können Sie den Höllensprung genießen :D","¡Ya está todo listo!
+Ya puedes ir a disfrutar del Hell Jump :D"
+TIMETOPLAY,Time To Play!,Čas hrát,Time To Play!,Zeit zum Spielen!,¡Es hora de jugar!
+PRIVACYPOLICY,Privacy Policy,Osobní údaje,Privacy Policy,Datenschutzrichtlinie,política de privacidad
+PRIVACYPOLICYDESC,"Before playing Hell Jump read this privacy policy
+if you read through it click I agree or if you do not 
+Agree close the game and delete it","Než začnete hrát Hell Jump, přečtěte si 
+tyto zásady  aochrany osobních údajů. Pokud jste si je přečetli,
+klikněte na Souhlasím pokud nesouhlasíte, 
+zavřete hru a odstraňte ji.","Before playing Hell Jump read this privacy policy
+if you read through it click I agree or if you do not 
+Agree close the game and delete it","Bevor Sie Hell Jump spielen, lesen Sie diese Datenschutzrichtlinie
+Wenn Sie es durchlesen, klicken Sie auf „Ich stimme zu“ oder wenn Sie dies nicht tun 
+Stimmen Sie zu, schließen Sie das Spiel und löschen Sie es","Antes de jugar Hell Jump lee esta política de privacidad
+si lo lees haz clic en Acepto o si no lo haces 
+Aceptar cerrar el juego y borrarlo"
+READ,"Read the 
+privacy policy",Přečíst zásady,"Read the 
+privacy policy","Lesen Sie die 
+Datenschutzrichtlinie","Lea el 
+política de privacidad"
+AGREE,I agree,Souhlasím,I agree,Ich stimme zu,Estoy de acuerdo
+U_SURE,Are you sure?,Jste si jistí?,Are you sure?,Bist du sicher?,¿Está seguro?
+RESET_WARNING,"Do you really wanna reset your 
+progress? Your data will be gone 
+forever. And forever is a really really 
+really long time (Your game will be closed)","Opravdu chceš resetovat svůj 
+postup ve hře? Tvá data budou navždy 
+ztracena. A navždy je opravdu, opravdu, 
+opravdu dlouhá doba (Hra bude zavřena)","Do you really wanna reset your 
+progress? Your data will be gone 
+forever. And forever is a really really 
+really long time (Your game will be closed)","Möchten Sie Ihr Gerät wirklich zurücksetzen? 
+Fortschritt? Ihre Daten werden verschwunden sein 
+für immer. Und für immer ist es wirklich wirklich 
+wirklich lange (Dein Spiel wird geschlossen)","¿Realmente quieres restablecer tu 
+progreso? Tus datos desaparecerán 
+para siempre. Y para siempre es realmente realmente 
+mucho tiempo (tu juego se cerrará)"
+DANGER_ZONE,Danger Zone,Nebezpečná zóna,Danger Zone,Gefahrenzone,Zona de peligro
+CAMPAIGN,Campaign mode,Kampaň,Campaign mode,Kampagnenmodus,Modo campaña
+COOP,Co-op mode,Kooperace,Co-op mode,Koop-Modus,Modo cooperativo
+BONUS,Bonus Levels,Bonusové levely,Bonus Levels,Bonuslevel,Niveles de bonificación
+COMINGSOON,Coming Soon!,Příjde brzy,Coming Soon!,Bald erhältlich!,¡Muy pronto!
+ARAMCZ,Hi i am the developer of this game,Ahoj já jsem vývojář této hry,Hi i am the developer of this game,"Hallo, ich bin der Entwickler dieses Spiels",hola soy el desarrollador de este juego
+SELECT_CHAPTER,Chapter Select,Výběr kapitol,Chapter Select,Kapitelauswahl,Seleccionar capítulo
+THEHELL,The Hell,Peklo,The Hell,Die Hölle,el infierno
+DEEPHELL,The Deep Hell,Hluboké Peklo,The Deep Hell,Die tiefe Hölle,El infierno profundo
+LOSTHELL,The Lost Hell,Ztracené peklo,The Lost Hell,Die verlorene Hölle,El infierno perdido
+MIDDLEHEAVEN,Middle Heaven,Střední nebe,Middle Heaven,Mittlerer Himmel,Cielo Medio
+PLUSLEVELS,Plus Levels:,Plusové levely:,Plus Levels:,Plus-Level:,Niveles Plus:
+FINALE,Final Level!,Finální level!,Final Level!,Letztes Level!,¡Nivel final!
+PAUSE_MENU,Pause Menu,Pauza,Pause Menu,Pause-Menü,Menú de pausa
+WIN_MENU,You Win!,Vyhrál jsi!,You Win!,Sie gewinnen!,¡Tú ganas!
+MESSAGE_LEVEL7_1,"This is just the 
+begin it will 
+be worse I promise","Tohle je jen
+Začátek
+Bude to horší","This is just the 
+begin it will 
+be worse I promise","Das ist genau das 
+Es wird beginnen 
+Es wird schlimmer, das verspreche ich","Este es solo el 
+comenzará lo hará 
+ser peor lo prometo"
+MESSAGE_LEVEL7_2,The hell begins,Peklo začíná,The hell begins,Die Hölle beginnt,el infierno comienza
+OK_BUTTON,Ok,Ok,Ok,OK,De acuerdo
+SITE_NO,Website not available,Stránka nedostupná,Website not available,Website nicht verfügbar,Sitio web no disponible
+WEBSITE_NOT_AVAILABLE,"Website is not available.
+Sorry for the inconvenience","Stránka není dostupná
+Omlouváme se","Website is not available.
+Sorry for the inconvenience","Website ist nicht verfügbar.
+Entschuldigen Sie die Unannehmlichkeiten","El sitio web no está disponible.
+Lo siento por los inconvenientes ocasionados"
+LEVEL_27_TEXT_1,Activate orb,Akttivuj orb,Activate orb,Kugel aktivieren,Activar orbe
+LEVEL_28_DIALOG_1,Oh hi new guy!,Čau nový týpku,Oh hi new guy!,Oh hallo Neuer!,¡Hola chico nuevo!
+LEVEL_28_TEXT_1,Rules,Pravdila,Rules,Regeln,Normas
+LEVEL_28_TEXT_2,"1. All cities must have a
+devil poster
+2. No escaping hell
+3. No complaining about
+hell
+4. You must worship the
+devil 10 times per day","1. Ve všech městech musí 
+Být plakát s ďáblem
+2. Z pekla není úniku
+3. Nesmí se stěžovat na
+peklo
+4. Musíte uctívat
+ďábla 10x denně","1. All cities must have a
+devil poster
+2. No escaping hell
+3. No complaining about
+hell
+4. You must worship the
+devil 10 times per day","1. Alle Städte müssen eine haben
+Teufelsplakat
+2. Kein Entkommen aus der Hölle
+3. Keine Beschwerden
+Hölle
+4. Du musst das anbeten
+Teufel 10 Mal am Tag","1. Todas las ciudades deben tener un
+cartel del diablo
+2. No hay escapatoria del infierno
+3. No te quejes
+infierno
+4. Debes adorar al
+diablo 10 veces al día"
+LEVEL_28_TEXT_3,Closed,zavřeno,Closed,Geschlossen,Cerrado
+LEVEL_28_TEXT_4,The Clinic,Nemocnice,The Clinic,Die Klinik,La clínica
+LEVEL_28_TEXT_5,Candy store,Sladkosti,Candy store,Süßwarengeschäft,Tienda de golosinas
+LEVEL_28_TEXT_6,Groceries,Potraviny,Groceries,Lebensmittel,Comestibles
+LEVEL_28_TEXT_7,Clothes,Oblečení,Clothes,Kleidung,Ropa
+LEVEL_28_TEXT_8(1),Room 1,Místnost 1,Room 1,Raum 1,Habitación 1
+LEVEL_28_TEXT_8(2),Room 2,Místnost 2,Room 2,Raum 2,Habitación 2
+LEVEL_28_TEXT_8(3),Room 3,Místnost 3,Room 3,Raum 3,Habitación 3
+LEVEL_28_TEXT_8(4),Room 4,Místnost 4,Room 4,Raum 4,Habitación 4
+LEVEL_28_TEXT_8(5),Room 5,Místnost 5,Room 5,Raum 5,Sala 5
+LEVEL_28_TEXT_8(6),Room 6,Místnost 6,Room 6,Raum 6,Sala 6
+LEVEL_28_TEXT_8(7),Room 7,Místnost 7,Room 7,Raum 7,Sala 7
+LEVEL_28_TEXT_9,"Wait for a doctor to
+clear obstacles or
+clear them if you dare","Počkejte, až lékař
+odstraní překážky, nebo
+je přeskočte","Wait for a doctor to
+clear obstacles or
+clear them if you dare","Warten Sie auf einen Arzt
+klare Hindernisse oder
+Räum sie auf, wenn du dich traust","Espere a que un médico
+obstáculos claros o
+límpialos si te atreves"
+LEVEL_28_DIALOG_2,Get out I am busy.,Vypadni. Dělám práci,Get out I am busy.,"Geh raus, ich bin beschäftigt.","Sal, estoy ocupado."
+LEVEL_34_TEXT_1,"The Deep Hell is 
+up 10451.0 pixels
+Above","Hluboké Peklol je 
+10451.0 pixelů
+Nahoře","The Deep Hell is 
+up 10451.0 pixels
+Above","Die tiefe Hölle ist 
+bis 10451,0 Pixel
+Oben","El infierno profundo es 
+hasta 10451,0 píxeles
+arriba"
+LEVEL_34_TEXT_2,keep going :D,jdi dál :D,keep going :D,mach weiter :D,sigue adelante :D
+MAP_TUTORIAL,"How to play: Click M to view
+the map then decide to what path
+to go","Jak hrát: Klikni M aby jsi viděl mapu  
+Pak zijsti kterou cestou jít","How to play: Click M to view
+the map then decide to what path
+to go","Spielanleitung: Zum Ansehen auf M klicken
+Die Karte entscheidet dann, zu welchem Weg
+gehen","Cómo jugar: haz clic en M para ver
+el mapa luego decide hacia qué camino
+ir"
+MAP_TUTORIAL_MOBILE,"How to play: Tap    to view
+the map then decide to what path
+to go","Jak hrát: Klikni ikonku mapy aby jsi viděl mapu  
+Pak zijsti kterou cestou jít","How to play: Tap map icon to view
+the map then decide to what path
+to go","Spielanleitung: Zum Ansehen antippen
+Die Karte entscheidet dann, zu welchem Weg
+gehen","Cómo jugar: toca para ver
+el mapa luego decide hacia qué camino
+ir"
+LEVEL_35_DIALOG_1(1),Why are you trying to escape hell?,Proč se snažíš dostat z pekla?,Why are you trying to escape hell?,"Warum versuchst du, der Hölle zu entkommen?",¿Por qué intentas escapar del infierno?
+LEVEL_35_DIALOG_1(2),Wait so we sent you here by accdent?,Počkej tebe jsme tě jsem dali omylem?,Wait so we sent you here by accdent?,"Warten Sie, also haben wir Sie versehentlich hierher geschickt?","Espera, ¿te enviamos aquí por accidente?"
+LEVEL_35_DIALOG_1(3),Our bad sorry you can now continue,Naše chyba můžeš dál pokračovat,Our bad sorry you can now continue,"Es tut uns leid, dass Sie jetzt fortfahren können","Lo siento mucho, ahora puedes continuar."
+LEVEL_35_TEXT_1,Castle ,Hrad,Castle ,Schloss,Castillo
+LEVEL_35_DIALOG_2,You just saw the devil?!,Ty jsi viděl ďábla?!,You just saw the devil?!,Du hast gerade den Teufel gesehen?!,¿Acabas de ver al diablo?
+LEVEL_35_TEXT_2,Café,Kavárna,Café,Cafe,Cafetería
+LEVEL_35_DIALOG_3,WE GOT YOU!,MÁME TĚ!,WE GOT YOU!,WIR HABEN SIE!,¡TE TENEMOS!
+LEVEL_35_DIALOG_4,Good luck!,Hodně štěstí!,Good luck!,Viel Glück!,¡Buena suerte!
+LEVEL_35_TEXT_3,Hard but shorter path,Těžší ale kratší cesta,Hard but shorter path,"Harter, aber kürzerer Weg",Camino duro pero más corto
+BOSSFIGHT_DEATH,"This bossfight is really really
+hard but you do not need to beat it to continue
+Continue or try again","Tento souboj je velmi
+Těžký ale nepotřebuješ ho dokončit
+Pokračuješ nebo zkusíš znova?","This bossfight is really really
+hard but you do not need to beat it to continue
+Continue or try again","Dieser Bosskampf ist wirklich wirklich
+hart, aber Sie müssen es nicht schlagen, um fortzufahren
+Fahren Sie fort oder versuchen Sie es erneut","Esta pelea de jefes es realmente muy
+Difícil pero no necesitas superarlo para continuar.
+Continuar o intentarlo de nuevo"
+CONTINUE_BUTTON,Continue,Pokračovat,Continue,Weitermachen,Continuar
+TRYAGAIN_BUTTON,Try again,Zkus zase,Try again,Versuchen Sie es erneut,Intentar otra vez
+LOSE_DIALOG1,"Why did you swoon them
+They were sent here by accident","Proč jsi ho dal do bezvědomí.
+Oni tu jsou omylem","Why did you swoon them
+They were sent here by accident","Warum hast du sie in Ohnmacht fallen lassen?
+Sie wurden zufällig hierher geschickt","¿Por qué los desmayaste?
+Fueron enviados aquí por accidente."
+LOSE_DIALOG2,I'm sorry boss I did not know,Promiň šéfe já nevěděl,I'm sorry boss I did not know,"Es tut mir leid, Chef, ich wusste es nicht",lo siento jefe no lo sabia
+LOSE_DIALOG3,Now go heal them!,Teď ho oživ!,Now go heal them!,Jetzt geh und heile sie!,¡Ahora ve a curarlos!
+WIN_DIALOG1,"You are strong. I am tired
+of sending obstacles onto you","Jsi silný. Už mě unavuje
+Posílání překážek na tebe","You are strong. I am tired
+of sending obsticles onto you","Du bist stark. Ich bin müde
+Hindernisse auf dich zu schicken","Eres fuerte. estoy cansado
+de enviarte obstáculos"
+WIN_DIALOG2,So you know what? You win,Takže víš co? Vyhráváš,So you know what? You win,Weißt du was? Du gewinnst,¿Entonces sabes qué? tu ganas
+WIN_DIALOG3,"You know because you actually
+won here is a skip ticket you might need it","Víš co protože si vyhrál
+Tady je přeskakovací ticket budeš ho potřebovat","You know because you actually
+won here is a skip ticket you might need it","Du weißt es, weil du es tatsächlich tust
+Hier gewonnen ist ein Skip-Ticket, das Sie vielleicht brauchen","Lo sabes porque en realidad
+Ganado aquí es un boleto saltado, es posible que lo necesites."
+HEAVEN_SIGN,"The 
+Heaven",Nebe,"The 
+Heaven","Die 
+Himmel","el 
+cielo"
+HEAVEN_SIGN2,"The middle
+Heaven",Střední nebe,"The middle
+Heaven","Die Mitte
+Himmel","el medio
+cielo"
+CONTINUED,To be continued,pokračování příště,To be continued,Fortgesetzt werden,Continuará
+CREDITS,"A game by Purple Controller
+
+
+
+
+
+
+
+Main Developers: AramCZ
+(Aka Aram)
+
+
+
+
+
+
+Programmers: AramCZ
+
+
+
+
+
+
+
+
+Art: By AramCZ in Piskel 
+
+
+
+
+Posters:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Music/Songs:
+
+The hell theme: Desert city
+by Kevin macleod
+The deep hell theme: 
+scheaming weasel by kevin
+macleod
+Level 35 theme: Killers
+by kevin macleod
+Lost hell theme: Unholy Knight 
+by Kevin Macleod
+Boss music: boss battle by audio
+keeper on pixabay
+campground wood 
+outhouse haunting airy ambience
+ in sh** receptacle 
+part1 hollow wind drone by
+kyles on freesound.org
+Credits Song: Desmeon -
+ Hellcat
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Level design:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playtestors:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Special thanks: 
+Pixel sagas for making this
+cool font symtext
+pixelsagas.com
+all of my playtestors
+The godot foundation
+Smart screen for making
+people think Hell Jump is
+a virus
+Wolfyxon for making the
+Godottogether plugin
+cherttov for making the
+to do list plugin
+my flash drive for saving the
+source code
+Cengiz for the admob plugin
+
+
+
+
+
+
+
+
+
+
+
+Thank you for playing!
+","Hra od Purple Controller
+
+
+
+
+
+
+
+Vývojáři: AramCZ
+(Aram)
+
+
+
+
+
+
+Programátoři: AramCZ
+
+
+
+
+
+
+
+
+Kreslení: AramCZ v Piskelu 
+
+
+
+
+Plakáty:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Muzika:
+
+Peklo: Desert city
+od Kevina macleoda
+Hluboké peklo: 
+scheaming weasel od kevina
+macleoda
+Level 35: Killers
+od kevina macleoda
+Ztracené peklo: Unholy Knight 
+by Kevin Macleod
+Finální boss: boss battle by audio
+keeper on pixabay
+campground wood 
+outhouse haunting airy ambience
+ in sh** receptacle 
+part1 hollow wind drone by
+kyles on freesound.org
+Titulky: Desmeon -
+ Hellcat
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Level design:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playtestři:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Speciální dík: 
+Pixel sagas pro udělání
+symtextu
+pixelsagas.com
+všichni playtestři
+The godot foundation
+Smart screen
+
+
+Wolfyxon pro
+godototgther plugin
+cherttov za udělání
+to do list plugin
+flashka za záchranu
+kódu hry
+Cengiz za udělání admob pluginu
+
+
+
+
+
+
+
+
+
+
+
+Děkuji za hraní!
+","A game by Purple controller
+
+
+
+
+
+
+
+
+Main Developers: AramCZ
+(Aka Aram)
+
+
+
+
+
+
+Programmers: AramCZ
+
+
+
+
+
+
+
+
+Art: By AramCZ in Piskel 
+
+
+
+
+Posters:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Music/Songs:
+
+The hell theme: Desert city
+by Kevin macleod
+The deep hell theme: 
+scheaming weasel by kevin
+macleod
+Level 35 theme: Killers
+by kevin macleod
+Lost hell theme: Unholy Knight 
+by Kevin Macleod
+Boss music: boss battle by audio
+keeper on pixabay
+campground wood 
+outhouse haunting airy ambience
+ in sh** receptacle 
+part1 hollow wind drone by
+kyles on freesound.org
+Credits Song: Desmeon -
+ Hellcat
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Level design:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playtestors:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Special thanks: 
+Pixel sagas for making this
+cool font symtext
+pixelsagas.com
+all of my playtestors
+The godot foundation
+Smart screen for making
+people think Hell Jump is
+a virus
+Wolfyxon for making the
+Godottogether plugin
+cherttov for making the
+to do list plugin
+my flash drive for saving the
+source code
+Cengiz for the admob plugin
+
+
+
+
+
+
+
+
+
+
+
+Thank you for playing!
+","Ein Spiel von Purple Controller
+
+
+
+
+
+
+
+Hauptentwickler: AramCZ
+(Aka Aram)
+
+
+
+
+
+
+Programmierer: AramCZ
+
+
+
+
+
+
+
+
+Kunst: Von AramCZ in Piskel 
+
+
+
+
+Poster:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Musik/Lieder:
+
+Das Höllenthema: Wüstenstadt
+von Kevin Macleod
+Das Thema der tiefen Hölle: 
+Betrügerisches Wiesel von Kevin
+macleod
+Level-35-Thema: Killer
+von Kevin Macleod
+Thema der verlorenen Hölle: Unheiliger Ritter 
+von Kevin Macleod
+Bossmusik: Bosskampf per Audio
+Torwart auf Pixabay
+Campingplatz Holz 
+Nebengebäude mit eindringlichem, luftigem Ambiente
+ in einem Scheißbehälter 
+Teil 1 Hohlwind-Drohne von
+Kyles auf freesound.org
+Credits Lied: Desmeon -
+ Höllenkatze
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Leveldesign:
+AramCZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Spieltester:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Besonderer Dank: 
+Pixel-Saga dafür, dass ihr das gemacht habt
+cooler Schriftart-Symtext
+pixelsagas.com
+Alle meine Spieletester
+Die Godot-Stiftung
+Intelligenter Bildschirm zum Herstellen
+Die Leute denken, Hell Jump sei
+ein Virus
+Wolfyxon für die Herstellung
+Godottogether-Plugin
+Cherttov für die Herstellung
+To-Do-Listen-Plugin
+Mein Flash-Laufwerk zum Speichern des
+Quellcode
+Cengiz für das Admob-Plugin
+
+
+
+
+
+
+
+
+
+
+
+Danke fürs Spielen!","Un juego de Purple Controller
+
+
+
+
+
+
+
+Desarrolladores principales: AramCZ
+(También conocido como Aram)
+
+
+
+
+
+
+Programadores: AramCZ
+
+
+
+
+
+
+
+
+Arte: Por AramCZ en Piskel 
+
+
+
+
+Carteles:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Música/Canciones:
+
+El tema del infierno: Ciudad del desierto
+por Kevin Macleod
+El tema del infierno profundo: 
+comadreja intrigante de kevin
+macleod
+Tema de nivel 35: Asesinos
+por kevin macleod
+Tema del infierno perdido: Caballero profano 
+por Kevin Macleod
+Música de jefe: batalla de jefe por audio
+guardián en pixabay
+madera de camping 
+letrina inquietante ambiente aireado
+ en receptáculo de mierda 
+part1 drone de viento hueco por
+kyles en freesound.org
+Créditos Canción: Desmeon -
+ gato infernal
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Diseño de niveles:
+aramcz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Testores de juego:
+LuckyNumChris
+
+
+
+
+
+
+
+
+
+
+Agradecimiento especial: 
+Sagas de píxeles para hacer esto
+texto simbólico de fuente genial
+pixelsagas.com
+todos mis jugadores de prueba
+la fundación godot
+Pantalla inteligente para hacer
+La gente piensa que Hell Jump es
+un virus
+Wolfyxon por hacer el
+Complemento Godottogether
+cherttov por hacer el
+complemento de lista de tareas pendientes
+mi unidad flash para guardar el
+código fuente
+Cengiz para el complemento admob
+
+
+
+
+
+
+
+
+
+
+
+¡Gracias por jugar!"
+BYARAMCZ,By: AramCZ,,By: AramCZ,Von: AramCZ,Por: AramCZ
+BYIHATETUESDAYS,By: I Hate tuesdays,,By: I Hate tuesdays,Von: Ich hasse Dienstage,Por: Odio los martes
+MAINMENU,Main Menu,Hlavní Menu,Main Menu,Hauptmenü,Menú principal
+ENDTHANKING,"Thank you for playing Hell Jump
+
+If you enjoyed the Hell Jump leave a review on itch io reviews
+or game jolt comments
+or just tag @HellJumpGame on Twitter and tell us
+how you enjoyed the game
+
+Chapter 4 coming soon
+
+And once again thank you for playing
+Hell Jump","Děkujeme, že jste si zahráli Hell Jump
+
+Pokud se vám Hell Jump líbil, napište recenzi na itch.io
+nebo komentář na Game Jolt
+nebo prostě označte @HellJumpGame na Twitteru a dejte nám vědět,
+jak se vám hra líbila
+
+4. kapitola brzy
+
+A ještě jednou děkujeme, že jste si zahráli
+Hell Jump","Thank you for playing Hell Jump
+
+If you enjoyed the Hell Jump leave a review on itch io reviews
+or game jolt comments
+or just tag @HellJumpGame on Twitter and tell us
+how you enjoyed the game
+
+Chapter 4 coming soon
+
+And once again thank you for playing
+Hell Jump","Vielen Dank, dass Sie Hell Jump gespielt haben
+
+Wenn Ihnen der Hell Jump gefallen hat, hinterlassen Sie eine Bewertung auf itch io reviews
+oder Spiel-Ruck-Kommentare
+Oder markiere einfach @HellJumpGame auf Twitter und sag es uns
+wie dir das Spiel gefallen hat
+
+Kapitel 4 kommt bald
+
+Und noch einmal vielen Dank fürs Spielen
+Höllensprung","Gracias por jugar Hell Jump.
+
+Si disfrutaste Hell Jump, deja una reseña en itch io reviews
+o comentarios sobre juegos
+o simplemente etiqueta a @HellJumpGame en Twitter y cuéntanos
+como disfrutaste el juego
+
+El capítulo 4 próximamente
+
+Y una vez más gracias por jugar.
+Salto del infierno"
+STORY,"You are a red cube and an orange 
+cube was making bad stuff. Well
+bad for you the hell
+took you instead because they 
+thought you are the orange one. 
+Your mission: Get out of hell","Jsi červená kostka a jedna oranžová 
+kostka dělala špatné věci. No
+a k tvé smůle si tě peklo
+vzalo místo ní, protože si 
+mysleli, že jsi ta oranžová. 
+Tvůj úkol: Dostat se z pekla","You are a red cube and an orange 
+cube was making bad stuff. Well
+bad for you the hell
+took you instead because they 
+thought you are the orange one. 
+Your mission: Get out of hell","Du bist ein roter und ein oranger Würfel 
+Cube hat schlechte Sachen gemacht. Nun ja
+verdammt schlecht für dich
+nahm dich stattdessen mit, weil sie 
+Ich dachte, du wärst der Orangene. 
+Ihre Mission: Raus aus der Hölle","Eres un cubo rojo y una naranja. 
+El cubo estaba haciendo cosas malas. Bueno
+mal por ti carajo
+te tomó a ti porque ellos 
+Pensé que eres el naranja. 
+Tu misión: salir del infierno"
+HOWTOPLAY,"How to play: You move right by 
+pressing right or D. You move left by
+pressing left or A. You jump by
+pressing space, up or W","Jak hrát: Doprava se pohybuješ 
+stisknutím vpravo nebo D. Doleva se pohybuješ
+stisknutím vlevo nebo klávesy A. Skočíš
+stisknutím mezerníku, nahoru nebo W","How to play: You move right by 
+pressing   or D. You move left by
+pressing   or A. You jump by
+pressing space,   oR W","Spielanleitung: Man bewegt sich direkt vorbei 
+Drücken Sie rechts oder D. Sie bewegen sich nach links
+Drücken Sie links oder A. Sie springen vorbei
+Drücken Sie die Leertaste, oben oder W","Cómo jugar: Te mueves hacia la derecha 
+presionando derecha o D. Te mueves hacia la izquierda
+presionando izquierda o A. Saltas por
+presionando espacio, arriba o W"
+HOWTODASH,"How to play: Dash by using S or
+Down. Dash boosts you a
+bit further. You can dash on the
+ground or midair. Now try","Jak hrát: Dashuj pomocí S nebo
+dolů. Dash ti umožní
+dostat se dál. Můžeš dashnout na
+zemi i ve vzduchu. Teď to zkus","How to play: Dash by using S or
+. Dash boosts you a
+bit further. You can dash on the
+ground or midair. Now try","Spielanleitung: Sprinten Sie mit S oder
+Runter. Dash steigert dich a
+etwas weiter. Sie können weiter rennen
+am Boden oder in der Luft. Versuchen Sie es jetzt","Cómo jugar: Dash usando S o
+Abajo. Dash te impulsa un
+un poco más lejos. Puedes correr sobre el
+suelo o en el aire. Ahora intenta"
+STORY2,"You fell through a fake bridge
+straight into the Deep Hell. The 
+heat is unbearable but you can't 
+even dash anymore. Every part of
+you wants to give up. But you won't
+Your mission: Escape the Deep Hell.","Propadl jsi se pod falešným mostem
+přímo do Hlubokého pekla. 
+Horko je nesnesitelné, ale už ani 
+nemůžeš sprintovat. Každá část
+tvého já chce to vzdát. Ale ty to nevzdáš.
+Tvůj úkol: Uteč z Hlubokého pekla.","You fell through a fake bridge
+straight into the Deep Hell. The 
+heat is unbearable but you can't 
+even dash anymore. Every part of
+you wants to give up. But you won't
+Your mission: Escape the Deep Hell.","Du bist durch eine falsche Brücke gefallen
+direkt in die tiefe Hölle. Die 
+Hitze ist unerträglich, aber das geht nicht 
+sogar noch sprinten. Jeder Teil von
+du willst aufgeben. Aber das wirst du nicht
+Ihre Mission: Entkommen Sie der tiefen Hölle.","Caíste por un puente falso
+Directo al Infierno Profundo. el 
+el calor es insoportable pero no se puede 
+incluso correr más. Cada parte de
+quieres rendirte. Pero no lo harás
+Tu misión: escapar del infierno profundo."
+STORY3,"Finally it's not so hot and you
+have the ability to dash again","Konečně není takové horko
+A máš funkci dash zpět","Finally it's not so hot and you
+have the ability to dash again","Endlich ist es nicht mehr so heiß und du
+die Fähigkeit haben, erneut zu rennen","Finalmente no hace tanto calor y tú
+tener la capacidad de correr de nuevo"
+UPDATE_BUTTON,NEW VERSION AVAILABLE!,NOVÁ VERZE DOSTUPNÁ!,NEW VERSION AVAILABLE!,NEUE VERSION VERFÜGBAR!,¡NUEVA VERSIÓN DISPONIBLE!
+hell_jump_achievement_title,Welcome!,Vítejte!,Welcome!,Willkommen!,¡Bienvenido!
+hell_jump_achievement_desc,Thank You For Playing Hell Jump!,Děkujeme že jste si zahráli Hell Jump,Thank You For Playing Hell Jump!,"Vielen Dank, dass Sie Hell Jump gespielt haben!",¡Gracias por jugar Hell Jump!
+hell_complete_achievement_title,The Easy Thing,Jednoduchá věc,The Easy Thing,Die einfache Sache,Lo fácil
+hell_complete_achievement_desc,Complete Chapter 1 The Hell.,Dokonči kapitolu 1 Peklo,Complete Chapter 1 The Hell.,Schließe Kapitel 1 „Die Hölle“ ab.,Completa el Capítulo 1 El infierno.
+deep_hell_complete_achievement_title,The Hot Area,Ta horká část,The Hot Area,Die heiße Gegend,La zona caliente
+deep_hell_complete_achievement_desc,Complete Chapter 2 The Deep Hell.,Dokonči kapitolu 2 Hluboké peklo,Complete Chapter 2 The Deep Hell.,Schließe Kapitel 2 „Die tiefe Hölle“ ab.,Completa el Capítulo 2 El infierno profundo.
+lost_hell_complete_title,Conquerer Of The Entire Hell,Dobyvatel celého pekla,Conquerer Of The Entire Hell,Eroberer der gesamten Hölle,Conquistador de todo el infierno
+lost_hell_complete_desc,Complete Chapter 3 The Lost Hell.,Dokonči kapitolu 3 Hluboké peklo,Complete Chapter 3 The Lost Hell.,Schließe Kapitel 3 „Die verlorene Hölle“ ab.,Completa el Capítulo 3 El infierno perdido.
+hell_plus_complete_title,The Less Easier Thing,Méně jednoduchá věc,The Less Easier Thing,Die weniger einfache Sache,Lo menos fácil
+hell_plus_complete_desc,Complete all The Hell plus levels.,Dokonči všchny plus levely v pekle,Complete all The Hell plus levels.,Schließe alle „The Hell Plus“-Level ab.,Completa todos los niveles de The Hell plus.
+deep_hell_plus_complete_title,Melting,Tání,Melting,Schmelzen,Fusión
+deep_hell_plus_complete_desc,Complete all The Deep Hell plus levels.,Dokonči všchny plus levely v hlubokém pekle,Complete all The Deep Hell plus levels.,Schließe alle „The Deep Hell Plus“-Level ab.,Completa todos los niveles de The Deep Hell plus.
+jumps50_title,You'll Do a Lot More,Uděláš jich více,You'll Do a Lot More,Sie werden noch viel mehr tun,Harás mucho más
+jumps50_desc,Jump 50 times.,Skoč 50x,Jump 50 times.,Springe 50 Mal.,Salta 50 veces.
+AD_TITLE,Ads,Reklamy,Ads,Anzeigen,Anuncios
+SUPPORT_BUTTON,Watch an ad,Podívejte se na reklamu,Watch an ad,Sehen Sie sich eine Anzeige an,ver un anuncio
+AD_NOT_LOADED,Ad not loaded yet!,Reklama se nenačetla!,Ad not loaded yet!,Anzeige noch nicht geladen!,¡Anuncio no cargado aún!
+jumps500_title,Jumper,Skákač,Jumper,Jumper,Saltador
+jumps500_desc,Jump 500 times.,Skoč 500x,Jump 500 times.,Springe 500 Mal.,Salta 500 veces.
+Jumps_1000_title,Jump King,Král skákání,Jump King,Sprungkönig,Rey del salto
+jumps_1000_desc,Jump 1 000 times.,Skoč 1 000x,Jump 1 000 times.,Springe 1.000 Mal.,Salta 1.000 veces.
+Jumps_10000_title,JUMP GOD!!!,BŮH SKÁKÁNÍ!,JUMP GOD!!!,SPRING GOTT!!!,¡¡¡SALTA DIOS!!!
+Jumps_10000_desc,Jump 10 000 times.,Skoč 10 000x,Jump 10 000 times.,Springe 10.000 Mal.,Salta 10 000 veces.
+deaths_50_title,N00B,N00BÁK,N00B,N00B,N00B
+deaths_50_desc,Die 50 times.,Umři 50x,Die 50 times.,Stirb 50 Mal.,Muere 50 veces.
+deaths_500_title,This Is A Hell What Did You Expect?,Toto je peklo co jste čekali?,This Is A Hell What Did You Expect?,Das ist die Hölle. Was hast du erwartet?,Esto es un infierno ¿Qué esperabas?
+deaths_500_desc,Die 500 times.,Umři 500x.,Die 500 times.,Stirb 500 Mal.,Muere 500 veces.
+deaths_1000_title,Dier,Umíráč,Dier,Dier,Dier
+deaths_1000_desc,Die 1 000 times.,Umři 1 000x,Die 1 000 times.,Stirb 1.000 Mal.,Muere 1.000 veces.
+boss_complete_title,True Gamer,Pravej Gejmr,True Gamer,Wahrer Gamer,verdadero jugador
+boss_complete_desc,Defeat ShadowGuy in Level 35.,Pokoř ShadowGuy v levelu 35,Defeat ShadowGuy in Level 35.,Besiege ShadowGuy in Level 35.,Derrota a ShadowGuy en el nivel 35.
+easteregg_level12,you went the wrong path idiot,Šel jsi špatnou cestou idiote,you went the wrong path idiot,"Du bist den falschen Weg gegangen, Idiot",fuiste por el camino equivocado idiota
+wrong_path_title,Wrong Path,Špatná cesta,Wrong Path,Falscher Weg,Camino equivocado
+wrong_path_desc,A secret is required to unlock this achievement,Tajemství je požadováno aby jsi tento úspěch odemknul,A secret is required to unlock this achievement,"Um diesen Erfolg freizuschalten, ist ein Geheimnis erforderlich",Se requiere un secreto para desbloquear este logro.
+CODES,"Type codes to get bonus levels
+(All letters must be uppercase and with no spaces)","Zadejte kódy a získejte bonusové úrovně
+(Všechna písmena musí být velká a bez mezer)","Type codes to get bonus levels
+(All letters must be uppercase and with no spaces)","Geben Sie Codes ein, um Bonuslevel zu erhalten
+(Alle Buchstaben müssen in Großbuchstaben geschrieben sein und dürfen keine Leerzeichen enthalten.)","Escriba códigos para obtener niveles de bonificación
+(Todas las letras deben estar en mayúsculas y sin espacios)"
+SUBMIT_BUTTON,Submit,Potvrdit,Submit,Einreichen,Entregar
+INCORRECT,Incorrect,Špatně,Incorrect,Falsch,Incorrecto
+MORECODES,How to get codes?,Jak dostat kódy?,How to get codes?,Wie bekomme ich Codes?,¿Cómo obtener códigos?
+TUTORIALHOWTOGETMORELEVELS,"Follow these accounts, where bonus codes
+ are occasionally posted:
+
+Twitter/X: @PurplController, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Keep an eye out for new posts. You never 
+know when a new code will appear.","Sledujte tyto účty, kde se
+občas objevují bonusové kódy:
+
+Twitter/X: @PurplController, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Sledujte nové příspěvky. Nikdy 
+nevíte, kdy se objeví nový kód.","Follow these accounts, where bonus codes
+ are occasionally posted:
+
+Twitter/X: @PurplController, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Keep an eye out for new posts. You never 
+know when a new code will appear.","Folgen Sie diesen Konten, wo Bonuscodes vorhanden sind
+ werden gelegentlich gepostet:
+
+Twitter/X: @PurplController, @HellJumpGame
+Bluesky: @AramCZdev.github.io
+Halten Sie Ausschau nach neuen Beiträgen. Du nie 
+wissen, wann ein neuer Code erscheint.","Siga estas cuentas, donde los códigos de bonificación
+ ocasionalmente se publican:
+
+Twitter/X: @PurplController, @HellJumpGame
+Cielo azul: @AramCZdev.github.io
+Esté atento a nuevas publicaciones. tu nunca 
+saber cuándo aparecerá un nuevo código."
+JUMPSTART,Jump to start,Skočte,Jump to start,Zum Anfang springen,Saltar para empezar
+STEPHERE,Step here to win,Stoupněte sem pro výhru,Step here to win,"Treten Sie hierher, um zu gewinnen",Paso aquí para ganar
+UNLOCKEDACH,Achievement Unlocked!,Úspěch Odemčen!,Achievement Unlocked!,Erfolg freigeschaltet!,¡Logro desbloqueado!
+TYPE_HERE,Type Here,Napsat sem,Type Here,Geben Sie hier ein,Escriba aquí
+LOADING_TEXT,Loading…,Načítání,Loading…,Laden…,Cargando…
+DEV_SETTINGS,Developer settings,Vývojářské nastavení,Developer settings,Entwicklereinstellungen,Configuración de desarrollador
+IMPROVE_PHYSICS,Improved physics (experimental),Vylepšená fyzika (Experimentální),Improved physics (experimental),Verbesserte Physik (experimentell),Física mejorada (experimental)
+NO_DEATH,No death run,Kolo bez umření,No death run,Kein Todeslauf,Sin carrera de la muerte
+NO_DEATH_DESC,"This challenge is only for the
+real gamers. You complete a
+chapter without dying once","Tato výzva je pouze pro
+Pravý hráče. Dokonči ka-
+Pitolu bez umření.","This challenge is only for the
+real gamers. You complete a
+chapter without dying once","Diese Herausforderung ist nur für die
+echte Gamer. Du vervollständigst a
+Kapitel, ohne einmal zu sterben","Este desafío es sólo para el
+jugadores reales. Completas un
+capitulo sin morir una vez"
+START,Start,Start,Start,Start,Comenzar
+DONOT,Do not,Ne,Do not,Nicht,No
+SIZE_WINDOW,Window size,Velikost okna,Window size,Fenstergröße,Tamaño de ventana
+STATS_BUTTON,Statistics,Statistiky,Statistics,Statistiken,Estadística
+MORE_BUTTON,More,Více,More,Mehr,Más
+TOTAL_JUMPS,Total jumps: ,Celkový skoky:,Total jumps: ,Gesamtsprünge:,Saltos totales:
+TOTAL_DEATHS,Total deaths: ,Celkový smrti:,Total deaths: ,Gesamtzahl der Todesfälle:,Muertes totales:
+TOTAL_DASHES,Total dashes: ,Celkový dashing:,Total dashes: ,Gesamtzahl der Striche:,Guiones totales:
+TOTAL_COMPLETES,Total level completes: ,Celkový dokončení levelů: ,Total completes: ,Gesamtlevel abgeschlossen:,Nivel total completado:
+TRANSFER,"Transfer jumps/deaths 
+from old versions","Přenést skoky/smrti ze
+Starších verzí","Transfer jumps/deaths 
+from old versions","Übertragen Sie Sprünge/Todesfälle 
+aus alten Versionen","Transferir saltos/muertes 
+de versiones antiguas"
+OG_title,OG player,Vracející se hrač,OG player,OG-Spieler,jugador original
+OG_desc,Transfer your stats from an older version,Převeď statistiky ze starší verze,Transfer your stats from an older version,Übertragen Sie Ihre Statistiken von einer älteren Version,Transfiere tus estadísticas desde una versión anterior
+ERR,Error,Chyba,Error,Fehler,Error
+ENABLE_DEV,Enable developer settings,Zapnout vývojářské nastavení,Enable developer settings,Entwicklereinstellungen aktivieren,Habilitar la configuración del desarrollador
+HOWTOPLAYROCK,Use arrow keys to play,Použij šipky aby jsi hrál,Use arrow keys to play,Benutzen Sie zum Spielen die Pfeiltasten,Usa las teclas de flecha para jugar.

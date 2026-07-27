@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://disu8lv2d7k2p"]
+
+[ext_resource type="Script" uid="uid://bsfvrriugsotk" path="res://Scripts/Levels/bonus/rock.gd" id="1_pv6w6"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="2_hant0"]
+[ext_resource type="AudioStream" uid="uid://baa6c4d1set05" path="res://Music/Hell Jump Main menu music (unused).wav" id="3_k2bxw"]
+[ext_resource type="Texture2D" uid="uid://nnhvddc80ao2" path="res://Photos/Mobile Controls/Left.png" id="3_kvunf"]
+[ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="4_k2bxw"]
+[ext_resource type="Texture2D" uid="uid://ck4egopbtgsks" path="res://Photos/Mobile Controls/Jump.png" id="4_ng07w"]
+[ext_resource type="Texture2D" uid="uid://h8n721ft2k85" path="res://Photos/Mobile Controls/Right.png" id="5_ca10t"]
+
+[node name="Rock" type="Node2D" unique_id=1829133333]
+script = ExtResource("1_pv6w6")
+
+[node name="The hell BG" type="ColorRect" parent="." unique_id=1635005946]
+light_mask = 513
+visibility_layer = 512
+offset_left = -1490.0
+offset_top = -892.0
+offset_right = 2949.0
+offset_bottom = 1395.0
+color = Color(1, 0.788235, 0.054902, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=787371126]
+offset_left = -1474.0
+offset_top = 454.0
+offset_right = 2945.0
+offset_bottom = 1390.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="ColorRect" parent="." unique_id=775634759]
+z_index = 2
+offset_left = 541.0
+offset_top = 395.0
+offset_right = 601.0
+offset_bottom = 454.0
+color = Color(1, 0, 0.016666412, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D" unique_id=290073246]
+z_index = 1
+layout_mode = 0
+offset_left = 51.0
+offset_top = 30.0
+offset_right = 66.30325
+offset_bottom = 45.303253
+rotation = -0.69115037
+color = Color(0.48, 0.48, 0.48, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Sprite2D" unique_id=25399140]
+layout_mode = 0
+offset_left = 61.835094
+offset_top = 39.481876
+offset_right = 72.42912
+offset_bottom = 59.415165
+rotation = -0.69115037
+color = Color(0.77, 0.77, 0.77, 1)
+
+[node name="HitZone" type="Marker2D" parent="." unique_id=832743194]
+position = Vector2(581, 561)
+
+[node name="ColorRect" type="ColorRect" parent="HitZone" unique_id=465737934]
+offset_left = -2074.0
+offset_right = 2393.0
+offset_bottom = 11.0
+color = Color(1, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=667122415]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1313623126]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = -72.0
+offset_right = 621.0
+offset_bottom = -13.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_hant0")
+theme_override_font_sizes/font_size = 40
+text = "HOWTOPLAYROCK"
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=1847949620]
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 309.0
+offset_bottom = 90.0
+theme_override_fonts/font = ExtResource("2_hant0")
+theme_override_font_sizes/font_size = 34
+
+[node name="Left" type="Control" parent="CanvasLayer" unique_id=107351508]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -648.0
+offset_right = 40.0
+offset_bottom = -608.0
+grow_vertical = 0
+
+[node name="Left" type="TouchScreenButton" parent="CanvasLayer/Left" unique_id=523821969]
+z_index = 10
+position = Vector2(45, 485)
+scale = Vector2(0.5714286, 0.5714286)
+texture_normal = ExtResource("3_kvunf")
+action = "ui_left"
+visibility_mode = 1
+
+[node name="Dash" type="TouchScreenButton" parent="CanvasLayer/Left" unique_id=1116637597]
+z_index = 10
+position = Vector2(316.0001, 613)
+rotation = -3.1415925
+scale = Vector2(0.5714286, 0.5714286)
+texture_normal = ExtResource("4_ng07w")
+action = "ui_down"
+visibility_mode = 1
+
+[node name="Right" type="Control" parent="CanvasLayer" unique_id=1716398718]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1152.0
+offset_top = -648.0
+offset_right = -1112.0
+offset_bottom = -608.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Right" type="TouchScreenButton" parent="CanvasLayer/Right" unique_id=822829241]
+z_index = 10
+position = Vector2(986.00006, 485.00003)
+scale = Vector2(0.5714286, 0.5714286)
+texture_normal = ExtResource("5_ca10t")
+action = "ui_right"
+visibility_mode = 1
+
+[node name="Jump" type="TouchScreenButton" parent="CanvasLayer/Right" unique_id=1817658336]
+z_index = 10
+position = Vector2(844, 485)
+scale = Vector2(0.5714286, 0.5714286)
+texture_normal = ExtResource("4_ng07w")
+action = "ui_up"
+visibility_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=904742889]
+stream = ExtResource("3_k2bxw")
+autoplay = true
+bus = &"Music"
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="." unique_id=1979082785]
+position = Vector2(570, 428)
+stream = ExtResource("4_k2bxw")
+bus = &"SFX"
+playback_type = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1898999140]
+position = Vector2(576, 324)
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

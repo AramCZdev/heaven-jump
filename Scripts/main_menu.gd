@@ -18,6 +18,7 @@ const BASE_SIZE := Vector2i(1152, 648)
 @onready var language_dropdown: OptionButton = $"Settings/Language/Language settings"
 @onready var resolution_dropdown: OptionButton = $"Settings/Video/Resolution"
 @onready var improved_physics_button: CheckButton = $Settings2/Developer/ImprovedPhysics
+@onready var dev_settings: CheckButton = $"Settings2/Developer/Enable dev settings"
 
 @onready var delete_warning: Panel = $"Settings2/Danger Zone/Warning"
 @onready var video: Node2D = $Settings/Video
@@ -34,6 +35,7 @@ var _loading := false
 
 
 func _ready() -> void:
+
 	print("Window size:", DisplayServer.window_get_size())
 	print("Window mode:", DisplayServer.window_get_mode())
 	print("Content scale mode:", get_window().content_scale_mode)
@@ -54,6 +56,7 @@ func _ready() -> void:
 	
 	$Settings2.visible = false
 	
+	dev_settings.button_pressed = SettingsManager.get_setting("dev_settings")
 	improved_physics_button.button_pressed = SettingsManager.is_improved_physics()
 	
 	var saved_index_language = SettingsManager.get_setting("language", 0)
@@ -116,6 +119,13 @@ func _ready() -> void:
 func _on_options_button_pressed() -> void:
 	$Stats.visible = false
 	$More.visible = false
+	if SettingsManager.get_setting("dev_settings"):
+		$Settings2/Developer/ImprovedPhysics.visible = true
+		$"Settings2/Developer/Unlock All".visible = true
+	else:
+		$Settings2/Developer/ImprovedPhysics.visible = false
+		$"Settings2/Developer/Unlock All".visible = false
+
 	if OS.get_name() == "Android" or OS.get_name() == "iOS":
 		$Settings/Video.visible = false
 	settings_menu.visible = true
@@ -235,7 +245,7 @@ func _on_ok_site_pressed() -> void:
 
 
 func _on_github_pressed() -> void:
-	OS.shell_open("https://github.com/PurpleController")
+	OS.shell_open("https://github.com/PurpleController/hell-jump")
 
 
 func _on_update_pressed() -> void:
@@ -379,10 +389,12 @@ func _on_language_settings_item_selected(index: int) -> void:
 	match index:
 		0: TranslationServer.set_locale("en_US")
 		1: TranslationServer.set_locale("en_GB")
+		2: TranslationServer.set_locale("es_ES")
 		3: TranslationServer.set_locale("cs_CZ")
+		4: TranslationServer.set_locale("de_DE")
 
-func _on_improved_physics_button_toggled(button_pressed: bool) -> void:
-	SettingsManager.set_setting("improved_physics", button_pressed)
+func _on_improved_physics_button_toggled(toggled_on: bool) -> void:
+	SettingsManager.set_setting("improved_physics", toggled_on)
 
 
 func _on_page_1_pressed() -> void:
@@ -441,3 +453,19 @@ func _on_transfer_pressed() -> void:
 
 func _on_no_reset_pressed() -> void:
 	delete_warning.visible = false
+
+func _on_unlock_all_pressed() -> void:
+	SaveManager.unlock_level("the_hell", 35)
+	SaveManager.unlock_chapter("the_deep_hell, 1")
+	SaveManager.unlock_chapter("the_deep_hell, 2")
+	SaveManager.unlock_chapter("the_deep_hell, 3")
+	SaveManager.unlock_secret("the_hell", "5+")
+	SaveManager.unlock_secret("the_hell", "11+")
+	SaveManager.unlock_secret("the_hell", "8+")
+	SaveManager.unlock_secret("the_hell", "22+")
+	SaveManager.unlock_secret("the_hell", "27+")
+	SaveManager.unlock_secret("the_hell", "24+")
+
+
+func _on_enable_dev_settings_toggled(toggled_on: bool) -> void:
+	SettingsManager.set_setting("dev_settings", toggled_on)

@@ -5,7 +5,11 @@ var codes = {
 	"THISSUCKS": "res://Scenes/Bonus/Level2.tscn",
 	"FALL": "res://Scenes/Bonus/Sky.tscn",
 	"MONEYHUNGRY": "res://Scenes/Bonus/$.tscn",
-	"HELLJUMP3D": "res://Scenes/Bonus/Level3D.tscn"
+	"HELLJUMP3D": "res://Scenes/Bonus/Level3D.tscn",
+	"ARAMCZISTHEDEV": "res://Scenes/Bonus/devroom.tscn",
+	"CUBEREVENGE": "res://Scenes/Bonus/cuberevenge.tscn",
+	"ROCKMINIGAME": "res://Scenes/Bonus/rock.tscn",
+	"ANOTHER3D": "res://Scenes/Bonus/Level3D2.tscn",
 }
 
 func _ready() -> void:
@@ -34,7 +38,26 @@ func _ready() -> void:
 		$"Control/3D".visible = true
 	else:
 		$"Control/3D".visible = false
-
+	if SaveManager.is_secret_unlocked("the_hell", "dev_lv"):
+		$"Control/dev".visible = true
+	else:
+		$"Control/dev".visible = false
+	if SaveManager.is_secret_unlocked("the_hell", "cuberevenge"):
+		$"Control/revenge".visible = true
+	else:
+		$"Control/revenge".visible = false
+	if SaveManager.is_secret_unlocked("the_hell", "rock"):
+		$"Control/rock".visible = true
+	else:
+		$"Control/rock".visible = false
+	if SaveManager.is_secret_unlocked("the_hell", "3D2"):
+		$"Control/3D2".visible = true
+	else:
+		$"Control/3D2".visible = false
+	if SaveManager.is_secret_unlocked("the_hell", "Beta8+"):
+		$"Control/B8+".visible = true
+	else:
+		$"Control/B8+".visible = false
 
 
 func _on_submit_button_pressed() -> void:
@@ -82,3 +105,23 @@ func _on_money_pressed() -> void:
 
 func _on_threed_pressed() -> void:
 	LoadingManager.goto("res://Scenes/Bonus/Level3D.tscn")
+
+
+func _on_dev_pressed() -> void:
+	LoadingManager.goto("res://Scenes/Bonus/devroom.tscn")
+
+
+func _on_revenge_pressed() -> void:
+	LoadingManager.goto("res://Scenes/Bonus/cuberevenge.tscn")
+
+
+func _on_rock_pressed() -> void:
+	LoadingManager.goto("res://Scenes/Bonus/rock.tscn")
+
+
+func _on_3d_2_pressed() -> void:
+	LoadingManager.goto("res://Scenes/Bonus/Level3D2.tscn")
+
+
+func _on_b_8_pressed() -> void:
+	LoadingManager.goto("res://Scenes/Bonus/Level8+.tscn")

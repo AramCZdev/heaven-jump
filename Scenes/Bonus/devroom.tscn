@@ -1,0 +1,478 @@
+[gd_scene format=3 uid="uid://k8uhm4440wud"]
+
+[ext_resource type="Script" uid="uid://gg0cocv4njww" path="res://Scripts/red_cube_deep_hell2.gd" id="1_h2lpm"]
+[ext_resource type="Script" uid="uid://dfqkh7sw0lx06" path="res://Scripts/Levels/bonus/devroom.gd" id="1_o830c"]
+[ext_resource type="AudioStream" uid="uid://ddf1h7qgejd5h" path="res://SFX/jump.wav" id="2_c55lk"]
+[ext_resource type="AudioStream" uid="uid://dwg7anwuclwvf" path="res://SFX/hitHurt.wav" id="3_o830c"]
+[ext_resource type="AudioStream" uid="uid://ce26ugl2ji5j4" path="res://SFX/Dash.wav" id="4_gfdec"]
+[ext_resource type="AudioStream" uid="uid://baa6c4d1set05" path="res://Music/Hell Jump Main menu music (unused).wav" id="6_2ucj3"]
+[ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="6_rvnmq"]
+[ext_resource type="Texture2D" uid="uid://cai1bracf8oul" path="res://Photos/Nav/Resume.png" id="7_8own0"]
+[ext_resource type="Texture2D" uid="uid://cs0hnoevs3rw2" path="res://Photos/Nav/Retry.png" id="8_k5qps"]
+[ext_resource type="Texture2D" uid="uid://6356cmkp6307" path="res://Photos/Nav/Menu.png" id="9_cqtyo"]
+[ext_resource type="Texture2D" uid="uid://cyj566iy84t2h" path="res://Photos/Nav/Next.png" id="10_6dep6"]
+[ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="11_c55lk"]
+[ext_resource type="Script" uid="uid://dtw6niy1cfg1x" path="res://Scripts/JumpOrb.gd" id="13_2ucj3"]
+[ext_resource type="Texture2D" uid="uid://bmax78vj7fqlf" path="res://Photos/misc/Orb.png" id="14_rvnmq"]
+[ext_resource type="PackedScene" uid="uid://qxhmxgh8x6jx" path="res://Scenes/touch_controls.tscn" id="15_rvnmq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qy7l7"]
+size = Vector2(60, 59.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmmof"]
+size = Vector2(13924.5, 51.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ka8mt"]
+size = Vector2(10556, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8own0"]
+size = Vector2(659, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o830c"]
+size = Vector2(30, 45)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c55lk"]
+size = Vector2(91, 45)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k5qps"]
+radius = 29.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ucj3"]
+size = Vector2(66, 1835)
+
+[node name="Devroom" type="Node2D" unique_id=1177531450]
+script = ExtResource("1_o830c")
+
+[node name="Red cube" type="CharacterBody2D" parent="." unique_id=1638981060]
+z_index = 10
+position = Vector2(56, -165)
+safe_margin = 0.001
+script = ExtResource("1_h2lpm")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="Red cube" unique_id=604555088]
+z_index = 10
+position = Vector2(131, 608.625)
+shape = SubResource("RectangleShape2D_qy7l7")
+
+[node name="SfxJump" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1309956111]
+position = Vector2(379, 190)
+stream = ExtResource("2_c55lk")
+bus = &"SFX"
+
+[node name="SfxHurt" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1516542755]
+position = Vector2(3, 0)
+stream = ExtResource("3_o830c")
+bus = &"SFX"
+
+[node name="SfxDash" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1333333182]
+stream = ExtResource("4_gfdec")
+bus = &"SFX"
+
+[node name="Node2D" type="Node2D" parent="Red cube" unique_id=1800293579]
+position = Vector2(131, 610)
+
+[node name="Sprite2D" type="ColorRect" parent="Red cube/Node2D" unique_id=1382137742]
+z_index = 2
+offset_left = -30.0
+offset_top = -31.0
+offset_right = 30.0
+offset_bottom = 28.0
+color = Color(1, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Red cube" unique_id=2076445641]
+position = Vector2(131, 610)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Red cube" unique_id=1487139752]
+stream = ExtResource("6_2ucj3")
+autoplay = true
+max_distance = 9.223372e+18
+bus = &"Music"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=251591689]
+
+[node name="Game menu" type="Panel" parent="CanvasLayer" unique_id=65259496]
+z_index = 30
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = -88.0
+offset_right = 206.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Game menu title" type="Label" parent="CanvasLayer/Game menu" unique_id=266401297]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("6_rvnmq")
+theme_override_font_sizes/font_size = 21
+text = "PAUSE_MENU"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Resume" type="Button" parent="CanvasLayer/Game menu" unique_id=969023374]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7.0
+offset_top = -55.0
+offset_right = 133.03847
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 53
+icon = ExtResource("7_8own0")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="CanvasLayer/Game menu" unique_id=384884717]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+icon = ExtResource("8_k5qps")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="CanvasLayer/Game menu" unique_id=2072079239]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+icon = ExtResource("9_cqtyo")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Win Menu" type="Panel" parent="CanvasLayer" unique_id=955065776]
+z_index = 1
+offset_left = 374.0
+offset_top = 253.0
+offset_right = 784.0
+offset_bottom = 429.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Win Title" type="Label" parent="CanvasLayer/Win Menu" unique_id=88797087]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_right = 76.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("6_rvnmq")
+theme_override_font_sizes/font_size = 21
+text = "WIN_MENU"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="CanvasLayer/Win Menu" unique_id=2053972340]
+z_index = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 33.0
+offset_right = 134.03847
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 53
+icon = ExtResource("9_cqtyo")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="CanvasLayer/Win Menu" unique_id=929724666]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -55.0
+offset_right = 268.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 61
+icon = ExtResource("8_k5qps")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Next" type="Button" parent="CanvasLayer/Win Menu" unique_id=389736399]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = -55.0
+offset_right = 402.03845
+offset_bottom = 58.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+icon = ExtResource("10_6dep6")
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Kill zone" type="Area2D" parent="." unique_id=1355575859]
+position = Vector2(-306, 638)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kill zone" unique_id=23102131]
+position = Vector2(928.25, 1609)
+shape = SubResource("RectangleShape2D_rmmof")
+
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=521430668]
+position = Vector2(87, 263)
+
+[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=1123009175]
+offset_left = 10592.118
+offset_top = 213.00046
+offset_right = 10642.118
+offset_bottom = 13716.816
+rotation = 1.5707964
+color = Color(0, 0, 0, 1)
+
+[node name="Platform 1" type="CollisionShape2D" parent="Platform1" unique_id=145933028]
+position = Vector2(5314, 238)
+shape = SubResource("RectangleShape2D_ka8mt")
+
+[node name="Platform 2" type="CollisionShape2D" parent="Platform1" unique_id=1918075555]
+position = Vector2(1547.5, 205.5)
+shape = SubResource("RectangleShape2D_8own0")
+
+[node name="Platform 3" type="CollisionShape2D" parent="Platform1" unique_id=776426353]
+position = Vector2(2500, -94)
+shape = SubResource("RectangleShape2D_8own0")
+
+[node name="Spike" type="Area2D" parent="." unique_id=221682493]
+z_index = 5
+position = Vector2(-57, 21)
+
+[node name="CollisionSpike" type="CollisionShape2D" parent="Spike" unique_id=299521101]
+position = Vector2(655, 431.5)
+shape = SubResource("RectangleShape2D_o830c")
+
+[node name="Label" type="Label" parent="Spike" unique_id=1396774494]
+offset_left = 669.848
+offset_top = 409.04575
+offset_right = 714.80225
+offset_bottom = 438.89377
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spike2" type="Area2D" parent="." unique_id=705710796]
+z_index = 5
+position = Vector2(250, 21)
+
+[node name="CollisionSpike" type="CollisionShape2D" parent="Spike2" unique_id=75219620]
+position = Vector2(685.5, 431.5)
+shape = SubResource("RectangleShape2D_c55lk")
+
+[node name="Label" type="Label" parent="Spike2" unique_id=81991943]
+offset_left = 669.848
+offset_top = 409.04575
+offset_right = 714.80225
+offset_bottom = 438.89377
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Spike2" unique_id=1983742384]
+offset_left = 699.848
+offset_top = 409.04578
+offset_right = 744.80225
+offset_bottom = 438.8938
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Spike2" unique_id=10208987]
+offset_left = 730.848
+offset_top = 409.04578
+offset_right = 775.80225
+offset_bottom = 438.8938
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="JumpOrb" type="Area2D" parent="." unique_id=1533227699]
+position = Vector2(1527, -195)
+script = ExtResource("13_2ucj3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOrb" unique_id=840716703]
+z_index = 1
+position = Vector2(573, 490)
+shape = SubResource("CircleShape2D_k5qps")
+
+[node name="TextureRect" type="TextureRect" parent="JumpOrb" unique_id=1973220946]
+offset_left = 544.0
+offset_top = 461.0
+offset_right = 602.0
+offset_bottom = 519.0
+texture = ExtResource("14_rvnmq")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Spike3" type="Area2D" parent="." unique_id=177755218]
+z_index = 5
+position = Vector2(1866, -342)
+
+[node name="CollisionSpike" type="CollisionShape2D" parent="Spike3" unique_id=2763488]
+position = Vector2(685.5, 431.5)
+shape = SubResource("RectangleShape2D_c55lk")
+
+[node name="Label" type="Label" parent="Spike3" unique_id=1461298287]
+offset_left = 669.848
+offset_top = 409.04575
+offset_right = 714.80225
+offset_bottom = 438.89377
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Spike3" unique_id=1818644258]
+offset_left = 699.848
+offset_top = 409.04578
+offset_right = 744.80225
+offset_bottom = 438.8938
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Spike3" unique_id=706060903]
+offset_left = 730.848
+offset_top = 409.04578
+offset_right = 775.80225
+offset_bottom = 438.8938
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="FinishLine" type="Area2D" parent="." unique_id=1328388754]
+z_index = 7
+position = Vector2(2506, -184)
+
+[node name="FinishLineCollision" type="CollisionShape2D" parent="FinishLine" unique_id=91530788]
+position = Vector2(991, -269.5)
+shape = SubResource("RectangleShape2D_2ucj3")
+
+[node name="Spike4" type="Area2D" parent="." unique_id=820746640]
+z_index = 5
+position = Vector2(1913, 21)
+
+[node name="CollisionSpike" type="CollisionShape2D" parent="Spike4" unique_id=754600533]
+position = Vector2(685.5, 431.5)
+shape = SubResource("RectangleShape2D_c55lk")
+
+[node name="Label" type="Label" parent="Spike4" unique_id=131134544]
+offset_left = 669.848
+offset_top = 409.04575
+offset_right = 714.80225
+offset_bottom = 438.89377
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Spike4" unique_id=1335634126]
+offset_left = 699.848
+offset_top = 409.04578
+offset_right = 744.80225
+offset_bottom = 438.8938
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Spike4" unique_id=358374631]
+offset_left = 730.848
+offset_top = 409.04578
+offset_right = 775.80225
+offset_bottom = 438.8938
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_c55lk")
+theme_override_font_sizes/font_size = 15
+text = "ERR"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="." unique_id=1140903281]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchControls" parent="Control" unique_id=3811519 instance=ExtResource("15_rvnmq")]
+
+[connection signal="pressed" from="CanvasLayer/Game menu/Resume" to="Red cube" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Game menu/Restart" to="Red cube" method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/Game menu/Quit" to="Red cube" method="_on_quit_pressed"]
+[connection signal="body_entered" from="Kill zone" to="Red cube" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="Spike" to="Red cube" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="Spike2" to="Red cube" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="FinishLine" to="." method="_on_finish_line_body_entered"]

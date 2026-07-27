@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bbg1w85kaqrqq" path="res://Scripts/bonus_levels.gd" id="1_6gr4j"]
 [ext_resource type="FontFile" uid="uid://ndkar43f25gy" path="res://Symtext.ttf" id="1_y66nr"]
 [ext_resource type="FontFile" uid="uid://0s13had4rja8" path="res://misc/Symtext.ttf" id="3_6gr4j"]
+[ext_resource type="Texture2D" uid="uid://bwl44a7v8pwrf" path="res://Photos/Unused/Spike.png" id="3_08fgg"]
 [ext_resource type="Texture2D" uid="uid://dfqm3u0pfusg0" path="res://Photos/Nav/Back.png" id="4_a35lr"]
 
 [sub_resource type="Theme" id="Theme_y66nr"]
@@ -137,6 +138,102 @@ theme_override_fonts/font = ExtResource("1_y66nr")
 theme_override_font_sizes/font_size = 40
 text = "3D"
 
+[node name="dev" type="Button" parent="Control" unique_id=1843321181]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -281.0
+offset_top = 213.0
+offset_right = -189.48
+offset_bottom = 304.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 36
+text = "DEV"
+
+[node name="revenge" type="Button" parent="Control" unique_id=1228758058]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -166.0
+offset_top = 213.0
+offset_right = -74.48
+offset_bottom = 304.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 36
+icon = ExtResource("3_08fgg")
+expand_icon = true
+
+[node name="rock" type="Button" parent="Control" unique_id=241083678]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = -50.0
+offset_top = 213.0
+offset_right = 41.52
+offset_bottom = 304.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 33
+
+[node name="ColorRect" type="ColorRect" parent="Control/rock" unique_id=441974091]
+z_index = 1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 25.751556
+offset_right = 42.261795
+offset_bottom = 63.01335
+rotation = -0.69115037
+mouse_filter = 1
+color = Color(0.48, 0.48, 0.48, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control/rock" unique_id=1634581643]
+layout_mode = 0
+offset_left = 32.327915
+offset_top = 48.307564
+offset_right = 56.15697
+offset_bottom = 100.72003
+rotation = -0.69115037
+mouse_filter = 1
+color = Color(0.77, 0.77, 0.77, 1)
+
+[node name="3D2" type="Button" parent="Control" unique_id=686523920]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 69.0
+offset_top = 213.0
+offset_right = 160.52
+offset_bottom = 304.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 36
+text = "3D2"
+
+[node name="B8+" type="Button" parent="Control" unique_id=125060389]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.012
+anchor_bottom = 0.012
+offset_left = 190.0
+offset_top = 213.0
+offset_right = 281.52
+offset_bottom = 304.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_y66nr")
+theme_override_font_sizes/font_size = 40
+text = "B8+"
+
 [node name="Code" type="Label" parent="." unique_id=1817979312]
 layout_mode = 1
 anchors_preset = 7
@@ -230,6 +327,7 @@ theme_override_font_sizes/font_size = 20
 text = "MORECODES"
 
 [node name="More2" type="Panel" parent="." unique_id=706948000]
+visible = false
 z_index = 7
 layout_mode = 1
 anchors_preset = 8
@@ -310,6 +408,11 @@ expand_icon = true
 [connection signal="pressed" from="Control/sky" to="." method="_on_sky_pressed"]
 [connection signal="pressed" from="Control/$" to="." method="_on_money_pressed"]
 [connection signal="pressed" from="Control/3D" to="." method="_on_threed_pressed"]
+[connection signal="pressed" from="Control/dev" to="." method="_on_dev_pressed"]
+[connection signal="pressed" from="Control/revenge" to="." method="_on_revenge_pressed"]
+[connection signal="pressed" from="Control/rock" to="." method="_on_rock_pressed"]
+[connection signal="pressed" from="Control/3D2" to="." method="_on_3d_2_pressed"]
+[connection signal="pressed" from="Control/B8+" to="." method="_on_b_8_pressed"]
 [connection signal="pressed" from="Code/Submit Button" to="." method="_on_submit_button_pressed"]
 [connection signal="pressed" from="More" to="." method="_on_more_pressed"]
 [connection signal="pressed" from="More2/ok" to="." method="_on_ok_pressed"]

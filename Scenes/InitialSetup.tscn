@@ -122,7 +122,6 @@ theme_override_font_sizes/font_size = 34
 text = "SKIP_SETUP_BUTTON"
 
 [node name="Step2" type="Control" parent="." unique_id=738418245]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -259,10 +258,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -194.5
-offset_top = -98.0
-offset_right = 194.5
-offset_bottom = -11.0
+offset_left = -233.5
+offset_top = -94.0
+offset_right = 233.5
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("3_smpi0")
@@ -299,78 +298,18 @@ theme = SubResource("Theme_ldk8y")
 theme_override_fonts/font = ExtResource("3_smpi0")
 theme_override_font_sizes/font_size = 20
 selected = 0
-item_count = 4
+item_count = 5
 popup/item_0/text = "English (US)"
 popup/item_0/id = 0
 popup/item_1/text = "English (UK)"
 popup/item_1/id = 1
 popup/item_2/text = "Español"
 popup/item_2/id = 2
-popup/item_2/disabled = true
 popup/item_3/text = "Čeština"
 popup/item_3/id = 3
+popup/item_4/text = "Deutsch"
+popup/item_4/id = 4
 metadata/_edit_use_anchors_ = true
-
-[node name="Step4" type="Control" parent="." unique_id=1532032364]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="Step4" unique_id=565368446]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -524.0
-offset_top = 12.0
-offset_right = 527.0
-offset_bottom = 262.0
-grow_horizontal = 2
-theme_override_fonts/font = ExtResource("3_smpi0")
-theme_override_font_sizes/font_size = 50
-text = "STEP3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Start lv 1" type="Button" parent="Step4" unique_id=825886304]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -257.875
-offset_top = 47.5
-offset_right = 257.875
-offset_bottom = 202.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_smpi0")
-theme_override_font_sizes/font_size = 45
-text = "LV1_START"
-
-[node name="unlock all" type="Button" parent="Step4" unique_id=941462433]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -257.875
-offset_top = 207.0
-offset_right = 257.875
-offset_bottom = 318.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.88, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0.49426448, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.49411765, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_smpi0")
-theme_override_font_sizes/font_size = 34
-text = "UNLOCK_ALL"
 
 [node name="Step5" type="Control" parent="." unique_id=734408830]
 visible = false
@@ -421,6 +360,4 @@ text = "TIMETOPLAY"
 [connection signal="item_selected" from="Step2/Video/Window settings" to="." method="_on_window_settings_item_selected"]
 [connection signal="pressed" from="Step2/Next" to="." method="_on_next_pressed"]
 [connection signal="item_selected" from="Step2/Language/Language Settings" to="." method="_on_language_settings_item_selected"]
-[connection signal="pressed" from="Step4/Start lv 1" to="." method="_on_start_lv_1_pressed"]
-[connection signal="pressed" from="Step4/unlock all" to="." method="_on_unlock_all_pressed"]
 [connection signal="pressed" from="Step5/play" to="." method="_on_play_pressed"]

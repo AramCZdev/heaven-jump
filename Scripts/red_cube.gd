@@ -11,8 +11,8 @@ extends CharacterBody2D
 @export var coyote_frames: int = 6
 
 # Improved Physics
-@export var improved_acceleration: float = 1200.0
-@export var improved_deceleration: float = 1800.0
+@export var improved_acceleration: float = 3500.0
+@export var improved_deceleration: float = 7000.0
 @export var improved_coyote_frames: int = 10
 
 @onready var _sprite := $Node2D
@@ -53,6 +53,10 @@ func _physics_process(delta: float) -> void:
 		if _dash_timer >= dash_duration:
 			_dashing = false
 			_dash_timer = 0.0
+
+			if SettingsManager.is_improved_physics():
+				velocity.x = _facing * walk_speed
+
 			if _sprite:
 				_sprite.rotation = 0.0
 
@@ -347,3 +351,9 @@ func _on_finish_line_body_entered11plus(_body: Node2D) -> void:
 	var paused := not win.visible
 	win.visible = paused
 	get_tree().paused = paused
+
+func _on_finish_line_body_entered8plusbonus(_body: Node2D) -> void:
+	if _body is CharacterBody2D:
+		AdManager.level_completed()
+		SaveManager.unlock_secret("the_hell", "Beta8+")
+		LoadingManager.goto("res://Scenes/BonusLevels.tscn")

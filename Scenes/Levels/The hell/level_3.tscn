@@ -311,7 +311,7 @@ expand_icon = true
 
 [node name="Red cube" type="CharacterBody2D" parent="." unique_id=694278719]
 z_index = 10
-position = Vector2(-16, -414)
+position = Vector2(-13, -388)
 safe_margin = 0.001
 script = ExtResource("1_paf5v")
 

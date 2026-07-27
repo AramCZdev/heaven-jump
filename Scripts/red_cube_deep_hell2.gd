@@ -12,8 +12,8 @@ const CHECKPOINT_FILE = "user://checkpoint.tmp"
 @export var jumpad_speed: float = 1000.0
 
 # Improved Physics
-@export var improved_acceleration: float = 1400.0
-@export var improved_deceleration: float = 1800.0
+@export var improved_acceleration: float = 2500.0
+@export var improved_deceleration: float = 4000.0
 @export var improved_coyote_frames: int = 10
 
 var _dashing: bool = false
@@ -44,19 +44,29 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if _dead:
 		return
-	
+
 	if _dashing:
 		_dash_timer += delta
+
 		if _dash_timer >= dash_duration:
 			_dashing = false
 			_dash_timer = 0.0
+
+			if SettingsManager.is_improved_physics():
+				velocity.x = _facing * walk_speed
+			else:
+				velocity.x = 0
+
 			if _sprite:
 				_sprite.rotation = 0.0
-	
+
 	var dir := Input.get_axis("move_left", "move_right")
+
 	if dir != 0:
 		_facing = sign(dir)
+
 	if not _dashing:
+
 		if SettingsManager.is_improved_physics():
 			if dir != 0:
 				velocity.x = move_toward(
@@ -75,39 +85,50 @@ func _physics_process(delta: float) -> void:
 
 		velocity.y += gravity * delta
 
+		var current_coyote_frames = coyote_frames
+
+		if SettingsManager.is_improved_physics():
+			current_coyote_frames = improved_coyote_frames
+
 		if is_on_floor():
-			_coyote_timer = improved_coyote_frames if SettingsManager.is_improved_physics() else coyote_frames
+			_coyote_timer = current_coyote_frames
 			_was_on_floor = true
 			_dash_ready = true
+
 		elif _was_on_floor:
 			_coyote_timer -= 1
+
 			if _coyote_timer <= 0:
 				_was_on_floor = false
 
 		var can_jump := is_on_floor() or _coyote_timer > 0
+
 		if Input.is_action_just_pressed("jump") and can_jump:
 			MiscManager.add_jump()
 			velocity.y = -jump_speed
 			_coyote_timer = 0
 			_was_on_floor = false
+
 			if _sfx_jump:
 				_sfx_jump.stop()
 				_sfx_jump.play()
-				AchievementManager.progressachievement("jumps_50", 1)
-				AchievementManager.progressachievement("jumps_500", 1)
-				AchievementManager.progressachievement("jumps_1000", 1)
-				AchievementManager.progressachievement("jumps_10000", 1)
+
 		if Input.is_action_just_pressed("dash") and _dash_ready:
 			MiscManager.add_dash()
 			var dash_dir := _facing
+
 			if dir != 0:
 				dash_dir = sign(dir)
+
 			_start_dash(dash_dir)
+
 	else:
 		velocity.x = dash_speed * _facing
 		velocity.y = 0
+
 		if _sprite:
 			_sprite.rotation += sprite_spin_speed * delta * _facing
+
 	move_and_slide()
 
 func _start_dash(dir: int) -> void:

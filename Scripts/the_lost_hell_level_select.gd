@@ -8,6 +8,10 @@ extends Control
 @onready var no_death_run: Panel = $"No death runs"
 
 func _ready() -> void:
+	if SaveManager.is_chapter_unlocked("the_deep_hell, 3"):
+		$"No death run".visible = true
+	else:
+		$"No death run".visible = false
 	no_death_run.visible = false
 	get_tree().paused = false
 

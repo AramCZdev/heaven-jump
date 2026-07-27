@@ -3,7 +3,6 @@ extends Node
 var loading_scene = preload("res://Scenes/Loading.tscn")
 
 var loading_ui: CanvasLayer
-var progress_bar: ProgressBar
 var animation: AnimationPlayer
 
 var _loading := false
@@ -18,7 +17,6 @@ func goto(path: String) -> void:
 	loading_ui = loading_scene.instantiate()
 	get_tree().root.add_child(loading_ui)
 
-	progress_bar = loading_ui.get_node_or_null("ProgressBar")
 	animation = loading_ui.get_node_or_null("AnimationPlayer")
 
 	if animation:
@@ -37,8 +35,6 @@ func _run_loader() -> void:
 	while _loading:
 		var status = ResourceLoader.load_threaded_get_status(_path, _progress)
 
-		if progress_bar and _progress.size() > 0:
-			progress_bar.value = _progress[0] * 100
 
 		if status == ResourceLoader.THREAD_LOAD_LOADED:
 			var packed = ResourceLoader.load_threaded_get(_path)
@@ -65,6 +61,5 @@ func _cleanup() -> void:
 	if loading_ui:
 		loading_ui.queue_free()
 	loading_ui = null
-	progress_bar = null
 	animation = null
 	_path = ""

@@ -1161,7 +1161,7 @@ offset_bottom = 644.0
 theme_override_colors/font_color = Color(0.39, 0.39, 0.39, 1)
 theme_override_fonts/font = ExtResource("7_loo7a")
 theme_override_font_sizes/font_size = 23
-text = "v1.1.0"
+text = "v1.1.2"
 
 [node name="Label2" type="Label" parent="Main menu" unique_id=249979390]
 layout_mode = 0
@@ -1176,7 +1176,6 @@ text = "AD_NOT_LOADED"
 horizontal_alignment = 1
 
 [node name="Settings" type="Control" parent="." unique_id=2091297106]
-visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -1361,16 +1360,17 @@ theme = SubResource("Theme_8e205")
 theme_override_fonts/font = ExtResource("7_loo7a")
 theme_override_font_sizes/font_size = 20
 selected = 0
-item_count = 4
+item_count = 5
 popup/item_0/text = "English (US)"
 popup/item_0/id = 0
 popup/item_1/text = "English (UK)"
 popup/item_1/id = 1
 popup/item_2/text = "Español"
 popup/item_2/id = 2
-popup/item_2/disabled = true
 popup/item_3/text = "Čeština"
 popup/item_3/id = 3
+popup/item_4/text = "Deutsch"
+popup/item_4/id = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Language" type="Label" parent="Settings/Language" unique_id=1646770186]
@@ -1465,6 +1465,7 @@ text = "RESET_BUTTON"
 metadata/_edit_use_anchors_ = true
 
 [node name="Warning" type="Panel" parent="Settings2/Danger Zone" unique_id=952033719]
+visible = false
 z_index = 7
 offset_left = 502.0
 offset_top = 228.0
@@ -1543,16 +1544,6 @@ vertical_alignment = 1
 [node name="Developer" type="Node2D" parent="Settings2" unique_id=269083518]
 position = Vector2(0, -283)
 
-[node name="ImprovedPhysics" type="CheckButton" parent="Settings2/Developer" unique_id=541002371]
-offset_left = -556.0
-offset_top = 241.0
-offset_right = -116.0
-offset_bottom = 276.0
-tooltip_text = "Improves coyote timing and enables acceleration"
-theme_override_fonts/font = ExtResource("6_fh7cp")
-text = "IMPROVE_PHYSICS"
-metadata/_edit_use_anchors_ = true
-
 [node name="Dev" type="Label" parent="Settings2/Developer" unique_id=434744633]
 anchors_preset = 8
 anchor_left = 0.5
@@ -1569,6 +1560,37 @@ theme_override_fonts/font = ExtResource("7_loo7a")
 theme_override_font_sizes/font_size = 20
 text = "DEV_SETTINGS"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Enable dev settings" type="CheckButton" parent="Settings2/Developer" unique_id=1030423486]
+offset_left = -556.0
+offset_top = 249.0
+offset_right = -116.0
+offset_bottom = 284.0
+tooltip_text = "Improves coyote timing and enables acceleration"
+theme_override_fonts/font = ExtResource("6_fh7cp")
+text = "ENABLE_DEV"
+metadata/_edit_use_anchors_ = true
+
+[node name="ImprovedPhysics" type="CheckButton" parent="Settings2/Developer" unique_id=541002371]
+offset_left = -556.0
+offset_top = 294.0
+offset_right = -116.0
+offset_bottom = 329.0
+tooltip_text = "Improves coyote timing and enables acceleration"
+theme_override_fonts/font = ExtResource("6_fh7cp")
+text = "IMPROVE_PHYSICS"
+metadata/_edit_use_anchors_ = true
+
+[node name="Unlock All" type="Button" parent="Settings2/Developer" unique_id=2120804056]
+offset_left = -556.0
+offset_top = 343.0
+offset_right = -119.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_loo7a")
+theme_override_font_sizes/font_size = 22
+text = "UNLOCK_ALL"
 metadata/_edit_use_anchors_ = true
 
 [node name="Back" type="Button" parent="Settings2" unique_id=2044135778]
@@ -1824,10 +1846,10 @@ text = "Back
 
 [node name="qwertz" type="Label" parent="." unique_id=377451189]
 layout_mode = 0
-offset_left = -2905.0
-offset_top = -1981.0
-offset_right = -2155.0
-offset_bottom = -1917.0
+offset_left = -30367.0
+offset_top = -23139.0
+offset_right = -28944.0
+offset_bottom = -23075.0
 theme_override_font_sizes/font_size = 39
 text = "If you are seeing this then stop hacking into my games :("
 
@@ -2099,6 +2121,7 @@ theme_override_font_sizes/font_size = 31
 text = "STATS_BUTTON"
 
 [node name="Stats" type="Control" parent="." unique_id=1836682673]
+visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -2244,7 +2267,9 @@ text = "TRANSFER"
 [connection signal="pressed" from="Settings2/Danger Zone/reset" to="." method="_on_warning_pressed"]
 [connection signal="pressed" from="Settings2/Danger Zone/Warning/YES" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="Settings2/Danger Zone/Warning/No" to="." method="_on_no_reset_pressed"]
+[connection signal="toggled" from="Settings2/Developer/Enable dev settings" to="." method="_on_enable_dev_settings_toggled"]
 [connection signal="toggled" from="Settings2/Developer/ImprovedPhysics" to="." method="_on_improved_physics_button_toggled"]
+[connection signal="pressed" from="Settings2/Developer/Unlock All" to="." method="_on_unlock_all_pressed"]
 [connection signal="pressed" from="Settings2/Back" to="." method="_on_page_1_pressed"]
 [connection signal="pressed" from="Play/Campaign/Play" to="." method="_on_campaign_pressed"]
 [connection signal="pressed" from="Play/Back button" to="." method="_on_back_button_pressed"]

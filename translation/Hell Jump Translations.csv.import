@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c3juknvcu5iq2"
+
+[deps]
+
+files=["res://translation/Hell Jump Translations.en_US.translation", "res://translation/Hell Jump Translations.cs_CZ.translation", "res://translation/Hell Jump Translations.en_GB.translation", "res://translation/Hell Jump Translations.de_DE.translation", "res://translation/Hell Jump Translations.es_ES.translation"]
+
+source_file="res://translation/Hell Jump Translations.csv"
+dest_files=["res://translation/Hell Jump Translations.en_US.translation", "res://translation/Hell Jump Translations.cs_CZ.translation", "res://translation/Hell Jump Translations.en_GB.translation", "res://translation/Hell Jump Translations.de_DE.translation", "res://translation/Hell Jump Translations.es_ES.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
