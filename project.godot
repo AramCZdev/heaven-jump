@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Hell Jump"
 config/description="A hellish platformer"
-config/version="1.1.2"
+config/version="1.1.3"
 config/tags=PackedStringArray("first_game")
 run/main_scene="uid://b6kdoxch4ks0t"
 config/features=PackedStringArray("4.7", "GL Compatibility")

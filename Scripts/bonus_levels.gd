@@ -10,6 +10,7 @@ var codes = {
 	"CUBEREVENGE": "res://Scenes/Bonus/cuberevenge.tscn",
 	"ROCKMINIGAME": "res://Scenes/Bonus/rock.tscn",
 	"ANOTHER3D": "res://Scenes/Bonus/Level3D2.tscn",
+	"8PLUS": "res://Scenes/Bonus/Level8+.tscn"
 }
 
 func _ready() -> void:

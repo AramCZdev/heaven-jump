@@ -1,6 +1,8 @@
 extends Control
 
 func _ready() -> void:
+	if OS.get_name() == "Android":
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	get_window().set_flag(Window.FLAG_MAXIMIZE_DISABLED, true)
 
 	# Apply language

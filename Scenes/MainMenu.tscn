@@ -1049,6 +1049,7 @@ timeout = 15.0
 
 [node name="Admob" type="Node" parent="." unique_id=1147268247]
 script = ExtResource("15_7467j")
+is_real = true
 android_debug_application_id = "ca-app-pub-3940256099942544~3347511713"
 android_real_application_id = "ca-app-pub-3565206398281299~4724396027"
 android_real_rewarded_id = "ca-app-pub-3565206398281299/4839620092"
@@ -1161,7 +1162,7 @@ offset_bottom = 644.0
 theme_override_colors/font_color = Color(0.39, 0.39, 0.39, 1)
 theme_override_fonts/font = ExtResource("7_loo7a")
 theme_override_font_sizes/font_size = 23
-text = "v1.1.2"
+text = "v1.1.3"
 
 [node name="Label2" type="Label" parent="Main menu" unique_id=249979390]
 layout_mode = 0
