@@ -1177,6 +1177,7 @@ text = "AD_NOT_LOADED"
 horizontal_alignment = 1
 
 [node name="Settings" type="Control" parent="." unique_id=2091297106]
+visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -1409,7 +1410,6 @@ icon = ExtResource("8_2x1g0")
 expand_icon = true
 
 [node name="Settings2" type="Control" parent="." unique_id=1180382777]
-visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0

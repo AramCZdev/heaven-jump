@@ -55,8 +55,8 @@ func _ready() -> void:
 	_on_resolution_settings_item_selected(saved_resolution)
 	
 	$Settings2.visible = false
-	
-	dev_settings.button_pressed = SettingsManager.get_setting("dev_settings")
+
+	dev_settings.button_pressed = SettingsManager.get_setting("dev_settings", false)
 	improved_physics_button.button_pressed = SettingsManager.is_improved_physics()
 	
 	var saved_index_language = SettingsManager.get_setting("language", 0)
