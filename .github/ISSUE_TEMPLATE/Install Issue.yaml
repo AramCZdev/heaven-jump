@@ -66,7 +66,7 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I downloaded Hell Jump from an official source (itch.io, Game Jolt, or Snap Store).
+        - label: I downloaded Heaven Jump from an official source (Github).
         - label: I confirmed my device supports Hell Jump.
         - label: I checked existing issues and confirmed this installation issue has not already been reported.
     validations:
