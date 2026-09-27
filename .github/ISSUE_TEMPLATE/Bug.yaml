@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug in Hell Jump
+description: Report a bug in Heaven Jump
 title: "[Bug]: "
 labels: ["bug"]
 
@@ -16,9 +16,7 @@ body:
       label: Platform
       options:
         - Windows
-        - Linux (Native)
-        - Linux (Snap)
-        - Android
+        - Linux
     validations:
       required: true
 
