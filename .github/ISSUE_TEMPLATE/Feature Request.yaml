@@ -11,7 +11,7 @@ body:
       options:
         - label: I confirmed this feature has not already been requested.
           required: true
-        - label: I confirmed this feature fits Hell Jump.
+        - label: I confirmed this feature fits Heaven Jump.
           required: true
 
   - type: textarea
@@ -27,7 +27,7 @@ body:
     id: reason
     attributes:
       label: Why should this feature be added?
-      description: Explain how this would improve Hell Jump.
+      description: Explain how this would improve Heaven Jump.
       placeholder: This feature would help because...
 
   - type: textarea
