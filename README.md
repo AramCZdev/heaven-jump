@@ -24,6 +24,6 @@ In **Heaven Jump** you control a orange cube trying to get out of Heaven. Becaus
 
 ## Tech Stack
 
-- **Engine:** Godot 4.6
+- **Engine:** Godot 4.7
 - **Language:** GDScript
 - **Other tools:** Piskel
