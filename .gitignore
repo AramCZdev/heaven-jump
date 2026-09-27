@@ -30,3 +30,4 @@ export/
 # Python files
 /translation/venv/
 /translation/add_language.py
+.godotlauncher
